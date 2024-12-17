@@ -1,0 +1,28 @@
+<?xml version="1.0"?>
+<Checkpoint Version="22" Minor="0">
+	<BUILD_NUMBER Name="5076996"/>
+	<FULL_BUILD Name="SW Build 5076996 on Wed May 22 18:37:14 MDT 2024"/>
+	<PRODUCT Name="Vivado v2024.1 (64-bit)"/>
+	<Part Name="xc7z007sclg400-1"/>
+	<FeatureSet Name="FeatureSet_Classic"/>
+	<NEXTGEN_VERSAL Name="0"/>
+	<Top Name="led_sw"/>
+	<DisableAutoIOBuffers Name="0"/>
+	<OutOfContext Name="0"/>
+	<MacroLevel Name="1"/>
+	<RunGenerated Name="1"/>
+	<HDPlatform Name="0"/>
+	<File Type="VERILOG_STUB" Name="led_sw_stub.v" ModTime="1724804042"/>
+	<File Type="VHDL_STUB" Name="led_sw_stub.vhdl" ModTime="1724804042"/>
+	<File Type="PARAMXML" Name="led_sw_param.xml" ModTime="1724804042"/>
+	<File Type="PARAMXML" Name="led_sw_param.xml" ModTime="1724804042"/>
+	<File Type="XN" Name="led_sw.xn" ModTime="1724804042"/>
+	<File Type="SHAPE" Name="led_sw.shape" ModTime="1724804042"/>
+	<File Type="EDIF" Name="led_sw.edf" ModTime="1724804042"/>
+	<File Type="INCR" Name="led_sw.incr" ModTime="1724804042"/>
+	<File Type="RDA" Name="led_sw.rda" ModTime="1724804042"/>
+	<File Type="JSON_RDA" Name="led_sw_rda.json" ModTime="1724804042"/>
+	<File Type="WDF" Name="led_sw.wdf" ModTime="1724804042"/>
+	<File Type="SYNTH" Name="led_sw.synth" ModTime="1724804042"/>
+</Checkpoint>
+

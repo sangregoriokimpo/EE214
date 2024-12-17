@@ -1,0 +1,239 @@
+{
+  "design": {
+    "design_info": {
+      "boundary_crc": "0x64CCC6B40EFD6E48",
+      "device": "xc7z007sclg400-1",
+      "gen_directory": "../../../../project_7.5.gen/sources_1/bd/design_2",
+      "name": "design_2",
+      "rev_ctrl_bd_flag": "RevCtrlBdOff",
+      "synth_flow_mode": "Hierarchical",
+      "tool_version": "2024.1.1",
+      "validated": "true"
+    },
+    "design_tree": {
+      "PISO_0": "",
+      "PISO_1": "",
+      "clock_divider_0": ""
+    },
+    "ports": {
+      "sw": {
+        "direction": "I",
+        "left": "7",
+        "right": "0"
+      },
+      "clk": {
+        "direction": "I"
+      },
+      "rst": {
+        "direction": "I"
+      },
+      "btn0": {
+        "direction": "I"
+      },
+      "btn1": {
+        "direction": "I"
+      },
+      "Y2": {
+        "direction": "O",
+        "left": "7",
+        "right": "0"
+      },
+      "Y1": {
+        "direction": "O",
+        "left": "7",
+        "right": "0"
+      }
+    },
+    "components": {
+      "PISO_0": {
+        "vlnv": "xilinx.com:module_ref:PISO:1.0",
+        "ip_revision": "1",
+        "xci_name": "design_2_PISO_0_2",
+        "xci_path": "ip\\design_2_PISO_0_2\\design_2_PISO_0_2.xci",
+        "inst_hier_path": "PISO_0",
+        "reference_info": {
+          "ref_type": "hdl",
+          "ref_name": "PISO",
+          "boundary_crc": "0x0"
+        },
+        "ports": {
+          "I": {
+            "direction": "I",
+            "left": "7",
+            "right": "0"
+          },
+          "clk": {
+            "type": "clk",
+            "direction": "I",
+            "parameters": {
+              "ASSOCIATED_RESET": {
+                "value": "rst",
+                "value_src": "constant"
+              },
+              "CLK_DOMAIN": {
+                "value": "design_2_clock_divider_0_0_slow_clk",
+                "value_src": "default_prop"
+              }
+            }
+          },
+          "rst": {
+            "type": "rst",
+            "direction": "I"
+          },
+          "Iconnect": {
+            "direction": "I"
+          },
+          "btn": {
+            "direction": "I"
+          },
+          "Y": {
+            "direction": "O",
+            "left": "7",
+            "right": "0"
+          },
+          "Oconnect": {
+            "direction": "O"
+          }
+        }
+      },
+      "PISO_1": {
+        "vlnv": "xilinx.com:module_ref:PISO:1.0",
+        "ip_revision": "1",
+        "xci_name": "design_2_PISO_1_1",
+        "xci_path": "ip\\design_2_PISO_1_1\\design_2_PISO_1_1.xci",
+        "inst_hier_path": "PISO_1",
+        "reference_info": {
+          "ref_type": "hdl",
+          "ref_name": "PISO",
+          "boundary_crc": "0x0"
+        },
+        "ports": {
+          "I": {
+            "direction": "I",
+            "left": "7",
+            "right": "0"
+          },
+          "clk": {
+            "type": "clk",
+            "direction": "I",
+            "parameters": {
+              "ASSOCIATED_RESET": {
+                "value": "rst",
+                "value_src": "constant"
+              },
+              "CLK_DOMAIN": {
+                "value": "design_2_clock_divider_0_0_slow_clk",
+                "value_src": "default_prop"
+              }
+            }
+          },
+          "rst": {
+            "type": "rst",
+            "direction": "I"
+          },
+          "Iconnect": {
+            "direction": "I"
+          },
+          "btn": {
+            "direction": "I"
+          },
+          "Y": {
+            "direction": "O",
+            "left": "7",
+            "right": "0"
+          },
+          "Oconnect": {
+            "direction": "O"
+          }
+        }
+      },
+      "clock_divider_0": {
+        "vlnv": "xilinx.com:module_ref:clock_divider:1.0",
+        "ip_revision": "1",
+        "xci_name": "design_2_clock_divider_0_0",
+        "xci_path": "ip\\design_2_clock_divider_0_0\\design_2_clock_divider_0_0.xci",
+        "inst_hier_path": "clock_divider_0",
+        "reference_info": {
+          "ref_type": "hdl",
+          "ref_name": "clock_divider",
+          "boundary_crc": "0x0"
+        },
+        "ports": {
+          "clk": {
+            "type": "clk",
+            "direction": "I"
+          },
+          "slow_clk": {
+            "type": "clk",
+            "direction": "O"
+          }
+        }
+      }
+    },
+    "nets": {
+      "PISO_0_Oconnect": {
+        "ports": [
+          "PISO_0/Oconnect",
+          "PISO_1/Iconnect"
+        ]
+      },
+      "PISO_0_Y": {
+        "ports": [
+          "PISO_0/Y",
+          "Y1"
+        ]
+      },
+      "PISO_1_Oconnect": {
+        "ports": [
+          "PISO_1/Oconnect",
+          "PISO_0/Iconnect"
+        ]
+      },
+      "PISO_1_Y": {
+        "ports": [
+          "PISO_1/Y",
+          "Y2"
+        ]
+      },
+      "btn0_1": {
+        "ports": [
+          "btn0",
+          "PISO_0/btn"
+        ]
+      },
+      "btn1_1": {
+        "ports": [
+          "btn1",
+          "PISO_1/btn"
+        ]
+      },
+      "clk_1": {
+        "ports": [
+          "clk",
+          "clock_divider_0/clk"
+        ]
+      },
+      "clock_divider_0_slow_clk": {
+        "ports": [
+          "clock_divider_0/slow_clk",
+          "PISO_0/clk",
+          "PISO_1/clk"
+        ]
+      },
+      "rst_1": {
+        "ports": [
+          "rst",
+          "PISO_0/rst",
+          "PISO_1/rst"
+        ]
+      },
+      "sw_1": {
+        "ports": [
+          "sw",
+          "PISO_0/I",
+          "PISO_1/I"
+        ]
+      }
+    }
+  }
+}

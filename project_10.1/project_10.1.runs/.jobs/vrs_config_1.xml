@@ -1,0 +1,39 @@
+<?xml version="1.0"?>
+<Runs Version="1" Minor="0">
+	<Run Id="displaycontroller_inst_0_bin2bcd_0_0_synth_1" LaunchDir="C:/xproj/project_10.1/project_10.1.runs/displaycontroller_inst_0_bin2bcd_0_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="displaycontroller_inst_0_clock_divider_0_0_synth_1" LaunchDir="C:/xproj/project_10.1/project_10.1.runs/displaycontroller_inst_0_clock_divider_0_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="displaycontroller_inst_0_counter_0_0_synth_1" LaunchDir="C:/xproj/project_10.1/project_10.1.runs/displaycontroller_inst_0_counter_0_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="design_1_aluA2_0_0_synth_1" LaunchDir="C:/xproj/project_10.1/project_10.1.runs/design_1_aluA2_0_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="design_1_input_switch_0_0_synth_1" LaunchDir="C:/xproj/project_10.1/project_10.1.runs/design_1_input_switch_0_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="displaycontroller_inst_0_display_decoder_0_0_synth_1" LaunchDir="C:/xproj/project_10.1/project_10.1.runs/displaycontroller_inst_0_display_decoder_0_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="displaycontroller_inst_0_decoder_0_0_synth_1" LaunchDir="C:/xproj/project_10.1/project_10.1.runs/displaycontroller_inst_0_decoder_0_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="displaycontroller_inst_0_mux_0_0_synth_1" LaunchDir="C:/xproj/project_10.1/project_10.1.runs/displaycontroller_inst_0_mux_0_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="synth_1" LaunchDir="C:/xproj/project_10.1/project_10.1.runs/synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado">
+		<Parent Id="displaycontroller_inst_0_bin2bcd_0_0_synth_1"/>
+		<Parent Id="displaycontroller_inst_0_clock_divider_0_0_synth_1"/>
+		<Parent Id="displaycontroller_inst_0_counter_0_0_synth_1"/>
+		<Parent Id="design_1_aluA2_0_0_synth_1"/>
+		<Parent Id="design_1_input_switch_0_0_synth_1"/>
+		<Parent Id="displaycontroller_inst_0_display_decoder_0_0_synth_1"/>
+		<Parent Id="displaycontroller_inst_0_decoder_0_0_synth_1"/>
+		<Parent Id="displaycontroller_inst_0_mux_0_0_synth_1"/>
+	</Run>
+	<Run Id="impl_1" LaunchDir="C:/xproj/project_10.1/project_10.1.runs/impl_1" FlowId="Vivado_Implementation" FromStepId="init_design" ToStepId="write_bitstream">
+		<Parent Id="synth_1"/>
+		<Parent Id="displaycontroller_inst_0_bin2bcd_0_0_synth_1"/>
+		<Parent Id="displaycontroller_inst_0_clock_divider_0_0_synth_1"/>
+		<Parent Id="displaycontroller_inst_0_counter_0_0_synth_1"/>
+		<Parent Id="design_1_aluA2_0_0_synth_1"/>
+		<Parent Id="design_1_input_switch_0_0_synth_1"/>
+		<Parent Id="displaycontroller_inst_0_display_decoder_0_0_synth_1"/>
+		<Parent Id="displaycontroller_inst_0_decoder_0_0_synth_1"/>
+		<Parent Id="displaycontroller_inst_0_mux_0_0_synth_1"/>
+	</Run>
+	<Parameters>
+		<Parameter Name="runs.monitorLSFJobs" Val="true" Type="bool"/>
+		<Parameter Name="runs.enableClusterConf" Val="true" Type="bool"/>
+		<Parameter Name="general.shortenLongPath" Val="true" Type="bool"/>
+	</Parameters>
+	<ProductInfo Name="vivado"/>
+</Runs>
+

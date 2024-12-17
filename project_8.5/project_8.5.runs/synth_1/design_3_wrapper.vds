@@ -1,0 +1,329 @@
+#-----------------------------------------------------------
+# Vivado v2024.1.1 (64-bit)
+# SW Build 5094488 on Fri Jun 14 08:59:21 MDT 2024
+# IP Build 5091682 on Fri Jun 14 16:55:04 MDT 2024
+# SharedData Build 5094118 on Fri Jun 14 01:09:43 MDT 2024
+# Start of session at: Tue Nov 19 11:40:38 2024
+# Process ID: 72460
+# Current directory: C:/xproj/project_8.5/project_8.5.runs/synth_1
+# Command line: vivado.exe -log design_3_wrapper.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source design_3_wrapper.tcl
+# Log file: C:/xproj/project_8.5/project_8.5.runs/synth_1/design_3_wrapper.vds
+# Journal file: C:/xproj/project_8.5/project_8.5.runs/synth_1\vivado.jou
+# Running On        :sgk
+# Platform          :Windows Server 2016 or Windows 10
+# Operating System  :22631
+# Processor Detail  :AMD Ryzen 7 7840HS w/ Radeon 780M Graphics     
+# CPU Frequency     :3793 MHz
+# CPU Physical cores:8
+# CPU Logical cores :16
+# Host memory       :66367 MB
+# Swap memory       :4160 MB
+# Total Virtual     :70528 MB
+# Available Virtual :45548 MB
+#-----------------------------------------------------------
+source design_3_wrapper.tcl -notrace
+create_project: Time (s): cpu = 00:00:03 ; elapsed = 00:00:08 . Memory (MB): peak = 630.645 ; gain = 200.555
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2024.1/data/ip'.
+Command: read_checkpoint -auto_incremental -incremental C:/xproj/project_8.5/project_8.5.srcs/utils_1/imports/synth_1/decimal_counter.dcp
+INFO: [Vivado 12-5825] Read reference checkpoint from C:/xproj/project_8.5/project_8.5.srcs/utils_1/imports/synth_1/decimal_counter.dcp for incremental synthesis
+INFO: [Vivado 12-7989] Please ensure there are no constraint changes
+Command: synth_design -top design_3_wrapper -part xc7z007sclg400-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7z007s'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7z007s'
+INFO: [Device 21-403] Loading part xc7z007sclg400-1
+INFO: [Device 21-9227] Part: xc7z007sclg400-1 does not have CEAM library.
+INFO: [Designutils 20-5440] No compile time benefit to using incremental synthesis; A full resynthesis will be run
+INFO: [Designutils 20-4379] Flow is switching to default flow due to incremental criteria not met. If you would like to alter this behaviour and have the flow terminate instead, please set the following parameter config_implementation {autoIncr.Synth.RejectBehavior Terminate}
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 76144
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:06 . Memory (MB): peak = 1495.660 ; gain = 449.891
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'design_3_wrapper' [C:/xproj/project_8.5/project_8.5.gen/sources_1/bd/design_3/hdl/design_3_wrapper.v:13]
+INFO: [Synth 8-6157] synthesizing module 'design_3' [c:/xproj/project_8.5/project_8.5.gen/sources_1/bd/design_3/synth/design_3.v:13]
+INFO: [Synth 8-6157] synthesizing module 'design_3_clock_divider_0_0' [C:/xproj/project_8.5/project_8.5.runs/synth_1/.Xil/Vivado-72460-sgk/realtime/design_3_clock_divider_0_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'design_3_clock_divider_0_0' (0#1) [C:/xproj/project_8.5/project_8.5.runs/synth_1/.Xil/Vivado-72460-sgk/realtime/design_3_clock_divider_0_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'design_3_clock_divider_1_0' [C:/xproj/project_8.5/project_8.5.runs/synth_1/.Xil/Vivado-72460-sgk/realtime/design_3_clock_divider_1_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'design_3_clock_divider_1_0' (0#1) [C:/xproj/project_8.5/project_8.5.runs/synth_1/.Xil/Vivado-72460-sgk/realtime/design_3_clock_divider_1_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'design_3_counter_0_0' [C:/xproj/project_8.5/project_8.5.runs/synth_1/.Xil/Vivado-72460-sgk/realtime/design_3_counter_0_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'design_3_counter_0_0' (0#1) [C:/xproj/project_8.5/project_8.5.runs/synth_1/.Xil/Vivado-72460-sgk/realtime/design_3_counter_0_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'design_3_counter_1_0' [C:/xproj/project_8.5/project_8.5.runs/synth_1/.Xil/Vivado-72460-sgk/realtime/design_3_counter_1_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'design_3_counter_1_0' (0#1) [C:/xproj/project_8.5/project_8.5.runs/synth_1/.Xil/Vivado-72460-sgk/realtime/design_3_counter_1_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'design_3_decimal_counter_0_0' [C:/xproj/project_8.5/project_8.5.runs/synth_1/.Xil/Vivado-72460-sgk/realtime/design_3_decimal_counter_0_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'design_3_decimal_counter_0_0' (0#1) [C:/xproj/project_8.5/project_8.5.runs/synth_1/.Xil/Vivado-72460-sgk/realtime/design_3_decimal_counter_0_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'design_3_decoder_0_0' [C:/xproj/project_8.5/project_8.5.runs/synth_1/.Xil/Vivado-72460-sgk/realtime/design_3_decoder_0_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'design_3_decoder_0_0' (0#1) [C:/xproj/project_8.5/project_8.5.runs/synth_1/.Xil/Vivado-72460-sgk/realtime/design_3_decoder_0_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'design_3_display_decoder_0_0' [C:/xproj/project_8.5/project_8.5.runs/synth_1/.Xil/Vivado-72460-sgk/realtime/design_3_display_decoder_0_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'design_3_display_decoder_0_0' (0#1) [C:/xproj/project_8.5/project_8.5.runs/synth_1/.Xil/Vivado-72460-sgk/realtime/design_3_display_decoder_0_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'design_3_mux_0_0' [C:/xproj/project_8.5/project_8.5.runs/synth_1/.Xil/Vivado-72460-sgk/realtime/design_3_mux_0_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'design_3_mux_0_0' (0#1) [C:/xproj/project_8.5/project_8.5.runs/synth_1/.Xil/Vivado-72460-sgk/realtime/design_3_mux_0_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'design_3_xlconstant_0_0' [c:/xproj/project_8.5/project_8.5.gen/sources_1/bd/design_3/ip/design_3_xlconstant_0_0/synth/design_3_xlconstant_0_0.v:53]
+INFO: [Synth 8-6157] synthesizing module 'xlconstant_v1_1_9_xlconstant' [c:/xproj/project_8.5/project_8.5.gen/sources_1/bd/design_3/ipshared/e2d2/hdl/xlconstant_v1_1_vl_rfs.v:68]
+INFO: [Synth 8-6155] done synthesizing module 'xlconstant_v1_1_9_xlconstant' (0#1) [c:/xproj/project_8.5/project_8.5.gen/sources_1/bd/design_3/ipshared/e2d2/hdl/xlconstant_v1_1_vl_rfs.v:68]
+INFO: [Synth 8-6155] done synthesizing module 'design_3_xlconstant_0_0' (0#1) [c:/xproj/project_8.5/project_8.5.gen/sources_1/bd/design_3/ip/design_3_xlconstant_0_0/synth/design_3_xlconstant_0_0.v:53]
+INFO: [Synth 8-6157] synthesizing module 'design_3_xlconstant_1_0' [c:/xproj/project_8.5/project_8.5.gen/sources_1/bd/design_3/ip/design_3_xlconstant_1_0/synth/design_3_xlconstant_1_0.v:53]
+INFO: [Synth 8-6157] synthesizing module 'xlconstant_v1_1_9_xlconstant__parameterized0' [c:/xproj/project_8.5/project_8.5.gen/sources_1/bd/design_3/ipshared/e2d2/hdl/xlconstant_v1_1_vl_rfs.v:68]
+INFO: [Synth 8-6155] done synthesizing module 'xlconstant_v1_1_9_xlconstant__parameterized0' (0#1) [c:/xproj/project_8.5/project_8.5.gen/sources_1/bd/design_3/ipshared/e2d2/hdl/xlconstant_v1_1_vl_rfs.v:68]
+INFO: [Synth 8-6155] done synthesizing module 'design_3_xlconstant_1_0' (0#1) [c:/xproj/project_8.5/project_8.5.gen/sources_1/bd/design_3/ip/design_3_xlconstant_1_0/synth/design_3_xlconstant_1_0.v:53]
+INFO: [Synth 8-6155] done synthesizing module 'design_3' (0#1) [c:/xproj/project_8.5/project_8.5.gen/sources_1/bd/design_3/synth/design_3.v:13]
+INFO: [Synth 8-6155] done synthesizing module 'design_3_wrapper' (0#1) [C:/xproj/project_8.5/project_8.5.gen/sources_1/bd/design_3/hdl/design_3_wrapper.v:13]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:07 . Memory (MB): peak = 1604.129 ; gain = 558.359
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:04 ; elapsed = 00:00:07 . Memory (MB): peak = 1604.129 ; gain = 558.359
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:04 ; elapsed = 00:00:07 . Memory (MB): peak = 1604.129 ; gain = 558.359
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1604.129 ; gain = 0.000
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [c:/xproj/project_8.5/project_8.5.gen/sources_1/bd/design_3/ip/design_3_mux_0_0/design_3_mux_0_0/design_3_mux_0_0_in_context.xdc] for cell 'design_3_i/mux_0'
+Finished Parsing XDC File [c:/xproj/project_8.5/project_8.5.gen/sources_1/bd/design_3/ip/design_3_mux_0_0/design_3_mux_0_0/design_3_mux_0_0_in_context.xdc] for cell 'design_3_i/mux_0'
+Parsing XDC File [c:/xproj/project_8.5/project_8.5.gen/sources_1/bd/design_3/ip/design_3_display_decoder_0_0/design_3_display_decoder_0_0/design_3_display_decoder_0_0_in_context.xdc] for cell 'design_3_i/display_decoder_0'
+Finished Parsing XDC File [c:/xproj/project_8.5/project_8.5.gen/sources_1/bd/design_3/ip/design_3_display_decoder_0_0/design_3_display_decoder_0_0/design_3_display_decoder_0_0_in_context.xdc] for cell 'design_3_i/display_decoder_0'
+Parsing XDC File [c:/xproj/project_8.5/project_8.5.gen/sources_1/bd/design_3/ip/design_3_decoder_0_0/design_3_decoder_0_0/design_3_decoder_0_0_in_context.xdc] for cell 'design_3_i/decoder_0'
+Finished Parsing XDC File [c:/xproj/project_8.5/project_8.5.gen/sources_1/bd/design_3/ip/design_3_decoder_0_0/design_3_decoder_0_0/design_3_decoder_0_0_in_context.xdc] for cell 'design_3_i/decoder_0'
+Parsing XDC File [c:/xproj/project_8.5/project_8.5.gen/sources_1/bd/design_3/ip/design_3_decimal_counter_0_0/design_3_decimal_counter_0_0/design_3_decimal_counter_0_0_in_context.xdc] for cell 'design_3_i/decimal_counter_0'
+Finished Parsing XDC File [c:/xproj/project_8.5/project_8.5.gen/sources_1/bd/design_3/ip/design_3_decimal_counter_0_0/design_3_decimal_counter_0_0/design_3_decimal_counter_0_0_in_context.xdc] for cell 'design_3_i/decimal_counter_0'
+Parsing XDC File [c:/xproj/project_8.5/project_8.5.gen/sources_1/bd/design_3/ip/design_3_clock_divider_0_0/design_3_clock_divider_0_0/design_3_clock_divider_0_0_in_context.xdc] for cell 'design_3_i/clock_divider_0'
+Finished Parsing XDC File [c:/xproj/project_8.5/project_8.5.gen/sources_1/bd/design_3/ip/design_3_clock_divider_0_0/design_3_clock_divider_0_0/design_3_clock_divider_0_0_in_context.xdc] for cell 'design_3_i/clock_divider_0'
+Parsing XDC File [c:/xproj/project_8.5/project_8.5.gen/sources_1/bd/design_3/ip/design_3_clock_divider_1_0/design_3_clock_divider_1_0/design_3_clock_divider_1_0_in_context.xdc] for cell 'design_3_i/clock_divider_1'
+Finished Parsing XDC File [c:/xproj/project_8.5/project_8.5.gen/sources_1/bd/design_3/ip/design_3_clock_divider_1_0/design_3_clock_divider_1_0/design_3_clock_divider_1_0_in_context.xdc] for cell 'design_3_i/clock_divider_1'
+Parsing XDC File [c:/xproj/project_8.5/project_8.5.gen/sources_1/bd/design_3/ip/design_3_counter_0_0/design_3_counter_0_0/design_3_counter_0_0_in_context.xdc] for cell 'design_3_i/counter_0'
+Finished Parsing XDC File [c:/xproj/project_8.5/project_8.5.gen/sources_1/bd/design_3/ip/design_3_counter_0_0/design_3_counter_0_0/design_3_counter_0_0_in_context.xdc] for cell 'design_3_i/counter_0'
+Parsing XDC File [c:/xproj/project_8.5/project_8.5.gen/sources_1/bd/design_3/ip/design_3_counter_1_0/design_3_counter_1_0/design_3_counter_1_0_in_context.xdc] for cell 'design_3_i/counter_1'
+Finished Parsing XDC File [c:/xproj/project_8.5/project_8.5.gen/sources_1/bd/design_3/ip/design_3_counter_1_0/design_3_counter_1_0/design_3_counter_1_0_in_context.xdc] for cell 'design_3_i/counter_1'
+Parsing XDC File [C:/xproj/project_8.5/project_8.5.srcs/constrs_1/new/constraints.xdc]
+WARNING: [Vivado 12-584] No ports matched 'led[0]'. [C:/xproj/project_8.5/project_8.5.srcs/constrs_1/new/constraints.xdc:8]
+WARNING: [Vivado 12-584] No ports matched 'led[1]'. [C:/xproj/project_8.5/project_8.5.srcs/constrs_1/new/constraints.xdc:9]
+WARNING: [Vivado 12-584] No ports matched 'led[2]'. [C:/xproj/project_8.5/project_8.5.srcs/constrs_1/new/constraints.xdc:10]
+WARNING: [Vivado 12-584] No ports matched 'led[3]'. [C:/xproj/project_8.5/project_8.5.srcs/constrs_1/new/constraints.xdc:11]
+WARNING: [Vivado 12-584] No ports matched 'led[4]'. [C:/xproj/project_8.5/project_8.5.srcs/constrs_1/new/constraints.xdc:12]
+WARNING: [Vivado 12-584] No ports matched 'led[5]'. [C:/xproj/project_8.5/project_8.5.srcs/constrs_1/new/constraints.xdc:13]
+WARNING: [Vivado 12-584] No ports matched 'led[6]'. [C:/xproj/project_8.5/project_8.5.srcs/constrs_1/new/constraints.xdc:14]
+WARNING: [Vivado 12-584] No ports matched 'led[7]'. [C:/xproj/project_8.5/project_8.5.srcs/constrs_1/new/constraints.xdc:15]
+WARNING: [Vivado 12-584] No ports matched 'led[8]'. [C:/xproj/project_8.5/project_8.5.srcs/constrs_1/new/constraints.xdc:16]
+WARNING: [Vivado 12-584] No ports matched 'led[9]'. [C:/xproj/project_8.5/project_8.5.srcs/constrs_1/new/constraints.xdc:17]
+WARNING: [Vivado 12-584] No ports matched 'RGB_led_A[0]'. [C:/xproj/project_8.5/project_8.5.srcs/constrs_1/new/constraints.xdc:20]
+WARNING: [Vivado 12-584] No ports matched 'RGB_led_A[1]'. [C:/xproj/project_8.5/project_8.5.srcs/constrs_1/new/constraints.xdc:21]
+WARNING: [Vivado 12-584] No ports matched 'RGB_led_A[2]'. [C:/xproj/project_8.5/project_8.5.srcs/constrs_1/new/constraints.xdc:22]
+WARNING: [Vivado 12-584] No ports matched 'RGB_led_B[0]'. [C:/xproj/project_8.5/project_8.5.srcs/constrs_1/new/constraints.xdc:24]
+WARNING: [Vivado 12-584] No ports matched 'RGB_led_B[1]'. [C:/xproj/project_8.5/project_8.5.srcs/constrs_1/new/constraints.xdc:25]
+WARNING: [Vivado 12-584] No ports matched 'RGB_led_B[2]'. [C:/xproj/project_8.5/project_8.5.srcs/constrs_1/new/constraints.xdc:26]
+WARNING: [Vivado 12-584] No ports matched 'sw[0]'. [C:/xproj/project_8.5/project_8.5.srcs/constrs_1/new/constraints.xdc:29]
+WARNING: [Vivado 12-584] No ports matched 'sw[1]'. [C:/xproj/project_8.5/project_8.5.srcs/constrs_1/new/constraints.xdc:30]
+WARNING: [Vivado 12-584] No ports matched 'sw[2]'. [C:/xproj/project_8.5/project_8.5.srcs/constrs_1/new/constraints.xdc:31]
+WARNING: [Vivado 12-584] No ports matched 'sw[3]'. [C:/xproj/project_8.5/project_8.5.srcs/constrs_1/new/constraints.xdc:32]
+WARNING: [Vivado 12-584] No ports matched 'sw[4]'. [C:/xproj/project_8.5/project_8.5.srcs/constrs_1/new/constraints.xdc:33]
+WARNING: [Vivado 12-584] No ports matched 'sw[5]'. [C:/xproj/project_8.5/project_8.5.srcs/constrs_1/new/constraints.xdc:34]
+WARNING: [Vivado 12-584] No ports matched 'sw[6]'. [C:/xproj/project_8.5/project_8.5.srcs/constrs_1/new/constraints.xdc:35]
+WARNING: [Vivado 12-584] No ports matched 'sw[7]'. [C:/xproj/project_8.5/project_8.5.srcs/constrs_1/new/constraints.xdc:36]
+WARNING: [Vivado 12-584] No ports matched 'sw[8]'. [C:/xproj/project_8.5/project_8.5.srcs/constrs_1/new/constraints.xdc:37]
+WARNING: [Vivado 12-584] No ports matched 'sw[9]'. [C:/xproj/project_8.5/project_8.5.srcs/constrs_1/new/constraints.xdc:38]
+WARNING: [Vivado 12-584] No ports matched 'sw[10]'. [C:/xproj/project_8.5/project_8.5.srcs/constrs_1/new/constraints.xdc:39]
+WARNING: [Vivado 12-584] No ports matched 'sw[11]'. [C:/xproj/project_8.5/project_8.5.srcs/constrs_1/new/constraints.xdc:40]
+WARNING: [Vivado 12-584] No ports matched 'btn[1]'. [C:/xproj/project_8.5/project_8.5.srcs/constrs_1/new/constraints.xdc:44]
+WARNING: [Vivado 12-584] No ports matched 'btn[2]'. [C:/xproj/project_8.5/project_8.5.srcs/constrs_1/new/constraints.xdc:45]
+WARNING: [Vivado 12-584] No ports matched 'btn[3]'. [C:/xproj/project_8.5/project_8.5.srcs/constrs_1/new/constraints.xdc:46]
+WARNING: [Vivado 12-584] No ports matched 'DP'. [C:/xproj/project_8.5/project_8.5.srcs/constrs_1/new/constraints.xdc:62]
+Finished Parsing XDC File [C:/xproj/project_8.5/project_8.5.srcs/constrs_1/new/constraints.xdc]
+WARNING: [Project 1-498] One or more constraints failed evaluation while reading constraint file [C:/xproj/project_8.5/project_8.5.srcs/constrs_1/new/constraints.xdc] and the design contains unresolved black boxes. These constraints will be read post-synthesis (as long as their source constraint file is marked as used_in_implementation) and should be applied correctly then. You should review the constraints listed in the file [.Xil/design_3_wrapper_propImpl.xdc] and check the run log file to verify that these constraints were correctly applied.
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [C:/xproj/project_8.5/project_8.5.srcs/constrs_1/new/constraints.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/design_3_wrapper_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/design_3_wrapper_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Parsing XDC File [C:/xproj/project_8.5/project_8.5.runs/synth_1/dont_touch.xdc]
+Finished Parsing XDC File [C:/xproj/project_8.5/project_8.5.runs/synth_1/dont_touch.xdc]
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1604.129 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.002 . Memory (MB): peak = 1604.129 ; gain = 0.000
+INFO: [Designutils 20-5440] No compile time benefit to using incremental synthesis; A full resynthesis will be run
+INFO: [Designutils 20-4379] Flow is switching to default flow due to incremental criteria not met. If you would like to alter this behaviour and have the flow terminate instead, please set the following parameter config_implementation {autoIncr.Synth.RejectBehavior Terminate}
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:09 ; elapsed = 00:00:14 . Memory (MB): peak = 1604.129 ; gain = 558.359
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7z007sclg400-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:09 ; elapsed = 00:00:14 . Memory (MB): peak = 1604.129 ; gain = 558.359
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+Applied set_property KEEP_HIERARCHY = SOFT for design_3_i. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for design_3_i/mux_0. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for design_3_i/display_decoder_0. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for design_3_i/decoder_0. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for design_3_i/decimal_counter_0. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for design_3_i/clock_divider_0. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for design_3_i/clock_divider_1. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for design_3_i/xlconstant_0. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for design_3_i/xlconstant_1. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for design_3_i/counter_0. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for design_3_i/counter_1. (constraint file  auto generated constraint).
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:09 ; elapsed = 00:00:14 . Memory (MB): peak = 1604.129 ; gain = 558.359
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:09 ; elapsed = 00:00:14 . Memory (MB): peak = 1604.129 ; gain = 558.359
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 66 (col length:40)
+BRAMs: 100 (col length: RAMB18 40 RAMB36 20)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-7080] Parallel synthesis criteria is not met
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:10 ; elapsed = 00:00:16 . Memory (MB): peak = 1604.129 ; gain = 558.359
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:13 ; elapsed = 00:00:19 . Memory (MB): peak = 1604.129 ; gain = 558.359
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:13 ; elapsed = 00:00:19 . Memory (MB): peak = 1604.129 ; gain = 558.359
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:13 ; elapsed = 00:00:19 . Memory (MB): peak = 1604.129 ; gain = 558.359
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:17 ; elapsed = 00:00:23 . Memory (MB): peak = 1604.129 ; gain = 558.359
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:17 ; elapsed = 00:00:23 . Memory (MB): peak = 1604.129 ; gain = 558.359
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:17 ; elapsed = 00:00:23 . Memory (MB): peak = 1604.129 ; gain = 558.359
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:17 ; elapsed = 00:00:23 . Memory (MB): peak = 1604.129 ; gain = 558.359
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:17 ; elapsed = 00:00:23 . Memory (MB): peak = 1604.129 ; gain = 558.359
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:17 ; elapsed = 00:00:23 . Memory (MB): peak = 1604.129 ; gain = 558.359
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++------+-----------------------------+----------+
+|      |BlackBox name                |Instances |
++------+-----------------------------+----------+
+|1     |design_3_clock_divider_0_0   |         1|
+|2     |design_3_clock_divider_1_0   |         1|
+|3     |design_3_counter_0_0         |         1|
+|4     |design_3_counter_1_0         |         1|
+|5     |design_3_decimal_counter_0_0 |         1|
+|6     |design_3_decoder_0_0         |         1|
+|7     |design_3_display_decoder_0_0 |         1|
+|8     |design_3_mux_0_0             |         1|
++------+-----------------------------+----------+
+
+Report Cell Usage: 
++------+---------------------------+------+
+|      |Cell                       |Count |
++------+---------------------------+------+
+|1     |design_3_clock_divider_0   |     1|
+|2     |design_3_clock_divider_1   |     1|
+|3     |design_3_counter_0         |     1|
+|4     |design_3_counter_1         |     1|
+|5     |design_3_decimal_counter_0 |     1|
+|6     |design_3_decoder_0         |     1|
+|7     |design_3_display_decoder_0 |     1|
+|8     |design_3_mux_0             |     1|
+|9     |IBUF                       |     2|
+|10    |OBUF                       |    11|
++------+---------------------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:17 ; elapsed = 00:00:23 . Memory (MB): peak = 1604.129 ; gain = 558.359
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 1 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:12 ; elapsed = 00:00:22 . Memory (MB): peak = 1604.129 ; gain = 558.359
+Synthesis Optimization Complete : Time (s): cpu = 00:00:17 ; elapsed = 00:00:23 . Memory (MB): peak = 1604.129 ; gain = 558.359
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1604.129 ; gain = 0.000
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1604.129 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Synth Design complete | Checksum: d83da094
+INFO: [Common 17-83] Releasing license: Synthesis
+51 Infos, 34 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:20 ; elapsed = 00:00:36 . Memory (MB): peak = 1604.129 ; gain = 953.367
+Write ShapeDB Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1604.129 ; gain = 0.000
+INFO: [Common 17-1381] The checkpoint 'C:/xproj/project_8.5/project_8.5.runs/synth_1/design_3_wrapper.dcp' has been generated.
+INFO: [Vivado 12-24828] Executing command : report_utilization -file design_3_wrapper_utilization_synth.rpt -pb design_3_wrapper_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Tue Nov 19 11:41:29 2024...

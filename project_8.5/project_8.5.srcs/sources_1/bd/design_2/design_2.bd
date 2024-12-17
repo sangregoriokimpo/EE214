@@ -1,0 +1,520 @@
+{
+  "design": {
+    "design_info": {
+      "boundary_crc": "0xF97AD17B225F4743",
+      "device": "xc7z007sclg400-1",
+      "gen_directory": "../../../../project_8.5.gen/sources_1/bd/design_2",
+      "name": "design_2",
+      "rev_ctrl_bd_flag": "RevCtrlBdOff",
+      "synth_flow_mode": "Hierarchical",
+      "tool_version": "2024.1.1",
+      "validated": "true"
+    },
+    "design_tree": {
+      "decimal_counter_0": "",
+      "clock_divider_0": "",
+      "display_decoder_0": "",
+      "mux_0": "",
+      "counter_0": "",
+      "decoder_0": "",
+      "counter_1": "",
+      "xlconstant_0": "",
+      "clock_divider_1": "",
+      "xlconstant_1": ""
+    },
+    "ports": {
+      "CA": {
+        "direction": "O"
+      },
+      "CB": {
+        "direction": "O"
+      },
+      "CC": {
+        "direction": "O"
+      },
+      "CD": {
+        "direction": "O"
+      },
+      "CE": {
+        "direction": "O"
+      },
+      "CF": {
+        "direction": "O"
+      },
+      "CG": {
+        "direction": "O"
+      },
+      "seg_an": {
+        "direction": "O",
+        "left": "3",
+        "right": "0"
+      },
+      "rst": {
+        "direction": "I"
+      },
+      "clk": {
+        "direction": "I"
+      }
+    },
+    "components": {
+      "decimal_counter_0": {
+        "vlnv": "xilinx.com:module_ref:decimal_counter:1.0",
+        "ip_revision": "1",
+        "xci_name": "design_2_decimal_counter_0_0",
+        "xci_path": "ip\\design_2_decimal_counter_0_0\\design_2_decimal_counter_0_0.xci",
+        "inst_hier_path": "decimal_counter_0",
+        "reference_info": {
+          "ref_type": "hdl",
+          "ref_name": "decimal_counter",
+          "boundary_crc": "0x0"
+        },
+        "ports": {
+          "clk": {
+            "type": "clk",
+            "direction": "I",
+            "parameters": {
+              "ASSOCIATED_RESET": {
+                "value": "rst",
+                "value_src": "constant"
+              }
+            }
+          },
+          "rst": {
+            "type": "rst",
+            "direction": "I"
+          },
+          "Y0": {
+            "direction": "O",
+            "left": "3",
+            "right": "0"
+          },
+          "Y1": {
+            "direction": "O",
+            "left": "3",
+            "right": "0"
+          },
+          "Y2": {
+            "direction": "O",
+            "left": "3",
+            "right": "0"
+          },
+          "Y3": {
+            "direction": "O",
+            "left": "3",
+            "right": "0"
+          }
+        }
+      },
+      "clock_divider_0": {
+        "vlnv": "xilinx.com:module_ref:clock_divider:1.0",
+        "ip_revision": "1",
+        "xci_name": "design_2_clock_divider_0_0",
+        "xci_path": "ip\\design_2_clock_divider_0_0\\design_2_clock_divider_0_0.xci",
+        "inst_hier_path": "clock_divider_0",
+        "reference_info": {
+          "ref_type": "hdl",
+          "ref_name": "clock_divider",
+          "boundary_crc": "0x0"
+        },
+        "ports": {
+          "clk": {
+            "type": "clk",
+            "direction": "I",
+            "parameters": {
+              "ASSOCIATED_RESET": {
+                "value": "rst",
+                "value_src": "constant"
+              }
+            }
+          },
+          "rst": {
+            "type": "rst",
+            "direction": "I"
+          },
+          "terminalcount": {
+            "direction": "I",
+            "left": "16",
+            "right": "0"
+          },
+          "clk_div": {
+            "direction": "O"
+          }
+        }
+      },
+      "display_decoder_0": {
+        "vlnv": "xilinx.com:module_ref:display_decoder:1.0",
+        "ip_revision": "1",
+        "xci_name": "design_2_display_decoder_0_0",
+        "xci_path": "ip\\design_2_display_decoder_0_0\\design_2_display_decoder_0_0.xci",
+        "inst_hier_path": "display_decoder_0",
+        "reference_info": {
+          "ref_type": "hdl",
+          "ref_name": "display_decoder",
+          "boundary_crc": "0x0"
+        },
+        "ports": {
+          "B": {
+            "direction": "I",
+            "left": "3",
+            "right": "0"
+          },
+          "CA": {
+            "direction": "O"
+          },
+          "CB": {
+            "direction": "O"
+          },
+          "CC": {
+            "direction": "O"
+          },
+          "CD": {
+            "direction": "O"
+          },
+          "CE": {
+            "direction": "O"
+          },
+          "CF": {
+            "direction": "O"
+          },
+          "CG": {
+            "direction": "O"
+          }
+        }
+      },
+      "mux_0": {
+        "vlnv": "xilinx.com:module_ref:mux:1.0",
+        "ip_revision": "1",
+        "xci_name": "design_2_mux_0_0",
+        "xci_path": "ip\\design_2_mux_0_0\\design_2_mux_0_0.xci",
+        "inst_hier_path": "mux_0",
+        "reference_info": {
+          "ref_type": "hdl",
+          "ref_name": "mux",
+          "boundary_crc": "0x0"
+        },
+        "ports": {
+          "I0": {
+            "direction": "I",
+            "left": "3",
+            "right": "0"
+          },
+          "I1": {
+            "direction": "I",
+            "left": "3",
+            "right": "0"
+          },
+          "I2": {
+            "direction": "I",
+            "left": "3",
+            "right": "0"
+          },
+          "I3": {
+            "direction": "I",
+            "left": "3",
+            "right": "0"
+          },
+          "S": {
+            "direction": "I",
+            "left": "1",
+            "right": "0"
+          },
+          "Y": {
+            "direction": "O",
+            "left": "3",
+            "right": "0"
+          }
+        }
+      },
+      "counter_0": {
+        "vlnv": "xilinx.com:module_ref:counter:1.0",
+        "ip_revision": "1",
+        "xci_name": "design_2_counter_0_1",
+        "xci_path": "ip\\design_2_counter_0_1\\design_2_counter_0_1.xci",
+        "inst_hier_path": "counter_0",
+        "reference_info": {
+          "ref_type": "hdl",
+          "ref_name": "counter",
+          "boundary_crc": "0x0"
+        },
+        "ports": {
+          "clk": {
+            "type": "clk",
+            "direction": "I",
+            "parameters": {
+              "ASSOCIATED_RESET": {
+                "value": "rst",
+                "value_src": "constant"
+              }
+            }
+          },
+          "rst": {
+            "type": "rst",
+            "direction": "I"
+          },
+          "Y": {
+            "direction": "O",
+            "left": "1",
+            "right": "0"
+          }
+        }
+      },
+      "decoder_0": {
+        "vlnv": "xilinx.com:module_ref:decoder:1.0",
+        "ip_revision": "1",
+        "xci_name": "design_2_decoder_0_1",
+        "xci_path": "ip\\design_2_decoder_0_1\\design_2_decoder_0_1.xci",
+        "inst_hier_path": "decoder_0",
+        "reference_info": {
+          "ref_type": "hdl",
+          "ref_name": "decoder",
+          "boundary_crc": "0x0"
+        },
+        "ports": {
+          "I": {
+            "direction": "I",
+            "left": "1",
+            "right": "0"
+          },
+          "Y": {
+            "direction": "O",
+            "left": "3",
+            "right": "0"
+          }
+        }
+      },
+      "counter_1": {
+        "vlnv": "xilinx.com:module_ref:counter:1.0",
+        "ip_revision": "1",
+        "xci_name": "design_2_counter_1_0",
+        "xci_path": "ip\\design_2_counter_1_0\\design_2_counter_1_0.xci",
+        "inst_hier_path": "counter_1",
+        "reference_info": {
+          "ref_type": "hdl",
+          "ref_name": "counter",
+          "boundary_crc": "0x0"
+        },
+        "ports": {
+          "clk": {
+            "type": "clk",
+            "direction": "I",
+            "parameters": {
+              "ASSOCIATED_RESET": {
+                "value": "rst",
+                "value_src": "constant"
+              }
+            }
+          },
+          "rst": {
+            "type": "rst",
+            "direction": "I"
+          },
+          "Y": {
+            "direction": "O",
+            "left": "1",
+            "right": "0"
+          }
+        }
+      },
+      "xlconstant_0": {
+        "vlnv": "xilinx.com:ip:xlconstant:1.1",
+        "ip_revision": "9",
+        "xci_name": "design_2_xlconstant_0_0",
+        "xci_path": "ip\\design_2_xlconstant_0_0\\design_2_xlconstant_0_0.xci",
+        "inst_hier_path": "xlconstant_0",
+        "parameters": {
+          "CONST_VAL": {
+            "value": "499"
+          },
+          "CONST_WIDTH": {
+            "value": "17"
+          }
+        }
+      },
+      "clock_divider_1": {
+        "vlnv": "xilinx.com:module_ref:clock_divider:1.0",
+        "ip_revision": "1",
+        "xci_name": "design_2_clock_divider_1_0",
+        "xci_path": "ip\\design_2_clock_divider_1_0\\design_2_clock_divider_1_0.xci",
+        "inst_hier_path": "clock_divider_1",
+        "reference_info": {
+          "ref_type": "hdl",
+          "ref_name": "clock_divider",
+          "boundary_crc": "0x0"
+        },
+        "ports": {
+          "clk": {
+            "type": "clk",
+            "direction": "I",
+            "parameters": {
+              "ASSOCIATED_RESET": {
+                "value": "rst",
+                "value_src": "constant"
+              }
+            }
+          },
+          "rst": {
+            "type": "rst",
+            "direction": "I"
+          },
+          "terminalcount": {
+            "direction": "I",
+            "left": "16",
+            "right": "0"
+          },
+          "clk_div": {
+            "direction": "O"
+          }
+        }
+      },
+      "xlconstant_1": {
+        "vlnv": "xilinx.com:ip:xlconstant:1.1",
+        "ip_revision": "9",
+        "xci_name": "design_2_xlconstant_1_0",
+        "xci_path": "ip\\design_2_xlconstant_1_0\\design_2_xlconstant_1_0.xci",
+        "inst_hier_path": "xlconstant_1",
+        "parameters": {
+          "CONST_VAL": {
+            "value": "49999"
+          },
+          "CONST_WIDTH": {
+            "value": "17"
+          }
+        }
+      }
+    },
+    "nets": {
+      "clk_1": {
+        "ports": [
+          "clk",
+          "clock_divider_1/clk"
+        ]
+      },
+      "clock_divider_0_clk_div": {
+        "ports": [
+          "clock_divider_0/clk_div",
+          "decimal_counter_0/clk",
+          "counter_0/clk",
+          "counter_1/clk"
+        ]
+      },
+      "clock_divider_1_clk_div": {
+        "ports": [
+          "clock_divider_1/clk_div",
+          "clock_divider_0/clk"
+        ]
+      },
+      "counter_0_Y": {
+        "ports": [
+          "counter_0/Y",
+          "mux_0/S"
+        ]
+      },
+      "counter_1_Y": {
+        "ports": [
+          "counter_1/Y",
+          "decoder_0/I"
+        ]
+      },
+      "decimal_counter_0_Y0": {
+        "ports": [
+          "decimal_counter_0/Y0",
+          "mux_0/I0"
+        ]
+      },
+      "decimal_counter_0_Y1": {
+        "ports": [
+          "decimal_counter_0/Y1",
+          "mux_0/I1"
+        ]
+      },
+      "decimal_counter_0_Y2": {
+        "ports": [
+          "decimal_counter_0/Y2",
+          "mux_0/I2"
+        ]
+      },
+      "decimal_counter_0_Y3": {
+        "ports": [
+          "decimal_counter_0/Y3",
+          "mux_0/I3"
+        ]
+      },
+      "decoder_0_Y": {
+        "ports": [
+          "decoder_0/Y",
+          "seg_an"
+        ]
+      },
+      "display_decoder_0_CA": {
+        "ports": [
+          "display_decoder_0/CA",
+          "CA"
+        ]
+      },
+      "display_decoder_0_CB": {
+        "ports": [
+          "display_decoder_0/CB",
+          "CB"
+        ]
+      },
+      "display_decoder_0_CC": {
+        "ports": [
+          "display_decoder_0/CC",
+          "CC"
+        ]
+      },
+      "display_decoder_0_CD": {
+        "ports": [
+          "display_decoder_0/CD",
+          "CD"
+        ]
+      },
+      "display_decoder_0_CE": {
+        "ports": [
+          "display_decoder_0/CE",
+          "CE"
+        ]
+      },
+      "display_decoder_0_CF": {
+        "ports": [
+          "display_decoder_0/CF",
+          "CG"
+        ]
+      },
+      "display_decoder_0_CG": {
+        "ports": [
+          "display_decoder_0/CG",
+          "CF"
+        ]
+      },
+      "mux_0_Y": {
+        "ports": [
+          "mux_0/Y",
+          "display_decoder_0/B"
+        ]
+      },
+      "rst_1": {
+        "ports": [
+          "rst",
+          "clock_divider_1/rst",
+          "clock_divider_0/rst",
+          "decimal_counter_0/rst",
+          "counter_0/rst",
+          "counter_1/rst"
+        ]
+      },
+      "xlconstant_0_dout": {
+        "ports": [
+          "xlconstant_0/dout",
+          "clock_divider_0/terminalcount"
+        ]
+      },
+      "xlconstant_1_dout": {
+        "ports": [
+          "xlconstant_1/dout",
+          "clock_divider_1/terminalcount"
+        ]
+      }
+    }
+  }
+}

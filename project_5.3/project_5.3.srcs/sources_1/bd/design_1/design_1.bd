@@ -1,0 +1,313 @@
+{
+  "design": {
+    "design_info": {
+      "boundary_crc": "0x6D7F0F4385701EC9",
+      "device": "xc7z007sclg400-1",
+      "gen_directory": "../../../../project_5.3.gen/sources_1/bd/design_1",
+      "name": "design_1",
+      "rev_ctrl_bd_flag": "RevCtrlBdOff",
+      "synth_flow_mode": "Hierarchical",
+      "tool_version": "2024.1.1",
+      "validated": "true"
+    },
+    "design_tree": {
+      "counter_0": "",
+      "mux_0": "",
+      "inverter_0": "",
+      "decoder_0": "",
+      "VDD_0": "",
+      "VDD_1": ""
+    },
+    "ports": {
+      "sw1": {
+        "direction": "I",
+        "left": "7",
+        "right": "4"
+      },
+      "sw0": {
+        "direction": "I",
+        "left": "3",
+        "right": "0"
+      },
+      "clk": {
+        "direction": "I"
+      },
+      "CC": {
+        "direction": "O"
+      },
+      "CA": {
+        "direction": "O"
+      },
+      "CB": {
+        "direction": "O"
+      },
+      "CD": {
+        "direction": "O"
+      },
+      "CE": {
+        "direction": "O"
+      },
+      "CF": {
+        "direction": "O"
+      },
+      "CG": {
+        "direction": "O"
+      },
+      "AN1": {
+        "direction": "O"
+      },
+      "AN2": {
+        "direction": "O"
+      },
+      "AN3": {
+        "direction": "O"
+      },
+      "AN0": {
+        "direction": "O"
+      }
+    },
+    "components": {
+      "counter_0": {
+        "vlnv": "xilinx.com:module_ref:counter:1.0",
+        "ip_revision": "1",
+        "xci_name": "design_1_counter_0_0",
+        "xci_path": "ip\\design_1_counter_0_0\\design_1_counter_0_0.xci",
+        "inst_hier_path": "counter_0",
+        "reference_info": {
+          "ref_type": "hdl",
+          "ref_name": "counter",
+          "boundary_crc": "0x0"
+        },
+        "ports": {
+          "clk": {
+            "type": "clk",
+            "direction": "I"
+          },
+          "Y": {
+            "direction": "O"
+          }
+        }
+      },
+      "mux_0": {
+        "vlnv": "xilinx.com:module_ref:mux:1.0",
+        "ip_revision": "1",
+        "xci_name": "design_1_mux_0_0",
+        "xci_path": "ip\\design_1_mux_0_0\\design_1_mux_0_0.xci",
+        "inst_hier_path": "mux_0",
+        "reference_info": {
+          "ref_type": "hdl",
+          "ref_name": "mux",
+          "boundary_crc": "0x0"
+        },
+        "ports": {
+          "I1": {
+            "direction": "I",
+            "left": "7",
+            "right": "4"
+          },
+          "I0": {
+            "direction": "I",
+            "left": "3",
+            "right": "0"
+          },
+          "S": {
+            "direction": "I"
+          },
+          "Y": {
+            "direction": "O",
+            "left": "3",
+            "right": "0"
+          }
+        }
+      },
+      "inverter_0": {
+        "vlnv": "xilinx.com:module_ref:inverter:1.0",
+        "ip_revision": "1",
+        "xci_name": "design_1_inverter_0_0",
+        "xci_path": "ip\\design_1_inverter_0_0\\design_1_inverter_0_0.xci",
+        "inst_hier_path": "inverter_0",
+        "reference_info": {
+          "ref_type": "hdl",
+          "ref_name": "inverter",
+          "boundary_crc": "0x0"
+        },
+        "ports": {
+          "IN_inverter": {
+            "direction": "I"
+          },
+          "OUT_inverter": {
+            "direction": "O"
+          }
+        }
+      },
+      "decoder_0": {
+        "vlnv": "xilinx.com:module_ref:decoder:1.0",
+        "ip_revision": "1",
+        "xci_name": "design_1_decoder_0_0",
+        "xci_path": "ip\\design_1_decoder_0_0\\design_1_decoder_0_0.xci",
+        "inst_hier_path": "decoder_0",
+        "reference_info": {
+          "ref_type": "hdl",
+          "ref_name": "decoder",
+          "boundary_crc": "0x0"
+        },
+        "ports": {
+          "B": {
+            "direction": "I",
+            "left": "3",
+            "right": "0"
+          },
+          "CA": {
+            "direction": "O"
+          },
+          "CB": {
+            "direction": "O"
+          },
+          "CC": {
+            "direction": "O"
+          },
+          "CD": {
+            "direction": "O"
+          },
+          "CE": {
+            "direction": "O"
+          },
+          "CF": {
+            "direction": "O"
+          },
+          "CG": {
+            "direction": "O"
+          }
+        }
+      },
+      "VDD_0": {
+        "vlnv": "xilinx.com:module_ref:VDD:1.0",
+        "ip_revision": "1",
+        "xci_name": "design_1_VDD_0_1",
+        "xci_path": "ip\\design_1_VDD_0_1\\design_1_VDD_0_1.xci",
+        "inst_hier_path": "VDD_0",
+        "reference_info": {
+          "ref_type": "hdl",
+          "ref_name": "VDD",
+          "boundary_crc": "0x0"
+        },
+        "ports": {
+          "OUT_VDD": {
+            "direction": "O"
+          }
+        }
+      },
+      "VDD_1": {
+        "vlnv": "xilinx.com:module_ref:VDD:1.0",
+        "ip_revision": "1",
+        "xci_name": "design_1_VDD_1_0",
+        "xci_path": "ip\\design_1_VDD_1_0\\design_1_VDD_1_0.xci",
+        "inst_hier_path": "VDD_1",
+        "reference_info": {
+          "ref_type": "hdl",
+          "ref_name": "VDD",
+          "boundary_crc": "0x0"
+        },
+        "ports": {
+          "OUT_VDD": {
+            "direction": "O"
+          }
+        }
+      }
+    },
+    "nets": {
+      "VDD_0_OUT_VDD": {
+        "ports": [
+          "VDD_0/OUT_VDD",
+          "AN2"
+        ]
+      },
+      "VDD_1_OUT_VDD": {
+        "ports": [
+          "VDD_1/OUT_VDD",
+          "AN3"
+        ]
+      },
+      "clk_1": {
+        "ports": [
+          "clk",
+          "counter_0/clk"
+        ]
+      },
+      "counter_0_Y": {
+        "ports": [
+          "counter_0/Y",
+          "mux_0/S",
+          "inverter_0/IN_inverter",
+          "AN0"
+        ]
+      },
+      "decoder_0_CA": {
+        "ports": [
+          "decoder_0/CA",
+          "CA"
+        ]
+      },
+      "decoder_0_CB": {
+        "ports": [
+          "decoder_0/CB",
+          "CB"
+        ]
+      },
+      "decoder_0_CC": {
+        "ports": [
+          "decoder_0/CC",
+          "CC"
+        ]
+      },
+      "decoder_0_CD": {
+        "ports": [
+          "decoder_0/CD",
+          "CD"
+        ]
+      },
+      "decoder_0_CE": {
+        "ports": [
+          "decoder_0/CE",
+          "CE"
+        ]
+      },
+      "decoder_0_CF": {
+        "ports": [
+          "decoder_0/CF",
+          "CF"
+        ]
+      },
+      "decoder_0_CG": {
+        "ports": [
+          "decoder_0/CG",
+          "CG"
+        ]
+      },
+      "inverter_0_OUT_inverter": {
+        "ports": [
+          "inverter_0/OUT_inverter",
+          "AN1"
+        ]
+      },
+      "mux_0_Y": {
+        "ports": [
+          "mux_0/Y",
+          "decoder_0/B"
+        ]
+      },
+      "sw0_1": {
+        "ports": [
+          "sw0",
+          "mux_0/I0"
+        ]
+      },
+      "sw1_1": {
+        "ports": [
+          "sw1",
+          "mux_0/I1"
+        ]
+      }
+    }
+  }
+}

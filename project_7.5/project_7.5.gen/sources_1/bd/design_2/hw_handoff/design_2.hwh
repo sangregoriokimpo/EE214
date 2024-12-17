@@ -1,0 +1,162 @@
+﻿<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+<EDKSYSTEM EDWVERSION="1.2" TIMESTAMP="Thu Oct 24 12:44:27 2024" VIVADOVERSION="2024.1.1">
+
+  <SYSTEMINFO ARCH="zynq" DEVICE="7z007s" NAME="design_2" PACKAGE="clg400" SPEEDGRADE="-1"/>
+
+  <EXTERNALPORTS>
+    <PORT DIR="O" LEFT="7" NAME="Y1" RIGHT="0" SIGIS="undef" SIGNAME="PISO_0_Y">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="PISO_0" PORT="Y"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="O" LEFT="7" NAME="Y2" RIGHT="0" SIGIS="undef" SIGNAME="PISO_1_Y">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="PISO_1" PORT="Y"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="I" NAME="btn0" SIGIS="undef" SIGNAME="External_Ports_btn0">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="PISO_0" PORT="btn"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="I" NAME="btn1" SIGIS="undef" SIGNAME="External_Ports_btn1">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="PISO_1" PORT="btn"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="I" NAME="clk" SIGIS="undef" SIGNAME="External_Ports_clk">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="clock_divider_0" PORT="clk"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="I" NAME="rst" SIGIS="undef" SIGNAME="External_Ports_rst">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="PISO_0" PORT="rst"/>
+        <CONNECTION INSTANCE="PISO_1" PORT="rst"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="I" LEFT="7" NAME="sw" RIGHT="0" SIGIS="undef" SIGNAME="External_Ports_sw">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="PISO_0" PORT="I"/>
+        <CONNECTION INSTANCE="PISO_1" PORT="I"/>
+      </CONNECTIONS>
+    </PORT>
+  </EXTERNALPORTS>
+
+  <EXTERNALINTERFACES/>
+
+  <MODULES>
+    <MODULE COREREVISION="1" FULLNAME="/PISO_0" HWVERSION="1.0" INSTANCE="PISO_0" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="PISO" VLNV="xilinx.com:module_ref:PISO:1.0">
+      <DOCUMENTS/>
+      <PARAMETERS>
+        <PARAMETER NAME="Component_Name" VALUE="design_2_PISO_0_2"/>
+        <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
+      </PARAMETERS>
+      <PORTS>
+        <PORT DIR="I" LEFT="7" NAME="I" RIGHT="0" SIGIS="undef" SIGNAME="External_Ports_sw">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="sw"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="Iconnect" SIGIS="undef" SIGNAME="PISO_1_Oconnect">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="PISO_1" PORT="Oconnect"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="Oconnect" SIGIS="undef" SIGNAME="PISO_0_Oconnect">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="PISO_1" PORT="Iconnect"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="7" NAME="Y" RIGHT="0" SIGIS="undef" SIGNAME="PISO_0_Y">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="Y1"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="btn" SIGIS="undef" SIGNAME="External_Ports_btn0">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="btn0"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT CLKFREQUENCY="100000000" DIR="I" NAME="clk" SIGIS="clk" SIGNAME="clock_divider_0_slow_clk">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="clock_divider_0" PORT="slow_clk"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="rst" POLARITY="ACTIVE_LOW" SIGIS="rst" SIGNAME="External_Ports_rst">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="rst"/>
+          </CONNECTIONS>
+        </PORT>
+      </PORTS>
+      <BUSINTERFACES/>
+    </MODULE>
+    <MODULE COREREVISION="1" FULLNAME="/PISO_1" HWVERSION="1.0" INSTANCE="PISO_1" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="PISO" VLNV="xilinx.com:module_ref:PISO:1.0">
+      <DOCUMENTS/>
+      <PARAMETERS>
+        <PARAMETER NAME="Component_Name" VALUE="design_2_PISO_1_1"/>
+        <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
+      </PARAMETERS>
+      <PORTS>
+        <PORT DIR="I" LEFT="7" NAME="I" RIGHT="0" SIGIS="undef" SIGNAME="External_Ports_sw">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="sw"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="Iconnect" SIGIS="undef" SIGNAME="PISO_0_Oconnect">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="PISO_0" PORT="Oconnect"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="Oconnect" SIGIS="undef" SIGNAME="PISO_1_Oconnect">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="PISO_0" PORT="Iconnect"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="7" NAME="Y" RIGHT="0" SIGIS="undef" SIGNAME="PISO_1_Y">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="Y2"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="btn" SIGIS="undef" SIGNAME="External_Ports_btn1">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="btn1"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT CLKFREQUENCY="100000000" DIR="I" NAME="clk" SIGIS="clk" SIGNAME="clock_divider_0_slow_clk">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="clock_divider_0" PORT="slow_clk"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="rst" POLARITY="ACTIVE_LOW" SIGIS="rst" SIGNAME="External_Ports_rst">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="rst"/>
+          </CONNECTIONS>
+        </PORT>
+      </PORTS>
+      <BUSINTERFACES/>
+    </MODULE>
+    <MODULE COREREVISION="1" FULLNAME="/clock_divider_0" HWVERSION="1.0" INSTANCE="clock_divider_0" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="clock_divider" VLNV="xilinx.com:module_ref:clock_divider:1.0">
+      <DOCUMENTS/>
+      <PARAMETERS>
+        <PARAMETER NAME="Component_Name" VALUE="design_2_clock_divider_0_0"/>
+        <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
+      </PARAMETERS>
+      <PORTS>
+        <PORT CLKFREQUENCY="100000000" DIR="I" NAME="clk" SIGIS="clk" SIGNAME="External_Ports_clk">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="clk"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT CLKFREQUENCY="100000000" DIR="O" NAME="slow_clk" SIGIS="clk" SIGNAME="clock_divider_0_slow_clk">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="PISO_0" PORT="clk"/>
+            <CONNECTION INSTANCE="PISO_1" PORT="clk"/>
+          </CONNECTIONS>
+        </PORT>
+      </PORTS>
+      <BUSINTERFACES/>
+    </MODULE>
+  </MODULES>
+
+</EDKSYSTEM>

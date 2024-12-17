@@ -1,0 +1,236 @@
+﻿<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+<EDKSYSTEM EDWVERSION="1.2" TIMESTAMP="Fri Oct  4 21:42:46 2024" VIVADOVERSION="2024.1.1">
+
+  <SYSTEMINFO ARCH="zynq" DEVICE="7z007s" NAME="design_1" PACKAGE="clg400" SPEEDGRADE="-1"/>
+
+  <EXTERNALPORTS>
+    <PORT DIR="O" NAME="AN0" SIGIS="undef" SIGNAME="counter_0_Y">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="counter_0" PORT="Y"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="O" NAME="AN1" SIGIS="undef" SIGNAME="inverter_0_OUT_inverter">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="inverter_0" PORT="OUT_inverter"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="O" NAME="AN2" SIGIS="undef" SIGNAME="VDD_0_OUT_VDD">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="VDD_0" PORT="OUT_VDD"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="O" NAME="AN3" SIGIS="undef" SIGNAME="VDD_1_OUT_VDD">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="VDD_1" PORT="OUT_VDD"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="O" NAME="CA" SIGIS="undef" SIGNAME="decoder_0_CA">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="decoder_0" PORT="CA"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="O" NAME="CB" SIGIS="undef" SIGNAME="decoder_0_CB">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="decoder_0" PORT="CB"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="O" NAME="CC" SIGIS="undef" SIGNAME="decoder_0_CC">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="decoder_0" PORT="CC"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="O" NAME="CD" SIGIS="undef" SIGNAME="decoder_0_CD">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="decoder_0" PORT="CD"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="O" NAME="CE" SIGIS="undef" SIGNAME="decoder_0_CE">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="decoder_0" PORT="CE"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="O" NAME="CF" SIGIS="undef" SIGNAME="decoder_0_CF">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="decoder_0" PORT="CF"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="O" NAME="CG" SIGIS="undef" SIGNAME="decoder_0_CG">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="decoder_0" PORT="CG"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="I" NAME="clk" SIGIS="undef" SIGNAME="External_Ports_clk">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="counter_0" PORT="clk"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="I" LEFT="3" NAME="sw0" RIGHT="0" SIGIS="undef" SIGNAME="External_Ports_sw0">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="mux_0" PORT="I0"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="I" LEFT="7" NAME="sw1" RIGHT="4" SIGIS="undef" SIGNAME="External_Ports_sw1">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="mux_0" PORT="I1"/>
+      </CONNECTIONS>
+    </PORT>
+  </EXTERNALPORTS>
+
+  <EXTERNALINTERFACES/>
+
+  <MODULES>
+    <MODULE COREREVISION="1" FULLNAME="/VDD_0" HWVERSION="1.0" INSTANCE="VDD_0" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="VDD" VLNV="xilinx.com:module_ref:VDD:1.0">
+      <DOCUMENTS/>
+      <PARAMETERS>
+        <PARAMETER NAME="Component_Name" VALUE="design_1_VDD_0_1"/>
+        <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
+      </PARAMETERS>
+      <PORTS>
+        <PORT DIR="O" NAME="OUT_VDD" SIGIS="undef" SIGNAME="VDD_0_OUT_VDD">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="AN2"/>
+          </CONNECTIONS>
+        </PORT>
+      </PORTS>
+      <BUSINTERFACES/>
+    </MODULE>
+    <MODULE COREREVISION="1" FULLNAME="/VDD_1" HWVERSION="1.0" INSTANCE="VDD_1" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="VDD" VLNV="xilinx.com:module_ref:VDD:1.0">
+      <DOCUMENTS/>
+      <PARAMETERS>
+        <PARAMETER NAME="Component_Name" VALUE="design_1_VDD_1_0"/>
+        <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
+      </PARAMETERS>
+      <PORTS>
+        <PORT DIR="O" NAME="OUT_VDD" SIGIS="undef" SIGNAME="VDD_1_OUT_VDD">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="AN3"/>
+          </CONNECTIONS>
+        </PORT>
+      </PORTS>
+      <BUSINTERFACES/>
+    </MODULE>
+    <MODULE COREREVISION="1" FULLNAME="/counter_0" HWVERSION="1.0" INSTANCE="counter_0" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="counter" VLNV="xilinx.com:module_ref:counter:1.0">
+      <DOCUMENTS/>
+      <PARAMETERS>
+        <PARAMETER NAME="Component_Name" VALUE="design_1_counter_0_0"/>
+        <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
+      </PARAMETERS>
+      <PORTS>
+        <PORT DIR="O" NAME="Y" SIGIS="undef" SIGNAME="counter_0_Y">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="mux_0" PORT="S"/>
+            <CONNECTION INSTANCE="inverter_0" PORT="IN_inverter"/>
+            <CONNECTION INSTANCE="External_Ports" PORT="AN0"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT CLKFREQUENCY="100000000" DIR="I" NAME="clk" SIGIS="clk" SIGNAME="External_Ports_clk">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="clk"/>
+          </CONNECTIONS>
+        </PORT>
+      </PORTS>
+      <BUSINTERFACES/>
+    </MODULE>
+    <MODULE COREREVISION="1" FULLNAME="/decoder_0" HWVERSION="1.0" INSTANCE="decoder_0" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="decoder" VLNV="xilinx.com:module_ref:decoder:1.0">
+      <DOCUMENTS/>
+      <PARAMETERS>
+        <PARAMETER NAME="Component_Name" VALUE="design_1_decoder_0_0"/>
+        <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
+      </PARAMETERS>
+      <PORTS>
+        <PORT DIR="I" LEFT="3" NAME="B" RIGHT="0" SIGIS="undef" SIGNAME="mux_0_Y">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="mux_0" PORT="Y"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="CA" SIGIS="undef" SIGNAME="decoder_0_CA">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="CA"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="CB" SIGIS="undef" SIGNAME="decoder_0_CB">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="CB"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="CC" SIGIS="undef" SIGNAME="decoder_0_CC">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="CC"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="CD" SIGIS="undef" SIGNAME="decoder_0_CD">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="CD"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="CE" SIGIS="undef" SIGNAME="decoder_0_CE">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="CE"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="CF" SIGIS="undef" SIGNAME="decoder_0_CF">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="CF"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="CG" SIGIS="undef" SIGNAME="decoder_0_CG">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="CG"/>
+          </CONNECTIONS>
+        </PORT>
+      </PORTS>
+      <BUSINTERFACES/>
+    </MODULE>
+    <MODULE COREREVISION="1" FULLNAME="/inverter_0" HWVERSION="1.0" INSTANCE="inverter_0" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="inverter" VLNV="xilinx.com:module_ref:inverter:1.0">
+      <DOCUMENTS/>
+      <PARAMETERS>
+        <PARAMETER NAME="Component_Name" VALUE="design_1_inverter_0_0"/>
+        <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
+      </PARAMETERS>
+      <PORTS>
+        <PORT DIR="I" NAME="IN_inverter" SIGIS="undef" SIGNAME="counter_0_Y">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="counter_0" PORT="Y"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="OUT_inverter" SIGIS="undef" SIGNAME="inverter_0_OUT_inverter">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="AN1"/>
+          </CONNECTIONS>
+        </PORT>
+      </PORTS>
+      <BUSINTERFACES/>
+    </MODULE>
+    <MODULE COREREVISION="1" FULLNAME="/mux_0" HWVERSION="1.0" INSTANCE="mux_0" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="mux" VLNV="xilinx.com:module_ref:mux:1.0">
+      <DOCUMENTS/>
+      <PARAMETERS>
+        <PARAMETER NAME="Component_Name" VALUE="design_1_mux_0_0"/>
+        <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
+      </PARAMETERS>
+      <PORTS>
+        <PORT DIR="I" LEFT="3" NAME="I0" RIGHT="0" SIGIS="undef" SIGNAME="External_Ports_sw0">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="sw0"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="7" NAME="I1" RIGHT="4" SIGIS="undef" SIGNAME="External_Ports_sw1">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="sw1"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="S" SIGIS="undef" SIGNAME="counter_0_Y">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="counter_0" PORT="Y"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="3" NAME="Y" RIGHT="0" SIGIS="undef" SIGNAME="mux_0_Y">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="decoder_0" PORT="B"/>
+          </CONNECTIONS>
+        </PORT>
+      </PORTS>
+      <BUSINTERFACES/>
+    </MODULE>
+  </MODULES>
+
+</EDKSYSTEM>

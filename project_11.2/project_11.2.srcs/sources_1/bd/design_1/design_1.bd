@@ -1,0 +1,191 @@
+{
+  "design": {
+    "design_info": {
+      "boundary_crc": "0xFA23063CFA23063C",
+      "device": "xc7z007sclg400-1",
+      "gen_directory": "../../../../project_11.2.gen/sources_1/bd/design_1",
+      "name": "design_1",
+      "rev_ctrl_bd_flag": "RevCtrlBdOff",
+      "synth_flow_mode": "Hierarchical",
+      "tool_version": "2024.1.1"
+    },
+    "design_tree": {
+      "displaycontroller_wr_0": "",
+      "counter_wrapper_0": "",
+      "xlconcat_0": ""
+    },
+    "ports": {
+      "seg_an": {
+        "direction": "O",
+        "left": "3",
+        "right": "0"
+      },
+      "seg_cat": {
+        "direction": "O",
+        "left": "7",
+        "right": "0"
+      }
+    },
+    "components": {
+      "displaycontroller_wr_0": {
+        "vlnv": "xilinx.com:module_ref:displaycontroller_wrapper:1.0",
+        "ip_revision": "1",
+        "xci_name": "design_1_displaycontroller_wr_0_0",
+        "xci_path": "ip\\design_1_displaycontroller_wr_0_0\\design_1_displaycontroller_wr_0_0.xci",
+        "inst_hier_path": "displaycontroller_wr_0",
+        "reference_info": {
+          "ref_type": "hdl",
+          "ref_name": "displaycontroller_wrapper",
+          "boundary_crc": "0x0"
+        },
+        "ports": {
+          "I": {
+            "direction": "I",
+            "left": "13",
+            "right": "0"
+          },
+          "clk": {
+            "type": "clk",
+            "direction": "I",
+            "parameters": {
+              "ASSOCIATED_RESET": {
+                "value": "rst",
+                "value_src": "constant"
+              }
+            }
+          },
+          "rst": {
+            "type": "rst",
+            "direction": "I"
+          },
+          "seg_an": {
+            "direction": "O",
+            "left": "3",
+            "right": "0"
+          },
+          "seg_cat": {
+            "direction": "O",
+            "left": "7",
+            "right": "0"
+          }
+        }
+      },
+      "counter_wrapper_0": {
+        "vlnv": "xilinx.com:module_ref:counter_wrapper:1.0",
+        "ip_revision": "1",
+        "xci_name": "design_1_counter_wrapper_0_0",
+        "xci_path": "ip\\design_1_counter_wrapper_0_0\\design_1_counter_wrapper_0_0.xci",
+        "inst_hier_path": "counter_wrapper_0",
+        "reference_info": {
+          "ref_type": "hdl",
+          "ref_name": "counter_wrapper",
+          "boundary_crc": "0x0"
+        },
+        "ports": {
+          "Y0": {
+            "direction": "O",
+            "left": "3",
+            "right": "0"
+          },
+          "Y1": {
+            "direction": "O",
+            "left": "3",
+            "right": "0"
+          },
+          "Y2": {
+            "direction": "O",
+            "left": "3",
+            "right": "0"
+          },
+          "Y3": {
+            "direction": "O",
+            "left": "3",
+            "right": "0"
+          },
+          "clk": {
+            "type": "clk",
+            "direction": "I",
+            "parameters": {
+              "ASSOCIATED_RESET": {
+                "value": "rst",
+                "value_src": "constant"
+              }
+            }
+          },
+          "rst": {
+            "type": "rst",
+            "direction": "I"
+          }
+        }
+      },
+      "xlconcat_0": {
+        "vlnv": "xilinx.com:ip:xlconcat:2.1",
+        "ip_revision": "6",
+        "xci_name": "design_1_xlconcat_0_0",
+        "xci_path": "ip\\design_1_xlconcat_0_0\\design_1_xlconcat_0_0.xci",
+        "inst_hier_path": "xlconcat_0",
+        "parameters": {
+          "IN0_WIDTH": {
+            "value": "4"
+          },
+          "IN1_WIDTH": {
+            "value": "4"
+          },
+          "IN2_WIDTH": {
+            "value": "4"
+          },
+          "IN3_WIDTH": {
+            "value": "4"
+          },
+          "NUM_PORTS": {
+            "value": "4"
+          }
+        }
+      }
+    },
+    "nets": {
+      "counter_wrapper_0_Y0": {
+        "ports": [
+          "counter_wrapper_0/Y0",
+          "xlconcat_0/In0"
+        ]
+      },
+      "counter_wrapper_0_Y1": {
+        "ports": [
+          "counter_wrapper_0/Y1",
+          "xlconcat_0/In1"
+        ]
+      },
+      "counter_wrapper_0_Y2": {
+        "ports": [
+          "counter_wrapper_0/Y2",
+          "xlconcat_0/In2"
+        ]
+      },
+      "counter_wrapper_0_Y3": {
+        "ports": [
+          "counter_wrapper_0/Y3",
+          "xlconcat_0/In3"
+        ]
+      },
+      "displaycontroller_wr_0_seg_an": {
+        "ports": [
+          "displaycontroller_wr_0/seg_an",
+          "seg_an"
+        ]
+      },
+      "displaycontroller_wr_0_seg_cat": {
+        "ports": [
+          "displaycontroller_wr_0/seg_cat",
+          "seg_cat"
+        ]
+      },
+      "xlconcat_0_dout": {
+        "ports": [
+          "xlconcat_0/dout",
+          "displaycontroller_wr_0/I"
+        ]
+      }
+    }
+  }
+}

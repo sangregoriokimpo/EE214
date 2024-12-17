@@ -1,0 +1,36 @@
+{
+   "ActiveEmotionalView":"Default View",
+   "Default View_ScaleFactor":"1.0",
+   "Default View_TopLeft":"-720,-266",
+   "ExpandedHierarchyInLayout":"",
+   "commentid":"",
+   "guistr":"# # String gsaved with Nlview 7.7.1 2023-07-26 3bc4126617 VDI=43 GEI=38 GUI=JA:21.0
+#  -string -flagsOSRD
+preplace port port-id_clk -pg 1 -lvl 0 -x 0 -y 80 -defaultsOSRD
+preplace port port-id_rst -pg 1 -lvl 0 -x 0 -y 100 -defaultsOSRD
+preplace port port-id_start -pg 1 -lvl 0 -x 0 -y 120 -defaultsOSRD
+preplace port port-id_stop -pg 1 -lvl 0 -x 0 -y 140 -defaultsOSRD
+preplace port port-id_increment -pg 1 -lvl 0 -x 0 -y 160 -defaultsOSRD
+preplace portBus seg_an -pg 1 -lvl 6 -x 1290 -y 110 -defaultsOSRD
+preplace portBus seg_cat -pg 1 -lvl 6 -x 1290 -y 130 -defaultsOSRD
+preplace inst xlconstant_0 -pg 1 -lvl 1 -x 120 -y 240 -defaultsOSRD
+preplace inst clock_divider_0 -pg 1 -lvl 2 -x 360 -y 220 -defaultsOSRD
+preplace inst counterA2_0 -pg 1 -lvl 4 -x 910 -y 100 -defaultsOSRD
+preplace inst displaycontroller_wr_0 -pg 1 -lvl 5 -x 1150 -y 120 -defaultsOSRD
+preplace inst statemachineA2_0 -pg 1 -lvl 3 -x 650 -y 120 -defaultsOSRD
+preplace netloc clk_1 1 0 2 NJ 80 200
+preplace netloc clock_divider_0_clk_div 1 2 3 500 10 800 10 1030
+preplace netloc counterA2_0_Y 1 4 1 N 100
+preplace netloc displaycontroller_wr_0_seg_an 1 5 1 N 110
+preplace netloc displaycontroller_wr_0_seg_cat 1 5 1 N 130
+preplace netloc increment_1 1 0 3 20J 130 NJ 130 510
+preplace netloc rst_1 1 0 5 NJ 100 220 100 510 20 790 20 1020
+preplace netloc start_1 1 0 3 NJ 120 NJ 120 N
+preplace netloc statemachineA2_0_Cen 1 3 1 790 110n
+preplace netloc stop_1 1 0 3 NJ 140 NJ 140 N
+preplace netloc xlconstant_0_dout 1 1 1 N 240
+levelinfo -pg 1 0 120 360 650 910 1150 1290
+pagesize -pg 1 -db -bbox -sgen -120 0 1420 300
+"
+}
+0

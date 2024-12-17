@@ -1,0 +1,321 @@
+#-----------------------------------------------------------
+# Vivado v2024.1.1 (64-bit)
+# SW Build 5094488 on Fri Jun 14 08:59:21 MDT 2024
+# IP Build 5091682 on Fri Jun 14 16:55:04 MDT 2024
+# SharedData Build 5094118 on Fri Jun 14 01:09:43 MDT 2024
+# Start of session at: Thu Sep 19 19:08:53 2024
+# Process ID: 172436
+# Current directory: C:/Users/sgk/Desktop/EE214/project_3.1/project_3.1.runs/synth_1
+# Command line: vivado.exe -log project.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source project.tcl
+# Log file: C:/Users/sgk/Desktop/EE214/project_3.1/project_3.1.runs/synth_1/project.vds
+# Journal file: C:/Users/sgk/Desktop/EE214/project_3.1/project_3.1.runs/synth_1\vivado.jou
+# Running On        :sgk
+# Platform          :Windows Server 2016 or Windows 10
+# Operating System  :22631
+# Processor Detail  :AMD Ryzen 7 7840HS w/ Radeon 780M Graphics     
+# CPU Frequency     :3793 MHz
+# CPU Physical cores:8
+# CPU Logical cores :16
+# Host memory       :66367 MB
+# Swap memory       :4160 MB
+# Total Virtual     :70528 MB
+# Available Virtual :42546 MB
+#-----------------------------------------------------------
+source project.tcl -notrace
+Command: read_checkpoint -auto_incremental -incremental C:/Users/sgk/Desktop/EE214/project_3.1/project_3.1.srcs/utils_1/imports/synth_1/project.dcp
+INFO: [Vivado 12-5825] Read reference checkpoint from C:/Users/sgk/Desktop/EE214/project_3.1/project_3.1.srcs/utils_1/imports/synth_1/project.dcp for incremental synthesis
+INFO: [Vivado 12-7989] Please ensure there are no constraint changes
+Command: synth_design -top project -part xc7z007sclg400-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7z007s'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7z007s'
+INFO: [Device 21-403] Loading part xc7z007sclg400-1
+INFO: [Device 21-9227] Part: xc7z007sclg400-1 does not have CEAM library.
+INFO: [Designutils 20-5440] No compile time benefit to using incremental synthesis; A full resynthesis will be run
+INFO: [Designutils 20-4379] Flow is switching to default flow due to incremental criteria not met. If you would like to alter this behaviour and have the flow terminate instead, please set the following parameter config_implementation {autoIncr.Synth.RejectBehavior Terminate}
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 154612
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 1486.367 ; gain = 447.094
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'project' [C:/Users/sgk/Desktop/EE214/project_3.1/project_3.1.srcs/sources_1/new/project.v:25]
+INFO: [Synth 8-6155] done synthesizing module 'project' (0#1) [C:/Users/sgk/Desktop/EE214/project_3.1/project_3.1.srcs/sources_1/new/project.v:25]
+WARNING: [Synth 8-7129] Port sw[7] in module project is either unconnected or has no load
+WARNING: [Synth 8-7129] Port sw[1] in module project is either unconnected or has no load
+WARNING: [Synth 8-7129] Port sw[0] in module project is either unconnected or has no load
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:06 . Memory (MB): peak = 1595.668 ; gain = 556.395
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:04 ; elapsed = 00:00:06 . Memory (MB): peak = 1595.668 ; gain = 556.395
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:04 ; elapsed = 00:00:06 . Memory (MB): peak = 1595.668 ; gain = 556.395
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1595.668 ; gain = 0.000
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [C:/Users/sgk/Desktop/EE214/project_3.1/project_3.1.srcs/constrs_1/new/constraint.xdc]
+WARNING: [Vivado 12-584] No ports matched 'clk'. [C:/Users/sgk/Desktop/EE214/project_3.1/project_3.1.srcs/constrs_1/new/constraint.xdc:4]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/sgk/Desktop/EE214/project_3.1/project_3.1.srcs/constrs_1/new/constraint.xdc:4]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'led[0]'. [C:/Users/sgk/Desktop/EE214/project_3.1/project_3.1.srcs/constrs_1/new/constraint.xdc:7]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/sgk/Desktop/EE214/project_3.1/project_3.1.srcs/constrs_1/new/constraint.xdc:7]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'led[1]'. [C:/Users/sgk/Desktop/EE214/project_3.1/project_3.1.srcs/constrs_1/new/constraint.xdc:8]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/sgk/Desktop/EE214/project_3.1/project_3.1.srcs/constrs_1/new/constraint.xdc:8]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'led[2]'. [C:/Users/sgk/Desktop/EE214/project_3.1/project_3.1.srcs/constrs_1/new/constraint.xdc:9]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/sgk/Desktop/EE214/project_3.1/project_3.1.srcs/constrs_1/new/constraint.xdc:9]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'led[3]'. [C:/Users/sgk/Desktop/EE214/project_3.1/project_3.1.srcs/constrs_1/new/constraint.xdc:10]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/sgk/Desktop/EE214/project_3.1/project_3.1.srcs/constrs_1/new/constraint.xdc:10]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'led[4]'. [C:/Users/sgk/Desktop/EE214/project_3.1/project_3.1.srcs/constrs_1/new/constraint.xdc:11]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/sgk/Desktop/EE214/project_3.1/project_3.1.srcs/constrs_1/new/constraint.xdc:11]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'led[5]'. [C:/Users/sgk/Desktop/EE214/project_3.1/project_3.1.srcs/constrs_1/new/constraint.xdc:12]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/sgk/Desktop/EE214/project_3.1/project_3.1.srcs/constrs_1/new/constraint.xdc:12]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'led[6]'. [C:/Users/sgk/Desktop/EE214/project_3.1/project_3.1.srcs/constrs_1/new/constraint.xdc:13]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/sgk/Desktop/EE214/project_3.1/project_3.1.srcs/constrs_1/new/constraint.xdc:13]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'led[7]'. [C:/Users/sgk/Desktop/EE214/project_3.1/project_3.1.srcs/constrs_1/new/constraint.xdc:14]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/sgk/Desktop/EE214/project_3.1/project_3.1.srcs/constrs_1/new/constraint.xdc:14]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'led[8]'. [C:/Users/sgk/Desktop/EE214/project_3.1/project_3.1.srcs/constrs_1/new/constraint.xdc:15]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/sgk/Desktop/EE214/project_3.1/project_3.1.srcs/constrs_1/new/constraint.xdc:15]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'led[9]'. [C:/Users/sgk/Desktop/EE214/project_3.1/project_3.1.srcs/constrs_1/new/constraint.xdc:16]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/sgk/Desktop/EE214/project_3.1/project_3.1.srcs/constrs_1/new/constraint.xdc:16]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'RGB_led_A[0]'. [C:/Users/sgk/Desktop/EE214/project_3.1/project_3.1.srcs/constrs_1/new/constraint.xdc:19]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/sgk/Desktop/EE214/project_3.1/project_3.1.srcs/constrs_1/new/constraint.xdc:19]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'RGB_led_A[1]'. [C:/Users/sgk/Desktop/EE214/project_3.1/project_3.1.srcs/constrs_1/new/constraint.xdc:20]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/sgk/Desktop/EE214/project_3.1/project_3.1.srcs/constrs_1/new/constraint.xdc:20]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'RGB_led_B[1]'. [C:/Users/sgk/Desktop/EE214/project_3.1/project_3.1.srcs/constrs_1/new/constraint.xdc:24]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/sgk/Desktop/EE214/project_3.1/project_3.1.srcs/constrs_1/new/constraint.xdc:24]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'RGB_led_B[2]'. [C:/Users/sgk/Desktop/EE214/project_3.1/project_3.1.srcs/constrs_1/new/constraint.xdc:25]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/sgk/Desktop/EE214/project_3.1/project_3.1.srcs/constrs_1/new/constraint.xdc:25]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'btn[0]'. [C:/Users/sgk/Desktop/EE214/project_3.1/project_3.1.srcs/constrs_1/new/constraint.xdc:42]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/sgk/Desktop/EE214/project_3.1/project_3.1.srcs/constrs_1/new/constraint.xdc:42]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'btn[1]'. [C:/Users/sgk/Desktop/EE214/project_3.1/project_3.1.srcs/constrs_1/new/constraint.xdc:43]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/sgk/Desktop/EE214/project_3.1/project_3.1.srcs/constrs_1/new/constraint.xdc:43]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'btn[2]'. [C:/Users/sgk/Desktop/EE214/project_3.1/project_3.1.srcs/constrs_1/new/constraint.xdc:44]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/sgk/Desktop/EE214/project_3.1/project_3.1.srcs/constrs_1/new/constraint.xdc:44]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'btn[3]'. [C:/Users/sgk/Desktop/EE214/project_3.1/project_3.1.srcs/constrs_1/new/constraint.xdc:45]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/sgk/Desktop/EE214/project_3.1/project_3.1.srcs/constrs_1/new/constraint.xdc:45]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'seg_an[0]'. [C:/Users/sgk/Desktop/EE214/project_3.1/project_3.1.srcs/constrs_1/new/constraint.xdc:48]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/sgk/Desktop/EE214/project_3.1/project_3.1.srcs/constrs_1/new/constraint.xdc:48]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'seg_an[1]'. [C:/Users/sgk/Desktop/EE214/project_3.1/project_3.1.srcs/constrs_1/new/constraint.xdc:49]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/sgk/Desktop/EE214/project_3.1/project_3.1.srcs/constrs_1/new/constraint.xdc:49]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'seg_an[2]'. [C:/Users/sgk/Desktop/EE214/project_3.1/project_3.1.srcs/constrs_1/new/constraint.xdc:50]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/sgk/Desktop/EE214/project_3.1/project_3.1.srcs/constrs_1/new/constraint.xdc:50]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'seg_an[3]'. [C:/Users/sgk/Desktop/EE214/project_3.1/project_3.1.srcs/constrs_1/new/constraint.xdc:51]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/sgk/Desktop/EE214/project_3.1/project_3.1.srcs/constrs_1/new/constraint.xdc:51]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'seg_cat[0]'. [C:/Users/sgk/Desktop/EE214/project_3.1/project_3.1.srcs/constrs_1/new/constraint.xdc:54]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/sgk/Desktop/EE214/project_3.1/project_3.1.srcs/constrs_1/new/constraint.xdc:54]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'seg_cat[1]'. [C:/Users/sgk/Desktop/EE214/project_3.1/project_3.1.srcs/constrs_1/new/constraint.xdc:55]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/sgk/Desktop/EE214/project_3.1/project_3.1.srcs/constrs_1/new/constraint.xdc:55]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'seg_cat[2]'. [C:/Users/sgk/Desktop/EE214/project_3.1/project_3.1.srcs/constrs_1/new/constraint.xdc:56]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/sgk/Desktop/EE214/project_3.1/project_3.1.srcs/constrs_1/new/constraint.xdc:56]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'seg_cat[3]'. [C:/Users/sgk/Desktop/EE214/project_3.1/project_3.1.srcs/constrs_1/new/constraint.xdc:57]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/sgk/Desktop/EE214/project_3.1/project_3.1.srcs/constrs_1/new/constraint.xdc:57]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'seg_cat[4]'. [C:/Users/sgk/Desktop/EE214/project_3.1/project_3.1.srcs/constrs_1/new/constraint.xdc:58]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/sgk/Desktop/EE214/project_3.1/project_3.1.srcs/constrs_1/new/constraint.xdc:58]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'seg_cat[5]'. [C:/Users/sgk/Desktop/EE214/project_3.1/project_3.1.srcs/constrs_1/new/constraint.xdc:59]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/sgk/Desktop/EE214/project_3.1/project_3.1.srcs/constrs_1/new/constraint.xdc:59]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'seg_cat[6]'. [C:/Users/sgk/Desktop/EE214/project_3.1/project_3.1.srcs/constrs_1/new/constraint.xdc:60]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/sgk/Desktop/EE214/project_3.1/project_3.1.srcs/constrs_1/new/constraint.xdc:60]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'seg_cat[7]'. [C:/Users/sgk/Desktop/EE214/project_3.1/project_3.1.srcs/constrs_1/new/constraint.xdc:61]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/sgk/Desktop/EE214/project_3.1/project_3.1.srcs/constrs_1/new/constraint.xdc:61]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+Finished Parsing XDC File [C:/Users/sgk/Desktop/EE214/project_3.1/project_3.1.srcs/constrs_1/new/constraint.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [C:/Users/sgk/Desktop/EE214/project_3.1/project_3.1.srcs/constrs_1/new/constraint.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/project_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/project_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1652.617 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.002 . Memory (MB): peak = 1652.617 ; gain = 0.000
+INFO: [Designutils 20-5440] No compile time benefit to using incremental synthesis; A full resynthesis will be run
+INFO: [Designutils 20-4379] Flow is switching to default flow due to incremental criteria not met. If you would like to alter this behaviour and have the flow terminate instead, please set the following parameter config_implementation {autoIncr.Synth.RejectBehavior Terminate}
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:09 ; elapsed = 00:00:12 . Memory (MB): peak = 1652.617 ; gain = 613.344
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7z007sclg400-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:09 ; elapsed = 00:00:13 . Memory (MB): peak = 1652.617 ; gain = 613.344
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:09 ; elapsed = 00:00:13 . Memory (MB): peak = 1652.617 ; gain = 613.344
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:09 ; elapsed = 00:00:13 . Memory (MB): peak = 1652.617 ; gain = 613.344
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---XORs : 
+	   4 Input      1 Bit         XORs := 2     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 66 (col length:40)
+BRAMs: 100 (col length: RAMB18 40 RAMB36 20)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-7080] Parallel synthesis criteria is not met
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:10 ; elapsed = 00:00:14 . Memory (MB): peak = 1652.617 ; gain = 613.344
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:13 ; elapsed = 00:00:18 . Memory (MB): peak = 1652.617 ; gain = 613.344
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:13 ; elapsed = 00:00:18 . Memory (MB): peak = 1652.617 ; gain = 613.344
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:13 ; elapsed = 00:00:18 . Memory (MB): peak = 1652.617 ; gain = 613.344
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:16 ; elapsed = 00:00:22 . Memory (MB): peak = 1652.617 ; gain = 613.344
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:16 ; elapsed = 00:00:22 . Memory (MB): peak = 1652.617 ; gain = 613.344
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:16 ; elapsed = 00:00:22 . Memory (MB): peak = 1652.617 ; gain = 613.344
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:16 ; elapsed = 00:00:22 . Memory (MB): peak = 1652.617 ; gain = 613.344
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:16 ; elapsed = 00:00:22 . Memory (MB): peak = 1652.617 ; gain = 613.344
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:16 ; elapsed = 00:00:22 . Memory (MB): peak = 1652.617 ; gain = 613.344
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+-----+------+
+|      |Cell |Count |
++------+-----+------+
+|1     |LUT5 |     2|
+|2     |IBUF |     9|
+|3     |OBUF |     2|
++------+-----+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:16 ; elapsed = 00:00:22 . Memory (MB): peak = 1652.617 ; gain = 613.344
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 1 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:11 ; elapsed = 00:00:21 . Memory (MB): peak = 1652.617 ; gain = 556.395
+Synthesis Optimization Complete : Time (s): cpu = 00:00:16 ; elapsed = 00:00:22 . Memory (MB): peak = 1652.617 ; gain = 613.344
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1652.617 ; gain = 0.000
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1652.617 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Synth Design complete | Checksum: f0e7f443
+INFO: [Common 17-83] Releasing license: Synthesis
+22 Infos, 35 Warnings, 31 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:19 ; elapsed = 00:00:27 . Memory (MB): peak = 1652.617 ; gain = 1011.801
+INFO: [runtcl-6] Synthesis results are not added to the cache due to CRITICAL_WARNING
+Write ShapeDB Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1652.617 ; gain = 0.000
+INFO: [Common 17-1381] The checkpoint 'C:/Users/sgk/Desktop/EE214/project_3.1/project_3.1.runs/synth_1/project.dcp' has been generated.
+INFO: [Vivado 12-24828] Executing command : report_utilization -file project_utilization_synth.rpt -pb project_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Thu Sep 19 19:09:29 2024...

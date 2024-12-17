@@ -1,0 +1,34 @@
+#-----------------------------------------------------------
+# Vivado v2024.1 (64-bit)
+# SW Build 5076996 on Wed May 22 18:37:14 MDT 2024
+# IP Build 5075265 on Wed May 22 21:45:21 MDT 2024
+# SharedData Build 5076995 on Wed May 22 18:29:18 MDT 2024
+# Start of session at: Tue Sep  3 18:02:14 2024
+# Process ID: 18308
+# Current directory: C:/Users/sgk/OneDrive/Desktop/EE214/requirement_2/requirement_2.runs/synth_1
+# Command line: vivado.exe -log requirement5.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source requirement5.tcl
+# Log file: C:/Users/sgk/OneDrive/Desktop/EE214/requirement_2/requirement_2.runs/synth_1/requirement5.vds
+# Journal file: C:/Users/sgk/OneDrive/Desktop/EE214/requirement_2/requirement_2.runs/synth_1\vivado.jou
+# Running On        :DESKTOP-JTBO2TI
+# Platform          :Windows Server 2016 or Windows 10
+# Operating System  :22631
+# Processor Detail  :AMD Ryzen 7 7840HS w/ Radeon 780M Graphics     
+# CPU Frequency     :3793 MHz
+# CPU Physical cores:8
+# CPU Logical cores :16
+# Host memory       :66367 MB
+# Swap memory       :4160 MB
+# Total Virtual     :70528 MB
+# Available Virtual :54296 MB
+#-----------------------------------------------------------
+source requirement5.tcl -notrace
+create_project: Time (s): cpu = 00:00:04 ; elapsed = 00:00:06 . Memory (MB): peak = 628.090 ; gain = 200.684
+Command: read_checkpoint -auto_incremental -incremental C:/Users/sgk/OneDrive/Desktop/EE214/requirement_2/requirement_2.srcs/utils_1/imports/synth_1/led_sw.dcp
+INFO: [Vivado 12-5825] Read reference checkpoint from C:/Users/sgk/OneDrive/Desktop/EE214/requirement_2/requirement_2.srcs/utils_1/imports/synth_1/led_sw.dcp for incremental synthesis
+INFO: [Vivado 12-7989] Please ensure there are no constraint changes
+Command: synth_design -top requirement5 -part xc7z007sclg400-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7z007s'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7z007s'
+INFO: [Device 21-403] Loading part xc7z007sclg400-1
+INFO: [Device 21-9227] Part: xc7z007sclg400-1 does not have CEAM library.

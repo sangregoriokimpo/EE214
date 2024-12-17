@@ -1,0 +1,334 @@
+#-----------------------------------------------------------
+# Vivado v2024.1.1 (64-bit)
+# SW Build 5094488 on Fri Jun 14 08:59:21 MDT 2024
+# IP Build 5091682 on Fri Jun 14 16:55:04 MDT 2024
+# SharedData Build 5094118 on Fri Jun 14 01:09:43 MDT 2024
+# Start of session at: Tue Nov 26 12:36:10 2024
+# Process ID: 51576
+# Current directory: C:/xproj/project_9.1A1/project_9.1A1.runs/synth_1
+# Command line: vivado.exe -log design_1_wrapper.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source design_1_wrapper.tcl
+# Log file: C:/xproj/project_9.1A1/project_9.1A1.runs/synth_1/design_1_wrapper.vds
+# Journal file: C:/xproj/project_9.1A1/project_9.1A1.runs/synth_1\vivado.jou
+# Running On        :sgk
+# Platform          :Windows Server 2016 or Windows 10
+# Operating System  :22631
+# Processor Detail  :AMD Ryzen 7 7840HS w/ Radeon 780M Graphics     
+# CPU Frequency     :3793 MHz
+# CPU Physical cores:8
+# CPU Logical cores :16
+# Host memory       :66367 MB
+# Swap memory       :4160 MB
+# Total Virtual     :70528 MB
+# Available Virtual :44573 MB
+#-----------------------------------------------------------
+source design_1_wrapper.tcl -notrace
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2024.1/data/ip'.
+Command: read_checkpoint -auto_incremental -incremental C:/xproj/project_9.1A1/project_9.1A1.srcs/utils_1/imports/synth_1/carry_lookahead_adder_4_bit.dcp
+INFO: [Vivado 12-5825] Read reference checkpoint from C:/xproj/project_9.1A1/project_9.1A1.srcs/utils_1/imports/synth_1/carry_lookahead_adder_4_bit.dcp for incremental synthesis
+INFO: [Vivado 12-7989] Please ensure there are no constraint changes
+Command: synth_design -top design_1_wrapper -part xc7z007sclg400-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7z007s'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7z007s'
+INFO: [Device 21-403] Loading part xc7z007sclg400-1
+INFO: [Device 21-9227] Part: xc7z007sclg400-1 does not have CEAM library.
+INFO: [Designutils 20-5440] No compile time benefit to using incremental synthesis; A full resynthesis will be run
+INFO: [Designutils 20-4379] Flow is switching to default flow due to incremental criteria not met. If you would like to alter this behaviour and have the flow terminate instead, please set the following parameter config_implementation {autoIncr.Synth.RejectBehavior Terminate}
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 52832
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:04 . Memory (MB): peak = 1496.148 ; gain = 448.082
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'design_1_wrapper' [c:/xproj/project_9.1A1/project_9.1A1.gen/sources_1/bd/design_1/hdl/design_1_wrapper.v:13]
+INFO: [Synth 8-6157] synthesizing module 'design_1' [c:/xproj/project_9.1A1/project_9.1A1.gen/sources_1/bd/design_1/synth/design_1.v:13]
+INFO: [Synth 8-6157] synthesizing module 'design_1_carry_lookahead_adde_0_1' [C:/xproj/project_9.1A1/project_9.1A1.runs/synth_1/.Xil/Vivado-51576-sgk/realtime/design_1_carry_lookahead_adde_0_1_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_carry_lookahead_adde_0_1' (0#1) [C:/xproj/project_9.1A1/project_9.1A1.runs/synth_1/.Xil/Vivado-51576-sgk/realtime/design_1_carry_lookahead_adde_0_1_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'design_1_clock_divider_0_0' [C:/xproj/project_9.1A1/project_9.1A1.runs/synth_1/.Xil/Vivado-51576-sgk/realtime/design_1_clock_divider_0_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_clock_divider_0_0' (0#1) [C:/xproj/project_9.1A1/project_9.1A1.runs/synth_1/.Xil/Vivado-51576-sgk/realtime/design_1_clock_divider_0_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'design_1_counter_0_0' [C:/xproj/project_9.1A1/project_9.1A1.runs/synth_1/.Xil/Vivado-51576-sgk/realtime/design_1_counter_0_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_counter_0_0' (0#1) [C:/xproj/project_9.1A1/project_9.1A1.runs/synth_1/.Xil/Vivado-51576-sgk/realtime/design_1_counter_0_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'design_1_decoder_0_0' [C:/xproj/project_9.1A1/project_9.1A1.runs/synth_1/.Xil/Vivado-51576-sgk/realtime/design_1_decoder_0_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_decoder_0_0' (0#1) [C:/xproj/project_9.1A1/project_9.1A1.runs/synth_1/.Xil/Vivado-51576-sgk/realtime/design_1_decoder_0_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'design_1_display_decoder_0_0' [C:/xproj/project_9.1A1/project_9.1A1.runs/synth_1/.Xil/Vivado-51576-sgk/realtime/design_1_display_decoder_0_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_display_decoder_0_0' (0#1) [C:/xproj/project_9.1A1/project_9.1A1.runs/synth_1/.Xil/Vivado-51576-sgk/realtime/design_1_display_decoder_0_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'design_1_mux_0_0' [C:/xproj/project_9.1A1/project_9.1A1.runs/synth_1/.Xil/Vivado-51576-sgk/realtime/design_1_mux_0_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_mux_0_0' (0#1) [C:/xproj/project_9.1A1/project_9.1A1.runs/synth_1/.Xil/Vivado-51576-sgk/realtime/design_1_mux_0_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'design_1_xlconstant_0_0' [c:/xproj/project_9.1A1/project_9.1A1.gen/sources_1/bd/design_1/ip/design_1_xlconstant_0_0/synth/design_1_xlconstant_0_0.v:53]
+INFO: [Synth 8-6157] synthesizing module 'xlconstant_v1_1_9_xlconstant' [c:/xproj/project_9.1A1/project_9.1A1.gen/sources_1/bd/design_1/ipshared/e2d2/hdl/xlconstant_v1_1_vl_rfs.v:68]
+INFO: [Synth 8-6155] done synthesizing module 'xlconstant_v1_1_9_xlconstant' (0#1) [c:/xproj/project_9.1A1/project_9.1A1.gen/sources_1/bd/design_1/ipshared/e2d2/hdl/xlconstant_v1_1_vl_rfs.v:68]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_xlconstant_0_0' (0#1) [c:/xproj/project_9.1A1/project_9.1A1.gen/sources_1/bd/design_1/ip/design_1_xlconstant_0_0/synth/design_1_xlconstant_0_0.v:53]
+INFO: [Synth 8-6157] synthesizing module 'design_1_xlconstant_1_0' [c:/xproj/project_9.1A1/project_9.1A1.gen/sources_1/bd/design_1/ip/design_1_xlconstant_1_0/synth/design_1_xlconstant_1_0.v:53]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_xlconstant_1_0' (0#1) [c:/xproj/project_9.1A1/project_9.1A1.gen/sources_1/bd/design_1/ip/design_1_xlconstant_1_0/synth/design_1_xlconstant_1_0.v:53]
+INFO: [Synth 8-6157] synthesizing module 'design_1_xlconstant_2_0' [c:/xproj/project_9.1A1/project_9.1A1.gen/sources_1/bd/design_1/ip/design_1_xlconstant_2_0/synth/design_1_xlconstant_2_0.v:53]
+INFO: [Synth 8-6157] synthesizing module 'xlconstant_v1_1_9_xlconstant__parameterized0' [c:/xproj/project_9.1A1/project_9.1A1.gen/sources_1/bd/design_1/ipshared/e2d2/hdl/xlconstant_v1_1_vl_rfs.v:68]
+INFO: [Synth 8-6155] done synthesizing module 'xlconstant_v1_1_9_xlconstant__parameterized0' (0#1) [c:/xproj/project_9.1A1/project_9.1A1.gen/sources_1/bd/design_1/ipshared/e2d2/hdl/xlconstant_v1_1_vl_rfs.v:68]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_xlconstant_2_0' (0#1) [c:/xproj/project_9.1A1/project_9.1A1.gen/sources_1/bd/design_1/ip/design_1_xlconstant_2_0/synth/design_1_xlconstant_2_0.v:53]
+INFO: [Synth 8-6157] synthesizing module 'design_1_xlslice_0_0' [c:/xproj/project_9.1A1/project_9.1A1.gen/sources_1/bd/design_1/ip/design_1_xlslice_0_0/synth/design_1_xlslice_0_0.v:53]
+INFO: [Synth 8-6157] synthesizing module 'xlslice_v1_0_4_xlslice' [c:/xproj/project_9.1A1/project_9.1A1.gen/sources_1/bd/design_1/ipshared/a97c/hdl/xlslice_v1_0_vl_rfs.v:58]
+INFO: [Synth 8-6155] done synthesizing module 'xlslice_v1_0_4_xlslice' (0#1) [c:/xproj/project_9.1A1/project_9.1A1.gen/sources_1/bd/design_1/ipshared/a97c/hdl/xlslice_v1_0_vl_rfs.v:58]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_xlslice_0_0' (0#1) [c:/xproj/project_9.1A1/project_9.1A1.gen/sources_1/bd/design_1/ip/design_1_xlslice_0_0/synth/design_1_xlslice_0_0.v:53]
+INFO: [Synth 8-6157] synthesizing module 'design_1_xlslice_1_0' [c:/xproj/project_9.1A1/project_9.1A1.gen/sources_1/bd/design_1/ip/design_1_xlslice_1_0/synth/design_1_xlslice_1_0.v:53]
+INFO: [Synth 8-6157] synthesizing module 'xlslice_v1_0_4_xlslice__parameterized0' [c:/xproj/project_9.1A1/project_9.1A1.gen/sources_1/bd/design_1/ipshared/a97c/hdl/xlslice_v1_0_vl_rfs.v:58]
+INFO: [Synth 8-6155] done synthesizing module 'xlslice_v1_0_4_xlslice__parameterized0' (0#1) [c:/xproj/project_9.1A1/project_9.1A1.gen/sources_1/bd/design_1/ipshared/a97c/hdl/xlslice_v1_0_vl_rfs.v:58]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_xlslice_1_0' (0#1) [c:/xproj/project_9.1A1/project_9.1A1.gen/sources_1/bd/design_1/ip/design_1_xlslice_1_0/synth/design_1_xlslice_1_0.v:53]
+INFO: [Synth 8-6155] done synthesizing module 'design_1' (0#1) [c:/xproj/project_9.1A1/project_9.1A1.gen/sources_1/bd/design_1/synth/design_1.v:13]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_wrapper' (0#1) [c:/xproj/project_9.1A1/project_9.1A1.gen/sources_1/bd/design_1/hdl/design_1_wrapper.v:13]
+WARNING: [Synth 8-7129] Port Din[3] in module xlslice_v1_0_4_xlslice__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Din[2] in module xlslice_v1_0_4_xlslice__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Din[1] in module xlslice_v1_0_4_xlslice__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Din[0] in module xlslice_v1_0_4_xlslice__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Din[7] in module xlslice_v1_0_4_xlslice is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Din[6] in module xlslice_v1_0_4_xlslice is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Din[5] in module xlslice_v1_0_4_xlslice is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Din[4] in module xlslice_v1_0_4_xlslice is either unconnected or has no load
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:06 . Memory (MB): peak = 1604.688 ; gain = 556.621
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:04 ; elapsed = 00:00:06 . Memory (MB): peak = 1604.688 ; gain = 556.621
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:04 ; elapsed = 00:00:06 . Memory (MB): peak = 1604.688 ; gain = 556.621
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1604.688 ; gain = 0.000
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [c:/xproj/project_9.1A1/project_9.1A1.gen/sources_1/bd/design_1/ip/design_1_display_decoder_0_0/design_1_display_decoder_0_0/design_1_display_decoder_0_0_in_context.xdc] for cell 'design_1_i/display_decoder_0'
+Finished Parsing XDC File [c:/xproj/project_9.1A1/project_9.1A1.gen/sources_1/bd/design_1/ip/design_1_display_decoder_0_0/design_1_display_decoder_0_0/design_1_display_decoder_0_0_in_context.xdc] for cell 'design_1_i/display_decoder_0'
+Parsing XDC File [c:/xproj/project_9.1A1/project_9.1A1.gen/sources_1/bd/design_1/ip/design_1_mux_0_0/design_1_mux_0_0/design_1_mux_0_0_in_context.xdc] for cell 'design_1_i/mux_0'
+Finished Parsing XDC File [c:/xproj/project_9.1A1/project_9.1A1.gen/sources_1/bd/design_1/ip/design_1_mux_0_0/design_1_mux_0_0/design_1_mux_0_0_in_context.xdc] for cell 'design_1_i/mux_0'
+Parsing XDC File [c:/xproj/project_9.1A1/project_9.1A1.gen/sources_1/bd/design_1/ip/design_1_carry_lookahead_adde_0_1/design_1_carry_lookahead_adde_0_1/design_1_carry_lookahead_adde_0_1_in_context.xdc] for cell 'design_1_i/carry_lookahead_adde_0'
+Finished Parsing XDC File [c:/xproj/project_9.1A1/project_9.1A1.gen/sources_1/bd/design_1/ip/design_1_carry_lookahead_adde_0_1/design_1_carry_lookahead_adde_0_1/design_1_carry_lookahead_adde_0_1_in_context.xdc] for cell 'design_1_i/carry_lookahead_adde_0'
+Parsing XDC File [c:/xproj/project_9.1A1/project_9.1A1.gen/sources_1/bd/design_1/ip/design_1_counter_0_0/design_1_counter_0_0/design_1_counter_0_0_in_context.xdc] for cell 'design_1_i/counter_0'
+Finished Parsing XDC File [c:/xproj/project_9.1A1/project_9.1A1.gen/sources_1/bd/design_1/ip/design_1_counter_0_0/design_1_counter_0_0/design_1_counter_0_0_in_context.xdc] for cell 'design_1_i/counter_0'
+Parsing XDC File [c:/xproj/project_9.1A1/project_9.1A1.gen/sources_1/bd/design_1/ip/design_1_clock_divider_0_0/design_1_clock_divider_0_0/design_1_clock_divider_0_0_in_context.xdc] for cell 'design_1_i/clock_divider_0'
+Finished Parsing XDC File [c:/xproj/project_9.1A1/project_9.1A1.gen/sources_1/bd/design_1/ip/design_1_clock_divider_0_0/design_1_clock_divider_0_0/design_1_clock_divider_0_0_in_context.xdc] for cell 'design_1_i/clock_divider_0'
+Parsing XDC File [c:/xproj/project_9.1A1/project_9.1A1.gen/sources_1/bd/design_1/ip/design_1_decoder_0_0/design_1_decoder_0_0/design_1_decoder_0_0_in_context.xdc] for cell 'design_1_i/decoder_0'
+Finished Parsing XDC File [c:/xproj/project_9.1A1/project_9.1A1.gen/sources_1/bd/design_1/ip/design_1_decoder_0_0/design_1_decoder_0_0/design_1_decoder_0_0_in_context.xdc] for cell 'design_1_i/decoder_0'
+Parsing XDC File [C:/xproj/project_9.1A1/project_9.1A1.srcs/constrs_1/new/constraints.xdc]
+WARNING: [Vivado 12-584] No ports matched 'led[0]'. [C:/xproj/project_9.1A1/project_9.1A1.srcs/constrs_1/new/constraints.xdc:7]
+WARNING: [Vivado 12-584] No ports matched 'led[1]'. [C:/xproj/project_9.1A1/project_9.1A1.srcs/constrs_1/new/constraints.xdc:8]
+WARNING: [Vivado 12-584] No ports matched 'led[2]'. [C:/xproj/project_9.1A1/project_9.1A1.srcs/constrs_1/new/constraints.xdc:9]
+WARNING: [Vivado 12-584] No ports matched 'led[3]'. [C:/xproj/project_9.1A1/project_9.1A1.srcs/constrs_1/new/constraints.xdc:10]
+WARNING: [Vivado 12-584] No ports matched 'led[4]'. [C:/xproj/project_9.1A1/project_9.1A1.srcs/constrs_1/new/constraints.xdc:11]
+WARNING: [Vivado 12-584] No ports matched 'led[5]'. [C:/xproj/project_9.1A1/project_9.1A1.srcs/constrs_1/new/constraints.xdc:12]
+WARNING: [Vivado 12-584] No ports matched 'led[6]'. [C:/xproj/project_9.1A1/project_9.1A1.srcs/constrs_1/new/constraints.xdc:13]
+WARNING: [Vivado 12-584] No ports matched 'led[7]'. [C:/xproj/project_9.1A1/project_9.1A1.srcs/constrs_1/new/constraints.xdc:14]
+WARNING: [Vivado 12-584] No ports matched 'led[8]'. [C:/xproj/project_9.1A1/project_9.1A1.srcs/constrs_1/new/constraints.xdc:15]
+WARNING: [Vivado 12-584] No ports matched 'led[9]'. [C:/xproj/project_9.1A1/project_9.1A1.srcs/constrs_1/new/constraints.xdc:16]
+WARNING: [Vivado 12-584] No ports matched 'RGB_led_A[0]'. [C:/xproj/project_9.1A1/project_9.1A1.srcs/constrs_1/new/constraints.xdc:19]
+WARNING: [Vivado 12-584] No ports matched 'RGB_led_A[1]'. [C:/xproj/project_9.1A1/project_9.1A1.srcs/constrs_1/new/constraints.xdc:20]
+WARNING: [Vivado 12-584] No ports matched 'RGB_led_A[2]'. [C:/xproj/project_9.1A1/project_9.1A1.srcs/constrs_1/new/constraints.xdc:21]
+WARNING: [Vivado 12-584] No ports matched 'RGB_led_B[0]'. [C:/xproj/project_9.1A1/project_9.1A1.srcs/constrs_1/new/constraints.xdc:23]
+WARNING: [Vivado 12-584] No ports matched 'RGB_led_B[1]'. [C:/xproj/project_9.1A1/project_9.1A1.srcs/constrs_1/new/constraints.xdc:24]
+WARNING: [Vivado 12-584] No ports matched 'RGB_led_B[2]'. [C:/xproj/project_9.1A1/project_9.1A1.srcs/constrs_1/new/constraints.xdc:25]
+WARNING: [Vivado 12-584] No ports matched 'sw[8]'. [C:/xproj/project_9.1A1/project_9.1A1.srcs/constrs_1/new/constraints.xdc:36]
+WARNING: [Vivado 12-584] No ports matched 'sw[9]'. [C:/xproj/project_9.1A1/project_9.1A1.srcs/constrs_1/new/constraints.xdc:37]
+WARNING: [Vivado 12-584] No ports matched 'sw[10]'. [C:/xproj/project_9.1A1/project_9.1A1.srcs/constrs_1/new/constraints.xdc:38]
+WARNING: [Vivado 12-584] No ports matched 'btn[1]'. [C:/xproj/project_9.1A1/project_9.1A1.srcs/constrs_1/new/constraints.xdc:43]
+WARNING: [Vivado 12-584] No ports matched 'btn[2]'. [C:/xproj/project_9.1A1/project_9.1A1.srcs/constrs_1/new/constraints.xdc:44]
+WARNING: [Vivado 12-584] No ports matched 'btn[3]'. [C:/xproj/project_9.1A1/project_9.1A1.srcs/constrs_1/new/constraints.xdc:45]
+WARNING: [Vivado 12-584] No ports matched 'DP'. [C:/xproj/project_9.1A1/project_9.1A1.srcs/constrs_1/new/constraints.xdc:61]
+Finished Parsing XDC File [C:/xproj/project_9.1A1/project_9.1A1.srcs/constrs_1/new/constraints.xdc]
+WARNING: [Project 1-498] One or more constraints failed evaluation while reading constraint file [C:/xproj/project_9.1A1/project_9.1A1.srcs/constrs_1/new/constraints.xdc] and the design contains unresolved black boxes. These constraints will be read post-synthesis (as long as their source constraint file is marked as used_in_implementation) and should be applied correctly then. You should review the constraints listed in the file [.Xil/design_1_wrapper_propImpl.xdc] and check the run log file to verify that these constraints were correctly applied.
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [C:/xproj/project_9.1A1/project_9.1A1.srcs/constrs_1/new/constraints.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/design_1_wrapper_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/design_1_wrapper_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Parsing XDC File [C:/xproj/project_9.1A1/project_9.1A1.runs/synth_1/dont_touch.xdc]
+Finished Parsing XDC File [C:/xproj/project_9.1A1/project_9.1A1.runs/synth_1/dont_touch.xdc]
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1627.781 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.002 . Memory (MB): peak = 1627.781 ; gain = 0.000
+INFO: [Designutils 20-5440] No compile time benefit to using incremental synthesis; A full resynthesis will be run
+INFO: [Designutils 20-4379] Flow is switching to default flow due to incremental criteria not met. If you would like to alter this behaviour and have the flow terminate instead, please set the following parameter config_implementation {autoIncr.Synth.RejectBehavior Terminate}
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:09 ; elapsed = 00:00:11 . Memory (MB): peak = 1627.781 ; gain = 579.715
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7z007sclg400-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:09 ; elapsed = 00:00:11 . Memory (MB): peak = 1627.781 ; gain = 579.715
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+Applied set_property KEEP_HIERARCHY = SOFT for design_1_i. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for design_1_i/display_decoder_0. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for design_1_i/mux_0. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for design_1_i/carry_lookahead_adde_0. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for design_1_i/xlslice_0. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for design_1_i/xlslice_1. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for design_1_i/xlconstant_0. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for design_1_i/xlconstant_1. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for design_1_i/counter_0. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for design_1_i/clock_divider_0. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for design_1_i/decoder_0. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for design_1_i/xlconstant_2. (constraint file  auto generated constraint).
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:10 ; elapsed = 00:00:11 . Memory (MB): peak = 1627.781 ; gain = 579.715
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:10 ; elapsed = 00:00:12 . Memory (MB): peak = 1627.781 ; gain = 579.715
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 66 (col length:40)
+BRAMs: 100 (col length: RAMB18 40 RAMB36 20)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-7080] Parallel synthesis criteria is not met
+WARNING: [Synth 8-7129] Port Din[3] in module design_1_xlslice_1_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Din[2] in module design_1_xlslice_1_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Din[1] in module design_1_xlslice_1_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Din[0] in module design_1_xlslice_1_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Din[7] in module design_1_xlslice_0_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Din[6] in module design_1_xlslice_0_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Din[5] in module design_1_xlslice_0_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Din[4] in module design_1_xlslice_0_0 is either unconnected or has no load
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:11 ; elapsed = 00:00:13 . Memory (MB): peak = 1627.781 ; gain = 579.715
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:14 ; elapsed = 00:00:17 . Memory (MB): peak = 1627.781 ; gain = 579.715
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:14 ; elapsed = 00:00:17 . Memory (MB): peak = 1627.781 ; gain = 579.715
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:14 ; elapsed = 00:00:17 . Memory (MB): peak = 1627.781 ; gain = 579.715
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:18 ; elapsed = 00:00:20 . Memory (MB): peak = 1627.781 ; gain = 579.715
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:18 ; elapsed = 00:00:20 . Memory (MB): peak = 1627.781 ; gain = 579.715
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:18 ; elapsed = 00:00:20 . Memory (MB): peak = 1627.781 ; gain = 579.715
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:18 ; elapsed = 00:00:20 . Memory (MB): peak = 1627.781 ; gain = 579.715
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:18 ; elapsed = 00:00:20 . Memory (MB): peak = 1627.781 ; gain = 579.715
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:18 ; elapsed = 00:00:20 . Memory (MB): peak = 1627.781 ; gain = 579.715
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++------+----------------------------------+----------+
+|      |BlackBox name                     |Instances |
++------+----------------------------------+----------+
+|1     |design_1_carry_lookahead_adde_0_1 |         1|
+|2     |design_1_clock_divider_0_0        |         1|
+|3     |design_1_counter_0_0              |         1|
+|4     |design_1_decoder_0_0              |         1|
+|5     |design_1_display_decoder_0_0      |         1|
+|6     |design_1_mux_0_0                  |         1|
++------+----------------------------------+----------+
+
+Report Cell Usage: 
++------+--------------------------------+------+
+|      |Cell                            |Count |
++------+--------------------------------+------+
+|1     |design_1_carry_lookahead_adde_0 |     1|
+|2     |design_1_clock_divider_0        |     1|
+|3     |design_1_counter_0              |     1|
+|4     |design_1_decoder_0              |     1|
+|5     |design_1_display_decoder_0      |     1|
+|6     |design_1_mux_0                  |     1|
+|7     |IBUF                            |    11|
+|8     |OBUF                            |    11|
++------+--------------------------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:18 ; elapsed = 00:00:20 . Memory (MB): peak = 1627.781 ; gain = 579.715
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 9 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:12 ; elapsed = 00:00:19 . Memory (MB): peak = 1627.781 ; gain = 556.621
+Synthesis Optimization Complete : Time (s): cpu = 00:00:18 ; elapsed = 00:00:20 . Memory (MB): peak = 1627.781 ; gain = 579.715
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1627.781 ; gain = 0.000
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1627.781 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Synth Design complete | Checksum: 829389e4
+INFO: [Common 17-83] Releasing license: Synthesis
+57 Infos, 41 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:21 ; elapsed = 00:00:24 . Memory (MB): peak = 1627.781 ; gain = 978.484
+Write ShapeDB Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1627.781 ; gain = 0.000
+INFO: [Common 17-1381] The checkpoint 'C:/xproj/project_9.1A1/project_9.1A1.runs/synth_1/design_1_wrapper.dcp' has been generated.
+INFO: [Vivado 12-24828] Executing command : report_utilization -file design_1_wrapper_utilization_synth.rpt -pb design_1_wrapper_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Tue Nov 26 12:36:42 2024...

@@ -1,0 +1,288 @@
+{
+  "design": {
+    "design_info": {
+      "boundary_crc": "0xE2482EB2EBFD976A",
+      "device": "xc7z007sclg400-1",
+      "gen_directory": "../../../../project_10.1.gen/sources_1/bd/design_1",
+      "name": "design_1",
+      "rev_ctrl_bd_flag": "RevCtrlBdOff",
+      "synth_flow_mode": "Hierarchical",
+      "tool_version": "2024.1.1",
+      "validated": "true"
+    },
+    "design_tree": {
+      "displaycontroller_0": "",
+      "aluA2_0": "",
+      "xlconcat_0": "",
+      "input_switch_0": ""
+    },
+    "ports": {
+      "clk": {
+        "direction": "I"
+      },
+      "sw": {
+        "direction": "I",
+        "left": "7",
+        "right": "0"
+      },
+      "I": {
+        "direction": "I",
+        "left": "1",
+        "right": "0"
+      },
+      "ALU_Sel": {
+        "direction": "I",
+        "left": "2",
+        "right": "0"
+      },
+      "rst": {
+        "direction": "I"
+      },
+      "seg_cat": {
+        "direction": "O",
+        "left": "7",
+        "right": "0"
+      },
+      "seg_an": {
+        "direction": "O",
+        "left": "3",
+        "right": "0"
+      }
+    },
+    "components": {
+      "displaycontroller_0": {
+        "parameters": {
+          "ACTIVE_SIM_BD": {
+            "value": "displaycontroller.bd"
+          },
+          "ACTIVE_SYNTH_BD": {
+            "value": "displaycontroller.bd"
+          },
+          "ENABLE_DFX": {
+            "value": "0"
+          },
+          "LIST_SIM_BD": {
+            "value": "displaycontroller.bd"
+          },
+          "LIST_SYNTH_BD": {
+            "value": "displaycontroller.bd"
+          },
+          "LOCK_PROPAGATE": {
+            "value": "0"
+          },
+          "TRAINING_MODULE": {
+            "value": "displaycontroller.bd",
+            "value_src": "auto"
+          }
+        },
+        "ports": {
+          "I": {
+            "direction": "I",
+            "left": "8",
+            "right": "0",
+            "parameters": {
+              "PortWidth": {
+                "value": "9",
+                "value_src": "ip_prop"
+              }
+            }
+          },
+          "clk": {
+            "direction": "I"
+          },
+          "rst": {
+            "direction": "I"
+          },
+          "cat": {
+            "direction": "O",
+            "left": "7",
+            "right": "0"
+          },
+          "an": {
+            "direction": "O",
+            "left": "3",
+            "right": "0"
+          }
+        },
+        "post_compiled_compname": "displaycontroller_inst_0",
+        "architecture": "zynq",
+        "variant_info": {
+          "displaycontroller.bd": {
+            "scoped_diagram": "displaycontroller_inst_0.bd",
+            "design_checksum": "0xC74AB69EC380A15F",
+            "ref_name": "displaycontroller",
+            "ref_subinst_path": "design_1_displaycontroller_0",
+            "ref_type": "Block Design",
+            "source_type": "all",
+            "active": "all"
+          }
+        }
+      },
+      "aluA2_0": {
+        "vlnv": "xilinx.com:module_ref:aluA2:1.0",
+        "ip_revision": "1",
+        "xci_name": "design_1_aluA2_0_0",
+        "xci_path": "ip\\design_1_aluA2_0_0\\design_1_aluA2_0_0.xci",
+        "inst_hier_path": "aluA2_0",
+        "reference_info": {
+          "ref_type": "hdl",
+          "ref_name": "aluA2",
+          "boundary_crc": "0x0"
+        },
+        "ports": {
+          "A": {
+            "direction": "I",
+            "left": "7",
+            "right": "0"
+          },
+          "B": {
+            "direction": "I",
+            "left": "7",
+            "right": "0"
+          },
+          "ALU_Sel": {
+            "direction": "I",
+            "left": "2",
+            "right": "0"
+          },
+          "ALU_out": {
+            "direction": "O",
+            "left": "7",
+            "right": "0"
+          },
+          "Cout": {
+            "direction": "O"
+          }
+        }
+      },
+      "xlconcat_0": {
+        "vlnv": "xilinx.com:ip:xlconcat:2.1",
+        "ip_revision": "6",
+        "xci_name": "design_1_xlconcat_0_0",
+        "xci_path": "ip\\design_1_xlconcat_0_0\\design_1_xlconcat_0_0.xci",
+        "inst_hier_path": "xlconcat_0",
+        "parameters": {
+          "IN0_WIDTH": {
+            "value": "8"
+          },
+          "IN1_WIDTH": {
+            "value": "1"
+          }
+        }
+      },
+      "input_switch_0": {
+        "vlnv": "xilinx.com:module_ref:input_switch:1.0",
+        "ip_revision": "1",
+        "xci_name": "design_1_input_switch_0_0",
+        "xci_path": "ip\\design_1_input_switch_0_0\\design_1_input_switch_0_0.xci",
+        "inst_hier_path": "input_switch_0",
+        "reference_info": {
+          "ref_type": "hdl",
+          "ref_name": "input_switch",
+          "boundary_crc": "0x0"
+        },
+        "ports": {
+          "clk": {
+            "type": "clk",
+            "direction": "I"
+          },
+          "btn": {
+            "direction": "I",
+            "left": "1",
+            "right": "0"
+          },
+          "sw": {
+            "direction": "I",
+            "left": "7",
+            "right": "0"
+          },
+          "op1": {
+            "direction": "O",
+            "left": "7",
+            "right": "0"
+          },
+          "op2": {
+            "direction": "O",
+            "left": "7",
+            "right": "0"
+          }
+        }
+      }
+    },
+    "nets": {
+      "ALU_Sel_1": {
+        "ports": [
+          "ALU_Sel",
+          "aluA2_0/ALU_Sel"
+        ]
+      },
+      "I_1": {
+        "ports": [
+          "I",
+          "input_switch_0/btn"
+        ]
+      },
+      "aluA2_0_ALU_out": {
+        "ports": [
+          "aluA2_0/ALU_out",
+          "xlconcat_0/In0"
+        ]
+      },
+      "aluA2_0_Cout": {
+        "ports": [
+          "aluA2_0/Cout",
+          "xlconcat_0/In1"
+        ]
+      },
+      "clk_1": {
+        "ports": [
+          "clk",
+          "input_switch_0/clk",
+          "displaycontroller_0/clk"
+        ]
+      },
+      "displaycontroller_0_an": {
+        "ports": [
+          "displaycontroller_0/an",
+          "seg_an"
+        ]
+      },
+      "displaycontroller_0_cat": {
+        "ports": [
+          "displaycontroller_0/cat",
+          "seg_cat"
+        ]
+      },
+      "input_switch_0_op1": {
+        "ports": [
+          "input_switch_0/op1",
+          "aluA2_0/A"
+        ]
+      },
+      "input_switch_0_op2": {
+        "ports": [
+          "input_switch_0/op2",
+          "aluA2_0/B"
+        ]
+      },
+      "rst_1": {
+        "ports": [
+          "rst",
+          "displaycontroller_0/rst"
+        ]
+      },
+      "sw_1": {
+        "ports": [
+          "sw",
+          "input_switch_0/sw"
+        ]
+      },
+      "xlconcat_0_dout": {
+        "ports": [
+          "xlconcat_0/dout",
+          "displaycontroller_0/I"
+        ]
+      }
+    }
+  }
+}

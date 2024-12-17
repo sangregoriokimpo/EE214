@@ -1,0 +1,4 @@
+ERROR: Exception caught trying to open file C:\xproj\project_9.1\project_9.1.runs\design_2_encoder_0_0_synth_1/runme.log
+	Exception name: Error
+	Exception error code: 70
+	Exception message: Permission denied

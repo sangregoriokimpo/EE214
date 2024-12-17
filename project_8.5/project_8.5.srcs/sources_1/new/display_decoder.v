@@ -1,0 +1,47 @@
+`timescale 1ns / 1ps
+//////////////////////////////////////////////////////////////////////////////////
+// Company: 
+// Engineer: 
+// 
+// Create Date: 11/17/2024 02:26:17 PM
+// Design Name: 
+// Module Name: display_decoder
+// Project Name: 
+// Target Devices: 
+// Tool Versions: 
+// Description: 
+// 
+// Dependencies: 
+// 
+// Revision:
+// Revision 0.01 - File Created
+// Additional Comments:
+// 
+//////////////////////////////////////////////////////////////////////////////////
+
+
+module display_decoder(
+input [3:0] B,
+output reg CA,CB,CC,CD,CE,CF,CG
+    );
+    always @(*) 
+    case (B)
+            4'b0000: begin {CA, CB, CC, CD, CE, CF, CG} = 7'b0000001; end //0
+            4'b0001: begin {CA, CB, CC, CD, CE, CF, CG} = 7'b1001111; end //1
+            4'b0010: begin {CA, CB, CC, CD, CE, CF, CG} = 7'b0010010; end //2
+            4'b0011: begin {CA, CB, CC, CD, CE, CF, CG} = 7'b0000110; end //3
+            4'b0100: begin {CA, CB, CC, CD, CE, CF, CG} = 7'b1001100; end //4
+            4'b0101: begin {CA, CB, CC, CD, CE, CF, CG} = 7'b0100100; end //5
+            4'b0110: begin {CA, CB, CC, CD, CE, CF, CG} = 7'b0100000; end //6
+            4'b0111: begin {CA, CB, CC, CD, CE, CF, CG} = 7'b0001111; end //7
+            4'b1000: begin {CA, CB, CC, CD, CE, CF, CG} = 7'b0000000; end //8
+            4'b1001: begin {CA, CB, CC, CD, CE, CF, CG} = 7'b0000100; end //9
+            4'b1010: begin {CA, CB, CC, CD, CE, CF, CG} = 7'b0001000; end //A
+            4'b1011: begin {CA, CB, CC, CD, CE, CF, CG} = 7'b1100000; end //B
+            4'b1100: begin {CA, CB, CC, CD, CE, CF, CG} = 7'b0110001; end //C
+            4'b1101: begin {CA, CB, CC, CD, CE, CF, CG} = 7'b1000010; end //D
+            4'b1110: begin {CA, CB, CC, CD, CE, CF, CG} = 7'b0110000; end //E
+            4'b1111: begin {CA, CB, CC, CD, CE, CF, CG} = 7'b0111000; end //F
+            default: begin {CA, CB, CC, CD, CE, CF, CG} = 7'b1111111; end //OFF
+    endcase
+endmodule;

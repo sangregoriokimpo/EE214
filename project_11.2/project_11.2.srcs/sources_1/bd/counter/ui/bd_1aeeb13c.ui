@@ -1,0 +1,37 @@
+{
+   "ActiveEmotionalView":"Default View",
+   "Default View_ScaleFactor":"1.0",
+   "Default View_TopLeft":"-282,-130",
+   "ExpandedHierarchyInLayout":"",
+   "guistr":"# # String gsaved with Nlview 7.7.1 2023-07-26 3bc4126617 VDI=43 GEI=38 GUI=JA:21.0
+#  -string -flagsOSRD
+preplace port port-id_clk -pg 1 -lvl 0 -x 0 -y 80 -defaultsOSRD
+preplace port port-id_rst -pg 1 -lvl 0 -x 0 -y 100 -defaultsOSRD
+preplace portBus Y0 -pg 1 -lvl 3 -x 430 -y 80 -defaultsOSRD
+preplace portBus Y1 -pg 1 -lvl 3 -x 430 -y 200 -defaultsOSRD
+preplace portBus Y2 -pg 1 -lvl 3 -x 430 -y 330 -defaultsOSRD
+preplace portBus Y3 -pg 1 -lvl 3 -x 430 -y 480 -defaultsOSRD
+preplace inst counterA1_0 -pg 1 -lvl 2 -x 310 -y 90 -defaultsOSRD
+preplace inst counterA1_1 -pg 1 -lvl 2 -x 310 -y 210 -defaultsOSRD
+preplace inst counterA1_2 -pg 1 -lvl 2 -x 310 -y 340 -defaultsOSRD
+preplace inst counterA1_3 -pg 1 -lvl 2 -x 310 -y 490 -defaultsOSRD
+preplace inst and2_gate_0 -pg 1 -lvl 1 -x 130 -y 220 -defaultsOSRD
+preplace inst and3_gate_0 -pg 1 -lvl 1 -x 130 -y 350 -defaultsOSRD
+preplace inst and4_gate_0 -pg 1 -lvl 1 -x 130 -y 500 -defaultsOSRD
+preplace netloc clk_1 1 0 2 20J 80 220
+preplace netloc and2_gate_0_Y 1 1 1 N 220
+preplace netloc and3_gate_0_Y 1 1 1 N 350
+preplace netloc and4_gate_0_Y 1 1 1 N 500
+preplace netloc rst_1 1 0 2 NJ 100 N
+preplace netloc counterA1_0_TC 1 0 3 30 10 NJ 10 400
+preplace netloc counterA1_1_TC 1 0 3 40 20 NJ 20 410
+preplace netloc counterA1_2_TC 1 0 3 50 150 210J 410 400
+preplace netloc counterA1_3_Y 1 2 1 N 480
+preplace netloc counterA1_2_Y 1 2 1 N 330
+preplace netloc counterA1_1_Y 1 2 1 N 200
+preplace netloc counterA1_0_Y 1 2 1 N 80
+levelinfo -pg 1 0 130 310 430
+pagesize -pg 1 -db -bbox -sgen -70 0 530 590
+"
+}
+

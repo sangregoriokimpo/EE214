@@ -1,0 +1,1 @@
+set_property SRC_FILE_INFO {cfile:C:/Users/sgk/OneDrive/Desktop/EE214/project_2/project_2.srcs/constrs_1/new/project2.xdc rfile:../../../../../project_2.srcs/constrs_1/new/project2.xdc id:1} [current_design]

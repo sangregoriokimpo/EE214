@@ -1,0 +1,123 @@
+{
+  "design": {
+    "design_info": {
+      "boundary_crc": "0xB4871441DB044B84",
+      "device": "xc7z007sclg400-1",
+      "gen_directory": "../../../../project_8.2.gen/sources_1/bd/design_1",
+      "name": "design_1",
+      "rev_ctrl_bd_flag": "RevCtrlBdOff",
+      "synth_flow_mode": "Hierarchical",
+      "tool_version": "2024.1.1",
+      "validated": "true"
+    },
+    "design_tree": {
+      "counter_0": "",
+      "synch_counter_0": ""
+    },
+    "ports": {
+      "clk": {
+        "direction": "I"
+      },
+      "rst": {
+        "direction": "I"
+      },
+      "led": {
+        "direction": "O",
+        "left": "3",
+        "right": "0"
+      }
+    },
+    "components": {
+      "counter_0": {
+        "vlnv": "xilinx.com:module_ref:counter:1.0",
+        "ip_revision": "1",
+        "xci_name": "design_1_counter_0_0",
+        "xci_path": "ip\\design_1_counter_0_0\\design_1_counter_0_0.xci",
+        "inst_hier_path": "counter_0",
+        "reference_info": {
+          "ref_type": "hdl",
+          "ref_name": "counter",
+          "boundary_crc": "0x0"
+        },
+        "ports": {
+          "clk": {
+            "type": "clk",
+            "direction": "I",
+            "parameters": {
+              "ASSOCIATED_RESET": {
+                "value": "rst",
+                "value_src": "constant"
+              },
+              "CLK_DOMAIN": {
+                "value": "design_1_synch_counter_0_0_led_clk",
+                "value_src": "default_prop"
+              }
+            }
+          },
+          "rst": {
+            "type": "rst",
+            "direction": "I"
+          },
+          "led": {
+            "direction": "O",
+            "left": "3",
+            "right": "0"
+          }
+        }
+      },
+      "synch_counter_0": {
+        "vlnv": "xilinx.com:module_ref:synch_counter:1.0",
+        "ip_revision": "1",
+        "xci_name": "design_1_synch_counter_0_0",
+        "xci_path": "ip\\design_1_synch_counter_0_0\\design_1_synch_counter_0_0.xci",
+        "inst_hier_path": "synch_counter_0",
+        "reference_info": {
+          "ref_type": "hdl",
+          "ref_name": "synch_counter",
+          "boundary_crc": "0x0"
+        },
+        "ports": {
+          "clk": {
+            "type": "clk",
+            "direction": "I"
+          },
+          "rst": {
+            "type": "rst",
+            "direction": "I"
+          },
+          "led_clk": {
+            "type": "clk",
+            "direction": "O"
+          }
+        }
+      }
+    },
+    "nets": {
+      "clk_1": {
+        "ports": [
+          "clk",
+          "synch_counter_0/clk"
+        ]
+      },
+      "counter_0_led": {
+        "ports": [
+          "counter_0/led",
+          "led"
+        ]
+      },
+      "rst_1": {
+        "ports": [
+          "rst",
+          "synch_counter_0/rst",
+          "counter_0/rst"
+        ]
+      },
+      "synch_counter_0_led_clk": {
+        "ports": [
+          "synch_counter_0/led_clk",
+          "counter_0/clk"
+        ]
+      }
+    }
+  }
+}

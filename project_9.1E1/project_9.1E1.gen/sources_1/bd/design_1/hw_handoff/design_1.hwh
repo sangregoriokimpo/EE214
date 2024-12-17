@@ -1,0 +1,324 @@
+﻿<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+<EDKSYSTEM EDWVERSION="1.2" TIMESTAMP="Tue Nov 26 22:16:36 2024" VIVADOVERSION="2024.1.1">
+
+  <SYSTEMINFO ARCH="zynq" DEVICE="7z007s" NAME="design_1" PACKAGE="clg400" SPEEDGRADE="-1"/>
+
+  <EXTERNALPORTS>
+    <PORT DIR="I" NAME="Cin" SIGIS="undef" SIGNAME="External_Ports_Cin">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="CLA_4bit_0" PORT="Cin"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="I" LEFT="7" NAME="bin" RIGHT="0" SIGIS="undef" SIGNAME="External_Ports_bin">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="xlslice_2" PORT="Din"/>
+        <CONNECTION INSTANCE="xlslice_3" PORT="Din"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="O" LEFT="7" NAME="cat" RIGHT="0" SIGIS="undef" SIGNAME="seg_decoder_0_out">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="seg_decoder_0" PORT="out"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="I" NAME="clk" SIGIS="undef" SIGNAME="External_Ports_clk">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="clkdiv_0" PORT="clk"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="I" NAME="rst" SIGIS="undef" SIGNAME="External_Ports_rst">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="clkdiv_0" PORT="rst"/>
+        <CONNECTION INSTANCE="seg_decoder_0" PORT="rst"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="O" LEFT="3" NAME="segan" RIGHT="0" SIGIS="undef" SIGNAME="encoder2_4_0_out">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="encoder2_4_0" PORT="out"/>
+      </CONNECTIONS>
+    </PORT>
+  </EXTERNALPORTS>
+
+  <EXTERNALINTERFACES/>
+
+  <MODULES>
+    <MODULE COREREVISION="1" FULLNAME="/CLA_4bit_0" HWVERSION="1.0" INSTANCE="CLA_4bit_0" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="CLA_4bit" VLNV="xilinx.com:module_ref:CLA_4bit:1.0">
+      <DOCUMENTS/>
+      <PARAMETERS>
+        <PARAMETER NAME="Component_Name" VALUE="design_1_CLA_4bit_0_0"/>
+        <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
+      </PARAMETERS>
+      <PORTS>
+        <PORT DIR="I" LEFT="3" NAME="A" RIGHT="0" SIGIS="undef" SIGNAME="xlslice_2_Dout">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="xlslice_2" PORT="Dout"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="3" NAME="B" RIGHT="0" SIGIS="undef" SIGNAME="xlslice_3_Dout">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="xlslice_3" PORT="Dout"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="Cin" SIGIS="undef" SIGNAME="External_Ports_Cin">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="Cin"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="Cout" SIGIS="undef" SIGNAME="CLA_4bit_0_Cout">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="concatmodule_0" PORT="Cout"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="3" NAME="S" RIGHT="0" SIGIS="undef" SIGNAME="CLA_4bit_0_S">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="concatmodule_0" PORT="S"/>
+          </CONNECTIONS>
+        </PORT>
+      </PORTS>
+      <BUSINTERFACES/>
+    </MODULE>
+    <MODULE COREREVISION="1" FULLNAME="/clkdiv_0" HWVERSION="1.0" INSTANCE="clkdiv_0" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="clkdiv" VLNV="xilinx.com:module_ref:clkdiv:1.0">
+      <DOCUMENTS/>
+      <PARAMETERS>
+        <PARAMETER NAME="Component_Name" VALUE="design_1_clkdiv_0_0"/>
+        <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
+      </PARAMETERS>
+      <PORTS>
+        <PORT CLKFREQUENCY="100000000" DIR="I" NAME="clk" SIGIS="clk" SIGNAME="External_Ports_clk">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="clk"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="clk_div" SIGIS="undef" SIGNAME="clkdiv_0_clk_div">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="counter_0" PORT="clk"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="rst" POLARITY="ACTIVE_LOW" SIGIS="rst" SIGNAME="External_Ports_rst">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="rst"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="15" NAME="terminalcount" RIGHT="0" SIGIS="undef" SIGNAME="xlconstant_0_dout">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="xlconstant_0" PORT="dout"/>
+          </CONNECTIONS>
+        </PORT>
+      </PORTS>
+      <BUSINTERFACES/>
+    </MODULE>
+    <MODULE COREREVISION="1" FULLNAME="/concatmodule_0" HWVERSION="1.0" INSTANCE="concatmodule_0" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="concatmodule" VLNV="xilinx.com:module_ref:concatmodule:1.0">
+      <DOCUMENTS/>
+      <PARAMETERS>
+        <PARAMETER NAME="Component_Name" VALUE="design_1_concatmodule_0_1"/>
+        <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
+      </PARAMETERS>
+      <PORTS>
+        <PORT DIR="I" NAME="Cout" SIGIS="undef" SIGNAME="CLA_4bit_0_Cout">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="CLA_4bit_0" PORT="Cout"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="3" NAME="S" RIGHT="0" SIGIS="undef" SIGNAME="CLA_4bit_0_S">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="CLA_4bit_0" PORT="S"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="4" NAME="out" RIGHT="0" SIGIS="undef" SIGNAME="concatmodule_0_out">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="split_digit_0" PORT="full_result"/>
+          </CONNECTIONS>
+        </PORT>
+      </PORTS>
+      <BUSINTERFACES/>
+    </MODULE>
+    <MODULE COREREVISION="1" FULLNAME="/counter_0" HWVERSION="1.0" INSTANCE="counter_0" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="counter" VLNV="xilinx.com:module_ref:counter:1.0">
+      <DOCUMENTS/>
+      <PARAMETERS>
+        <PARAMETER NAME="Component_Name" VALUE="design_1_counter_0_0"/>
+        <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
+      </PARAMETERS>
+      <PORTS>
+        <PORT CLKFREQUENCY="100000000" DIR="I" NAME="clk" SIGIS="clk" SIGNAME="clkdiv_0_clk_div">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="clkdiv_0" PORT="clk_div"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="1" NAME="out" RIGHT="0" SIGIS="undef" SIGNAME="counter_0_out">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="encoder2_4_0" PORT="in"/>
+            <CONNECTION INSTANCE="mux4_1_0" PORT="sel"/>
+          </CONNECTIONS>
+        </PORT>
+      </PORTS>
+      <BUSINTERFACES/>
+    </MODULE>
+    <MODULE COREREVISION="1" FULLNAME="/encoder2_4_0" HWVERSION="1.0" INSTANCE="encoder2_4_0" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="encoder2_4" VLNV="xilinx.com:module_ref:encoder2_4:1.0">
+      <DOCUMENTS/>
+      <PARAMETERS>
+        <PARAMETER NAME="Component_Name" VALUE="design_1_encoder2_4_0_0"/>
+        <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
+      </PARAMETERS>
+      <PORTS>
+        <PORT DIR="I" LEFT="1" NAME="in" RIGHT="0" SIGIS="undef" SIGNAME="counter_0_out">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="counter_0" PORT="out"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="3" NAME="out" RIGHT="0" SIGIS="undef" SIGNAME="encoder2_4_0_out">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="segan"/>
+          </CONNECTIONS>
+        </PORT>
+      </PORTS>
+      <BUSINTERFACES/>
+    </MODULE>
+    <MODULE COREREVISION="1" FULLNAME="/mux4_1_0" HWVERSION="1.0" INSTANCE="mux4_1_0" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="mux4_1" VLNV="xilinx.com:module_ref:mux4_1:1.0">
+      <DOCUMENTS/>
+      <PARAMETERS>
+        <PARAMETER NAME="Component_Name" VALUE="design_1_mux4_1_0_0"/>
+        <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
+      </PARAMETERS>
+      <PORTS>
+        <PORT DIR="I" LEFT="3" NAME="I0" RIGHT="0" SIGIS="undef" SIGNAME="split_digit_0_right_digit">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="split_digit_0" PORT="right_digit"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="3" NAME="I1" RIGHT="0" SIGIS="undef" SIGNAME="split_digit_0_left_digit">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="split_digit_0" PORT="left_digit"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="3" NAME="I2" RIGHT="0" SIGIS="undef"/>
+        <PORT DIR="I" LEFT="3" NAME="I3" RIGHT="0" SIGIS="undef"/>
+        <PORT DIR="O" LEFT="3" NAME="Y" RIGHT="0" SIGIS="undef" SIGNAME="mux4_1_0_Y">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="seg_decoder_0" PORT="in"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="1" NAME="sel" RIGHT="0" SIGIS="undef" SIGNAME="counter_0_out">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="counter_0" PORT="out"/>
+          </CONNECTIONS>
+        </PORT>
+      </PORTS>
+      <BUSINTERFACES/>
+    </MODULE>
+    <MODULE COREREVISION="1" FULLNAME="/seg_decoder_0" HWVERSION="1.0" INSTANCE="seg_decoder_0" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="seg_decoder" VLNV="xilinx.com:module_ref:seg_decoder:1.0">
+      <DOCUMENTS/>
+      <PARAMETERS>
+        <PARAMETER NAME="Component_Name" VALUE="design_1_seg_decoder_0_0"/>
+        <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
+      </PARAMETERS>
+      <PORTS>
+        <PORT DIR="I" LEFT="3" NAME="in" RIGHT="0" SIGIS="undef" SIGNAME="mux4_1_0_Y">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="mux4_1_0" PORT="Y"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="7" NAME="out" RIGHT="0" SIGIS="undef" SIGNAME="seg_decoder_0_out">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="cat"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="rst" POLARITY="ACTIVE_LOW" SIGIS="rst" SIGNAME="External_Ports_rst">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="rst"/>
+          </CONNECTIONS>
+        </PORT>
+      </PORTS>
+      <BUSINTERFACES/>
+    </MODULE>
+    <MODULE COREREVISION="1" FULLNAME="/split_digit_0" HWVERSION="1.0" INSTANCE="split_digit_0" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="split_digit" VLNV="xilinx.com:module_ref:split_digit:1.0">
+      <DOCUMENTS/>
+      <PARAMETERS>
+        <PARAMETER NAME="Component_Name" VALUE="design_1_split_digit_0_0"/>
+        <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
+      </PARAMETERS>
+      <PORTS>
+        <PORT DIR="I" LEFT="4" NAME="full_result" RIGHT="0" SIGIS="undef" SIGNAME="concatmodule_0_out">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="concatmodule_0" PORT="out"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="3" NAME="left_digit" RIGHT="0" SIGIS="undef" SIGNAME="split_digit_0_left_digit">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="mux4_1_0" PORT="I1"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="3" NAME="right_digit" RIGHT="0" SIGIS="undef" SIGNAME="split_digit_0_right_digit">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="mux4_1_0" PORT="I0"/>
+          </CONNECTIONS>
+        </PORT>
+      </PORTS>
+      <BUSINTERFACES/>
+    </MODULE>
+    <MODULE COREREVISION="9" FULLNAME="/xlconstant_0" HWVERSION="1.1" INSTANCE="xlconstant_0" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="xlconstant" VLNV="xilinx.com:ip:xlconstant:1.1">
+      <DOCUMENTS/>
+      <PARAMETERS>
+        <PARAMETER NAME="CONST_VAL" VALUE="0x4E1F"/>
+        <PARAMETER NAME="CONST_WIDTH" VALUE="16"/>
+        <PARAMETER NAME="Component_Name" VALUE="design_1_xlconstant_0_0"/>
+        <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
+      </PARAMETERS>
+      <PORTS>
+        <PORT DIR="O" LEFT="15" NAME="dout" RIGHT="0" SIGIS="undef" SIGNAME="xlconstant_0_dout">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="clkdiv_0" PORT="terminalcount"/>
+          </CONNECTIONS>
+        </PORT>
+      </PORTS>
+      <BUSINTERFACES/>
+    </MODULE>
+    <MODULE COREREVISION="4" FULLNAME="/xlslice_2" HWVERSION="1.0" INSTANCE="xlslice_2" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="xlslice" VLNV="xilinx.com:ip:xlslice:1.0">
+      <DOCUMENTS/>
+      <PARAMETERS>
+        <PARAMETER NAME="DIN_FROM" VALUE="3"/>
+        <PARAMETER NAME="DIN_TO" VALUE="0"/>
+        <PARAMETER NAME="DIN_WIDTH" VALUE="8"/>
+        <PARAMETER NAME="Component_Name" VALUE="design_1_xlslice_2_0"/>
+        <PARAMETER NAME="DOUT_WIDTH" VALUE="4"/>
+        <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
+      </PARAMETERS>
+      <PORTS>
+        <PORT DIR="I" LEFT="7" NAME="Din" RIGHT="0" SIGIS="undef" SIGNAME="External_Ports_bin">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="bin"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="3" NAME="Dout" RIGHT="0" SIGIS="undef" SIGNAME="xlslice_2_Dout">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="CLA_4bit_0" PORT="A"/>
+          </CONNECTIONS>
+        </PORT>
+      </PORTS>
+      <BUSINTERFACES/>
+    </MODULE>
+    <MODULE COREREVISION="4" FULLNAME="/xlslice_3" HWVERSION="1.0" INSTANCE="xlslice_3" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="xlslice" VLNV="xilinx.com:ip:xlslice:1.0">
+      <DOCUMENTS/>
+      <PARAMETERS>
+        <PARAMETER NAME="DIN_FROM" VALUE="7"/>
+        <PARAMETER NAME="DIN_TO" VALUE="4"/>
+        <PARAMETER NAME="DIN_WIDTH" VALUE="8"/>
+        <PARAMETER NAME="Component_Name" VALUE="design_1_xlslice_3_0"/>
+        <PARAMETER NAME="DOUT_WIDTH" VALUE="4"/>
+        <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
+      </PARAMETERS>
+      <PORTS>
+        <PORT DIR="I" LEFT="7" NAME="Din" RIGHT="0" SIGIS="undef" SIGNAME="External_Ports_bin">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="bin"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="3" NAME="Dout" RIGHT="0" SIGIS="undef" SIGNAME="xlslice_3_Dout">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="CLA_4bit_0" PORT="B"/>
+          </CONNECTIONS>
+        </PORT>
+      </PORTS>
+      <BUSINTERFACES/>
+    </MODULE>
+  </MODULES>
+
+</EDKSYSTEM>

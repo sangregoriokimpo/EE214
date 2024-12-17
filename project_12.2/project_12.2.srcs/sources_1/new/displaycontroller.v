@@ -1,0 +1,98 @@
+`timescale 1ns / 1ps
+//////////////////////////////////////////////////////////////////////////////////
+// Company: 
+// Engineer: 
+// 
+// Create Date: 12/03/2024 08:50:13 PM
+// Design Name: 
+// Module Name: displaycontroller
+// Project Name: 
+// Target Devices: 
+// Tool Versions: 
+// Description: 
+// 
+// Dependencies: 
+// 
+// Revision:
+// Revision 0.01 - File Created
+// Additional Comments:
+// 
+//////////////////////////////////////////////////////////////////////////////////
+
+
+
+(* CORE_GENERATION_INFO = "displaycontroller,IP_Integrator,{x_ipVendor=xilinx.com,x_ipLibrary=BlockDiagram,x_ipName=displaycontroller,x_ipVersion=1.00.a,x_ipLanguage=VERILOG,numBlks=11,numReposBlks=11,numNonXlnxBlks=0,numHierBlks=0,maxHierDepth=0,numSysgenBlks=0,numHlsBlks=0,numHdlrefBlks=6,numPkgbdBlks=0,bdsource=USER,synth_mode=Hierarchical}" *) (* HW_HANDOFF = "displaycontroller.hwdef" *) 
+module displaycontroller
+   (I,
+    clk,
+    rst,
+    seg_an,
+    seg_cat);
+  input [13:0]I;
+  input clk;
+  input rst;
+  output [3:0]seg_an;
+  output [7:0]seg_cat;
+
+  wire [13:0]I_1;
+  wire [15:0]bin2bcd_0_bcd;
+  wire clk_1;
+  wire clock_divider_0_clk_div;
+  wire [1:0]counter_0_Y;
+  wire [3:0]decoder_0_Y;
+  wire [7:0]display_decoder_0_out;
+  wire [3:0]mux_0_Y;
+  wire rst_1;
+  wire [16:0]xlconstant_0_dout;
+  wire [3:0]xlslice_0_Dout;
+  wire [3:0]xlslice_1_Dout;
+  wire [3:0]xlslice_2_Dout;
+  wire [3:0]xlslice_3_Dout;
+
+  assign I_1 = I[13:0];
+  assign clk_1 = clk;
+  assign rst_1 = rst;
+  assign seg_an[3:0] = decoder_0_Y;
+  assign seg_cat[7:0] = display_decoder_0_out;
+  displaycontroller_bin2bcd_0_0 bin2bcd_0
+       (.bcd(bin2bcd_0_bcd),
+        .bin(I_1));
+  displaycontroller_clock_divider_0_0 clock_divider_0
+       (.clk(clk_1),
+        .clk_div(clock_divider_0_clk_div),
+        .rst(rst_1),
+        .terminalcount(xlconstant_0_dout));
+  displaycontroller_counter_0_0 counter_0
+       (.Y(counter_0_Y),
+        .clk(clock_divider_0_clk_div));
+  displaycontroller_decoder_0_0 decoder_0
+       (.I(counter_0_Y),
+        .Y(decoder_0_Y),
+        .rst(rst_1));
+  displaycontroller_display_decoder_0_0 display_decoder_0
+       (.in(mux_0_Y),
+        .out(display_decoder_0_out),
+        .rst(rst_1));
+  displaycontroller_mux_0_0 mux_0
+       (.I0(xlslice_0_Dout),
+        .I1(xlslice_1_Dout),
+        .I2(xlslice_2_Dout),
+        .I3(xlslice_3_Dout),
+        .S(counter_0_Y),
+        .Y(mux_0_Y));
+  displaycontroller_xlconstant_0_0 xlconstant_0
+       (.dout(xlconstant_0_dout));
+  displaycontroller_xlslice_0_0 xlslice_0
+       (.Din(bin2bcd_0_bcd),
+        .Dout(xlslice_0_Dout));
+  displaycontroller_xlslice_0_1 xlslice_1
+       (.Din(bin2bcd_0_bcd),
+        .Dout(xlslice_1_Dout));
+  displaycontroller_xlslice_0_2 xlslice_2
+       (.Din(bin2bcd_0_bcd),
+        .Dout(xlslice_2_Dout));
+  displaycontroller_xlslice_0_3 xlslice_3
+       (.Din(bin2bcd_0_bcd),
+        .Dout(xlslice_3_Dout));
+endmodule
+

@@ -1,0 +1,411 @@
+{
+  "design": {
+    "design_info": {
+      "boundary_crc": "0x40859E843D2C5941",
+      "device": "xc7z007sclg400-1",
+      "gen_directory": "../../../../project_11.2.gen/sources_1/bd/displaycontroller",
+      "name": "displaycontroller",
+      "rev_ctrl_bd_flag": "RevCtrlBdOff",
+      "synth_flow_mode": "Hierarchical",
+      "tool_version": "2024.1.1",
+      "validated": "true"
+    },
+    "design_tree": {
+      "bin2bcd_0": "",
+      "clock_divider_0": "",
+      "counter_0": "",
+      "mux_0": "",
+      "display_decoder_0": "",
+      "xlslice_0": "",
+      "xlslice_1": "",
+      "xlslice_2": "",
+      "xlslice_3": "",
+      "xlconstant_0": "",
+      "decoder_0": ""
+    },
+    "ports": {
+      "clk": {
+        "direction": "I"
+      },
+      "rst": {
+        "direction": "I"
+      },
+      "seg_cat": {
+        "direction": "O",
+        "left": "7",
+        "right": "0"
+      },
+      "seg_an": {
+        "direction": "O",
+        "left": "3",
+        "right": "0"
+      },
+      "I": {
+        "direction": "I",
+        "left": "13",
+        "right": "0"
+      }
+    },
+    "components": {
+      "bin2bcd_0": {
+        "vlnv": "xilinx.com:module_ref:bin2bcd:1.0",
+        "ip_revision": "1",
+        "xci_name": "displaycontroller_bin2bcd_0_0",
+        "xci_path": "ip\\displaycontroller_bin2bcd_0_0\\displaycontroller_bin2bcd_0_0.xci",
+        "inst_hier_path": "bin2bcd_0",
+        "reference_info": {
+          "ref_type": "hdl",
+          "ref_name": "bin2bcd",
+          "boundary_crc": "0x0"
+        },
+        "ports": {
+          "bin": {
+            "direction": "I",
+            "left": "13",
+            "right": "0"
+          },
+          "bcd": {
+            "direction": "O",
+            "left": "15",
+            "right": "0"
+          }
+        }
+      },
+      "clock_divider_0": {
+        "vlnv": "xilinx.com:module_ref:clock_divider:1.0",
+        "ip_revision": "1",
+        "xci_name": "displaycontroller_clock_divider_0_0",
+        "xci_path": "ip\\displaycontroller_clock_divider_0_0\\displaycontroller_clock_divider_0_0.xci",
+        "inst_hier_path": "clock_divider_0",
+        "reference_info": {
+          "ref_type": "hdl",
+          "ref_name": "clock_divider",
+          "boundary_crc": "0x0"
+        },
+        "ports": {
+          "clk": {
+            "type": "clk",
+            "direction": "I",
+            "parameters": {
+              "ASSOCIATED_RESET": {
+                "value": "rst",
+                "value_src": "constant"
+              }
+            }
+          },
+          "rst": {
+            "type": "rst",
+            "direction": "I"
+          },
+          "terminalcount": {
+            "direction": "I",
+            "left": "16",
+            "right": "0"
+          },
+          "clk_div": {
+            "direction": "O"
+          }
+        }
+      },
+      "counter_0": {
+        "vlnv": "xilinx.com:module_ref:counter:1.0",
+        "ip_revision": "1",
+        "xci_name": "displaycontroller_counter_0_0",
+        "xci_path": "ip\\displaycontroller_counter_0_0\\displaycontroller_counter_0_0.xci",
+        "inst_hier_path": "counter_0",
+        "reference_info": {
+          "ref_type": "hdl",
+          "ref_name": "counter",
+          "boundary_crc": "0x0"
+        },
+        "ports": {
+          "clk": {
+            "type": "clk",
+            "direction": "I"
+          },
+          "Y": {
+            "direction": "O",
+            "left": "1",
+            "right": "0"
+          }
+        }
+      },
+      "mux_0": {
+        "vlnv": "xilinx.com:module_ref:mux:1.0",
+        "ip_revision": "1",
+        "xci_name": "displaycontroller_mux_0_0",
+        "xci_path": "ip\\displaycontroller_mux_0_0\\displaycontroller_mux_0_0.xci",
+        "inst_hier_path": "mux_0",
+        "reference_info": {
+          "ref_type": "hdl",
+          "ref_name": "mux",
+          "boundary_crc": "0x0"
+        },
+        "ports": {
+          "I0": {
+            "direction": "I",
+            "left": "3",
+            "right": "0"
+          },
+          "I1": {
+            "direction": "I",
+            "left": "3",
+            "right": "0"
+          },
+          "I2": {
+            "direction": "I",
+            "left": "3",
+            "right": "0"
+          },
+          "I3": {
+            "direction": "I",
+            "left": "3",
+            "right": "0"
+          },
+          "S": {
+            "direction": "I",
+            "left": "1",
+            "right": "0"
+          },
+          "Y": {
+            "direction": "O",
+            "left": "3",
+            "right": "0"
+          }
+        }
+      },
+      "display_decoder_0": {
+        "vlnv": "xilinx.com:module_ref:display_decoder:1.0",
+        "ip_revision": "1",
+        "xci_name": "displaycontroller_display_decoder_0_0",
+        "xci_path": "ip\\displaycontroller_display_decoder_0_0\\displaycontroller_display_decoder_0_0.xci",
+        "inst_hier_path": "display_decoder_0",
+        "reference_info": {
+          "ref_type": "hdl",
+          "ref_name": "display_decoder",
+          "boundary_crc": "0x0"
+        },
+        "ports": {
+          "in": {
+            "direction": "I",
+            "left": "3",
+            "right": "0"
+          },
+          "rst": {
+            "type": "rst",
+            "direction": "I"
+          },
+          "out": {
+            "direction": "O",
+            "left": "7",
+            "right": "0"
+          }
+        }
+      },
+      "xlslice_0": {
+        "vlnv": "xilinx.com:ip:xlslice:1.0",
+        "ip_revision": "4",
+        "xci_name": "displaycontroller_xlslice_0_0",
+        "xci_path": "ip\\displaycontroller_xlslice_0_0\\displaycontroller_xlslice_0_0.xci",
+        "inst_hier_path": "xlslice_0",
+        "parameters": {
+          "DIN_FROM": {
+            "value": "3"
+          },
+          "DIN_WIDTH": {
+            "value": "16"
+          }
+        }
+      },
+      "xlslice_1": {
+        "vlnv": "xilinx.com:ip:xlslice:1.0",
+        "ip_revision": "4",
+        "xci_name": "displaycontroller_xlslice_0_1",
+        "xci_path": "ip\\displaycontroller_xlslice_0_1\\displaycontroller_xlslice_0_1.xci",
+        "inst_hier_path": "xlslice_1",
+        "parameters": {
+          "DIN_FROM": {
+            "value": "7"
+          },
+          "DIN_TO": {
+            "value": "4"
+          },
+          "DIN_WIDTH": {
+            "value": "16"
+          }
+        }
+      },
+      "xlslice_2": {
+        "vlnv": "xilinx.com:ip:xlslice:1.0",
+        "ip_revision": "4",
+        "xci_name": "displaycontroller_xlslice_0_2",
+        "xci_path": "ip\\displaycontroller_xlslice_0_2\\displaycontroller_xlslice_0_2.xci",
+        "inst_hier_path": "xlslice_2",
+        "parameters": {
+          "DIN_FROM": {
+            "value": "11"
+          },
+          "DIN_TO": {
+            "value": "8"
+          },
+          "DIN_WIDTH": {
+            "value": "16"
+          }
+        }
+      },
+      "xlslice_3": {
+        "vlnv": "xilinx.com:ip:xlslice:1.0",
+        "ip_revision": "4",
+        "xci_name": "displaycontroller_xlslice_0_3",
+        "xci_path": "ip\\displaycontroller_xlslice_0_3\\displaycontroller_xlslice_0_3.xci",
+        "inst_hier_path": "xlslice_3",
+        "parameters": {
+          "DIN_FROM": {
+            "value": "15"
+          },
+          "DIN_TO": {
+            "value": "12"
+          },
+          "DIN_WIDTH": {
+            "value": "16"
+          }
+        }
+      },
+      "xlconstant_0": {
+        "vlnv": "xilinx.com:ip:xlconstant:1.1",
+        "ip_revision": "9",
+        "xci_name": "displaycontroller_xlconstant_0_0",
+        "xci_path": "ip\\displaycontroller_xlconstant_0_0\\displaycontroller_xlconstant_0_0.xci",
+        "inst_hier_path": "xlconstant_0",
+        "parameters": {
+          "CONST_VAL": {
+            "value": "49999"
+          },
+          "CONST_WIDTH": {
+            "value": "17"
+          }
+        }
+      },
+      "decoder_0": {
+        "vlnv": "xilinx.com:module_ref:decoder:1.0",
+        "ip_revision": "1",
+        "xci_name": "displaycontroller_decoder_0_0",
+        "xci_path": "ip\\displaycontroller_decoder_0_0\\displaycontroller_decoder_0_0.xci",
+        "inst_hier_path": "decoder_0",
+        "reference_info": {
+          "ref_type": "hdl",
+          "ref_name": "decoder",
+          "boundary_crc": "0x0"
+        },
+        "ports": {
+          "I": {
+            "direction": "I",
+            "left": "1",
+            "right": "0"
+          },
+          "rst": {
+            "type": "rst",
+            "direction": "I"
+          },
+          "Y": {
+            "direction": "O",
+            "left": "3",
+            "right": "0"
+          }
+        }
+      }
+    },
+    "nets": {
+      "I_1": {
+        "ports": [
+          "I",
+          "bin2bcd_0/bin"
+        ]
+      },
+      "bin2bcd_0_bcd": {
+        "ports": [
+          "bin2bcd_0/bcd",
+          "xlslice_0/Din",
+          "xlslice_1/Din",
+          "xlslice_2/Din",
+          "xlslice_3/Din"
+        ]
+      },
+      "clk_1": {
+        "ports": [
+          "clk",
+          "clock_divider_0/clk"
+        ]
+      },
+      "clock_divider_0_clk_div": {
+        "ports": [
+          "clock_divider_0/clk_div",
+          "counter_0/clk"
+        ]
+      },
+      "counter_0_Y": {
+        "ports": [
+          "counter_0/Y",
+          "mux_0/S",
+          "decoder_0/I"
+        ]
+      },
+      "decoder_0_Y": {
+        "ports": [
+          "decoder_0/Y",
+          "seg_an"
+        ]
+      },
+      "display_decoder_0_out": {
+        "ports": [
+          "display_decoder_0/out",
+          "seg_cat"
+        ]
+      },
+      "mux_0_Y": {
+        "ports": [
+          "mux_0/Y",
+          "display_decoder_0/in"
+        ]
+      },
+      "rst_1": {
+        "ports": [
+          "rst",
+          "clock_divider_0/rst",
+          "display_decoder_0/rst",
+          "decoder_0/rst"
+        ]
+      },
+      "xlconstant_0_dout": {
+        "ports": [
+          "xlconstant_0/dout",
+          "clock_divider_0/terminalcount"
+        ]
+      },
+      "xlslice_0_Dout": {
+        "ports": [
+          "xlslice_0/Dout",
+          "mux_0/I0"
+        ]
+      },
+      "xlslice_1_Dout": {
+        "ports": [
+          "xlslice_1/Dout",
+          "mux_0/I1"
+        ]
+      },
+      "xlslice_2_Dout": {
+        "ports": [
+          "xlslice_2/Dout",
+          "mux_0/I2"
+        ]
+      },
+      "xlslice_3_Dout": {
+        "ports": [
+          "xlslice_3/Dout",
+          "mux_0/I3"
+        ]
+      }
+    }
+  }
+}

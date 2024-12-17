@@ -1,0 +1,186 @@
+﻿<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+<EDKSYSTEM EDWVERSION="1.2" TIMESTAMP="Fri Nov 15 22:01:04 2024" VIVADOVERSION="2024.1.1">
+
+  <SYSTEMINFO ARCH="zynq" DEVICE="7z007s" NAME="design_1" PACKAGE="clg400" SPEEDGRADE="-1"/>
+
+  <EXTERNALPORTS>
+    <PORT DIR="O" NAME="CA" SIGIS="undef" SIGNAME="decoder_0_CA">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="decoder_0" PORT="CA"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="O" NAME="CB" SIGIS="undef" SIGNAME="decoder_0_CB">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="decoder_0" PORT="CB"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="O" NAME="CC" SIGIS="undef" SIGNAME="decoder_0_CC">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="decoder_0" PORT="CC"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="O" NAME="CD" SIGIS="undef" SIGNAME="decoder_0_CD">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="decoder_0" PORT="CD"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="O" NAME="CE" SIGIS="undef" SIGNAME="decoder_0_CE">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="decoder_0" PORT="CE"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="O" NAME="CF" SIGIS="undef" SIGNAME="decoder_0_CF">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="decoder_0" PORT="CF"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="O" NAME="CG" SIGIS="undef" SIGNAME="decoder_0_CG">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="decoder_0" PORT="CG"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="I" NAME="clk" SIGIS="undef" SIGNAME="External_Ports_clk">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="clock_divider_1" PORT="clk"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="I" NAME="rst" SIGIS="undef" SIGNAME="External_Ports_rst">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="clock_divider_1" PORT="rst"/>
+        <CONNECTION INSTANCE="clock_divider_0" PORT="rst"/>
+        <CONNECTION INSTANCE="BCD_0" PORT="rst"/>
+      </CONNECTIONS>
+    </PORT>
+  </EXTERNALPORTS>
+
+  <EXTERNALINTERFACES/>
+
+  <MODULES>
+    <MODULE COREREVISION="1" FULLNAME="/BCD_0" HWVERSION="1.0" INSTANCE="BCD_0" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="BCD" VLNV="xilinx.com:module_ref:BCD:1.0">
+      <DOCUMENTS/>
+      <PARAMETERS>
+        <PARAMETER NAME="Component_Name" VALUE="design_1_BCD_0_0"/>
+        <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
+      </PARAMETERS>
+      <PORTS>
+        <PORT DIR="O" LEFT="3" NAME="Y" RIGHT="0" SIGIS="undef" SIGNAME="BCD_0_Y">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="decoder_0" PORT="B"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT CLKFREQUENCY="100000000" DIR="I" NAME="clk" SIGIS="clk" SIGNAME="clock_divider_0_clk_div">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="clock_divider_0" PORT="clk_div"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="rst" POLARITY="ACTIVE_LOW" SIGIS="rst" SIGNAME="External_Ports_rst">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="rst"/>
+          </CONNECTIONS>
+        </PORT>
+      </PORTS>
+      <BUSINTERFACES/>
+    </MODULE>
+    <MODULE COREREVISION="1" FULLNAME="/clock_divider_0" HWVERSION="1.0" INSTANCE="clock_divider_0" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="clock_divider" VLNV="xilinx.com:module_ref:clock_divider:1.0">
+      <DOCUMENTS/>
+      <PARAMETERS>
+        <PARAMETER NAME="Component_Name" VALUE="design_1_clock_divider_0_0"/>
+        <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
+      </PARAMETERS>
+      <PORTS>
+        <PORT CLKFREQUENCY="100000000" DIR="I" NAME="clk" SIGIS="clk" SIGNAME="clock_divider_1_clk_div">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="clock_divider_1" PORT="clk_div"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="clk_div" SIGIS="undef" SIGNAME="clock_divider_0_clk_div">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="BCD_0" PORT="clk"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="rst" POLARITY="ACTIVE_LOW" SIGIS="rst" SIGNAME="External_Ports_rst">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="rst"/>
+          </CONNECTIONS>
+        </PORT>
+      </PORTS>
+      <BUSINTERFACES/>
+    </MODULE>
+    <MODULE COREREVISION="1" FULLNAME="/clock_divider_1" HWVERSION="1.0" INSTANCE="clock_divider_1" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="clock_divider" VLNV="xilinx.com:module_ref:clock_divider:1.0">
+      <DOCUMENTS/>
+      <PARAMETERS>
+        <PARAMETER NAME="Component_Name" VALUE="design_1_clock_divider_1_0"/>
+        <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
+      </PARAMETERS>
+      <PORTS>
+        <PORT CLKFREQUENCY="100000000" DIR="I" NAME="clk" SIGIS="clk" SIGNAME="External_Ports_clk">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="clk"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="clk_div" SIGIS="undef" SIGNAME="clock_divider_1_clk_div">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="clock_divider_0" PORT="clk"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="rst" POLARITY="ACTIVE_LOW" SIGIS="rst" SIGNAME="External_Ports_rst">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="rst"/>
+          </CONNECTIONS>
+        </PORT>
+      </PORTS>
+      <BUSINTERFACES/>
+    </MODULE>
+    <MODULE COREREVISION="1" FULLNAME="/decoder_0" HWVERSION="1.0" INSTANCE="decoder_0" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="decoder" VLNV="xilinx.com:module_ref:decoder:1.0">
+      <DOCUMENTS/>
+      <PARAMETERS>
+        <PARAMETER NAME="Component_Name" VALUE="design_1_decoder_0_0"/>
+        <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
+      </PARAMETERS>
+      <PORTS>
+        <PORT DIR="I" LEFT="3" NAME="B" RIGHT="0" SIGIS="undef" SIGNAME="BCD_0_Y">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="BCD_0" PORT="Y"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="CA" SIGIS="undef" SIGNAME="decoder_0_CA">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="CA"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="CB" SIGIS="undef" SIGNAME="decoder_0_CB">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="CB"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="CC" SIGIS="undef" SIGNAME="decoder_0_CC">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="CC"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="CD" SIGIS="undef" SIGNAME="decoder_0_CD">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="CD"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="CE" SIGIS="undef" SIGNAME="decoder_0_CE">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="CE"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="CF" SIGIS="undef" SIGNAME="decoder_0_CF">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="CF"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="CG" SIGIS="undef" SIGNAME="decoder_0_CG">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="CG"/>
+          </CONNECTIONS>
+        </PORT>
+      </PORTS>
+      <BUSINTERFACES/>
+    </MODULE>
+  </MODULES>
+
+</EDKSYSTEM>

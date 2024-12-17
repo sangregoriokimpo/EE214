@@ -1,0 +1,358 @@
+{
+  "design": {
+    "design_info": {
+      "boundary_crc": "0x3BB45A13DC49B26",
+      "device": "xc7z007sclg400-1",
+      "gen_directory": "../../../../project_11.2.gen/sources_1/bd/counter",
+      "name": "counter",
+      "rev_ctrl_bd_flag": "RevCtrlBdOff",
+      "synth_flow_mode": "Hierarchical",
+      "tool_version": "2024.1.1",
+      "validated": "true"
+    },
+    "design_tree": {
+      "counterA1_0": "",
+      "counterA1_1": "",
+      "counterA1_2": "",
+      "counterA1_3": "",
+      "and2_gate_0": "",
+      "and3_gate_0": "",
+      "and4_gate_0": ""
+    },
+    "ports": {
+      "clk": {
+        "direction": "I"
+      },
+      "rst": {
+        "direction": "I"
+      },
+      "Y0": {
+        "direction": "O",
+        "left": "3",
+        "right": "0"
+      },
+      "Y1": {
+        "direction": "O",
+        "left": "3",
+        "right": "0"
+      },
+      "Y2": {
+        "direction": "O",
+        "left": "3",
+        "right": "0"
+      },
+      "Y3": {
+        "direction": "O",
+        "left": "3",
+        "right": "0"
+      }
+    },
+    "components": {
+      "counterA1_0": {
+        "vlnv": "xilinx.com:module_ref:counterA1:1.0",
+        "ip_revision": "1",
+        "xci_name": "counter_counterA1_0_0",
+        "xci_path": "ip\\counter_counterA1_0_0\\counter_counterA1_0_0.xci",
+        "inst_hier_path": "counterA1_0",
+        "reference_info": {
+          "ref_type": "hdl",
+          "ref_name": "counterA1",
+          "boundary_crc": "0x0"
+        },
+        "ports": {
+          "clk": {
+            "type": "clk",
+            "direction": "I",
+            "parameters": {
+              "ASSOCIATED_RESET": {
+                "value": "rst",
+                "value_src": "constant"
+              }
+            }
+          },
+          "rst": {
+            "type": "rst",
+            "direction": "I"
+          },
+          "Y": {
+            "direction": "O",
+            "left": "3",
+            "right": "0"
+          },
+          "TC": {
+            "direction": "O"
+          }
+        }
+      },
+      "counterA1_1": {
+        "vlnv": "xilinx.com:module_ref:counterA1:1.0",
+        "ip_revision": "1",
+        "xci_name": "counter_counterA1_1_0",
+        "xci_path": "ip\\counter_counterA1_1_0\\counter_counterA1_1_0.xci",
+        "inst_hier_path": "counterA1_1",
+        "reference_info": {
+          "ref_type": "hdl",
+          "ref_name": "counterA1",
+          "boundary_crc": "0x0"
+        },
+        "ports": {
+          "clk": {
+            "type": "clk",
+            "direction": "I",
+            "parameters": {
+              "ASSOCIATED_RESET": {
+                "value": "rst",
+                "value_src": "constant"
+              }
+            }
+          },
+          "rst": {
+            "type": "rst",
+            "direction": "I"
+          },
+          "Y": {
+            "direction": "O",
+            "left": "3",
+            "right": "0"
+          },
+          "TC": {
+            "direction": "O"
+          }
+        }
+      },
+      "counterA1_2": {
+        "vlnv": "xilinx.com:module_ref:counterA1:1.0",
+        "ip_revision": "1",
+        "xci_name": "counter_counterA1_2_0",
+        "xci_path": "ip\\counter_counterA1_2_0\\counter_counterA1_2_0.xci",
+        "inst_hier_path": "counterA1_2",
+        "reference_info": {
+          "ref_type": "hdl",
+          "ref_name": "counterA1",
+          "boundary_crc": "0x0"
+        },
+        "ports": {
+          "clk": {
+            "type": "clk",
+            "direction": "I",
+            "parameters": {
+              "ASSOCIATED_RESET": {
+                "value": "rst",
+                "value_src": "constant"
+              }
+            }
+          },
+          "rst": {
+            "type": "rst",
+            "direction": "I"
+          },
+          "Y": {
+            "direction": "O",
+            "left": "3",
+            "right": "0"
+          },
+          "TC": {
+            "direction": "O"
+          }
+        }
+      },
+      "counterA1_3": {
+        "vlnv": "xilinx.com:module_ref:counterA1:1.0",
+        "ip_revision": "1",
+        "xci_name": "counter_counterA1_3_0",
+        "xci_path": "ip\\counter_counterA1_3_0\\counter_counterA1_3_0.xci",
+        "inst_hier_path": "counterA1_3",
+        "reference_info": {
+          "ref_type": "hdl",
+          "ref_name": "counterA1",
+          "boundary_crc": "0x0"
+        },
+        "ports": {
+          "clk": {
+            "type": "clk",
+            "direction": "I",
+            "parameters": {
+              "ASSOCIATED_RESET": {
+                "value": "rst",
+                "value_src": "constant"
+              }
+            }
+          },
+          "rst": {
+            "type": "rst",
+            "direction": "I"
+          },
+          "Y": {
+            "direction": "O",
+            "left": "3",
+            "right": "0"
+          },
+          "TC": {
+            "direction": "O"
+          }
+        }
+      },
+      "and2_gate_0": {
+        "vlnv": "xilinx.com:module_ref:and2_gate:1.0",
+        "ip_revision": "1",
+        "xci_name": "counter_and2_gate_0_0",
+        "xci_path": "ip\\counter_and2_gate_0_0\\counter_and2_gate_0_0.xci",
+        "inst_hier_path": "and2_gate_0",
+        "reference_info": {
+          "ref_type": "hdl",
+          "ref_name": "and2_gate",
+          "boundary_crc": "0x0"
+        },
+        "ports": {
+          "A": {
+            "direction": "I"
+          },
+          "B": {
+            "direction": "I"
+          },
+          "Y": {
+            "direction": "O"
+          }
+        }
+      },
+      "and3_gate_0": {
+        "vlnv": "xilinx.com:module_ref:and3_gate:1.0",
+        "ip_revision": "1",
+        "xci_name": "counter_and3_gate_0_0",
+        "xci_path": "ip\\counter_and3_gate_0_0\\counter_and3_gate_0_0.xci",
+        "inst_hier_path": "and3_gate_0",
+        "reference_info": {
+          "ref_type": "hdl",
+          "ref_name": "and3_gate",
+          "boundary_crc": "0x0"
+        },
+        "ports": {
+          "A": {
+            "direction": "I"
+          },
+          "B": {
+            "direction": "I"
+          },
+          "C": {
+            "direction": "I"
+          },
+          "Y": {
+            "direction": "O"
+          }
+        }
+      },
+      "and4_gate_0": {
+        "vlnv": "xilinx.com:module_ref:and4_gate:1.0",
+        "ip_revision": "1",
+        "xci_name": "counter_and4_gate_0_0",
+        "xci_path": "ip\\counter_and4_gate_0_0\\counter_and4_gate_0_0.xci",
+        "inst_hier_path": "and4_gate_0",
+        "reference_info": {
+          "ref_type": "hdl",
+          "ref_name": "and4_gate",
+          "boundary_crc": "0x0"
+        },
+        "ports": {
+          "A": {
+            "direction": "I"
+          },
+          "B": {
+            "direction": "I"
+          },
+          "C": {
+            "direction": "I"
+          },
+          "D": {
+            "direction": "I"
+          },
+          "Y": {
+            "direction": "O"
+          }
+        }
+      }
+    },
+    "nets": {
+      "and2_gate_0_Y": {
+        "ports": [
+          "and2_gate_0/Y",
+          "counterA1_1/rst"
+        ]
+      },
+      "and3_gate_0_Y": {
+        "ports": [
+          "and3_gate_0/Y",
+          "counterA1_2/rst"
+        ]
+      },
+      "and4_gate_0_Y": {
+        "ports": [
+          "and4_gate_0/Y",
+          "counterA1_3/rst"
+        ]
+      },
+      "clk_1": {
+        "ports": [
+          "clk",
+          "counterA1_0/clk",
+          "counterA1_1/clk",
+          "counterA1_2/clk",
+          "counterA1_3/clk",
+          "and2_gate_0/B",
+          "and3_gate_0/C",
+          "and4_gate_0/D"
+        ]
+      },
+      "counterA1_0_TC": {
+        "ports": [
+          "counterA1_0/TC",
+          "and2_gate_0/A",
+          "and3_gate_0/B",
+          "and4_gate_0/C"
+        ]
+      },
+      "counterA1_0_Y": {
+        "ports": [
+          "counterA1_0/Y",
+          "Y0"
+        ]
+      },
+      "counterA1_1_TC": {
+        "ports": [
+          "counterA1_1/TC",
+          "and3_gate_0/A",
+          "and4_gate_0/B"
+        ]
+      },
+      "counterA1_1_Y": {
+        "ports": [
+          "counterA1_1/Y",
+          "Y1"
+        ]
+      },
+      "counterA1_2_TC": {
+        "ports": [
+          "counterA1_2/TC",
+          "and4_gate_0/A"
+        ]
+      },
+      "counterA1_2_Y": {
+        "ports": [
+          "counterA1_2/Y",
+          "Y2"
+        ]
+      },
+      "counterA1_3_Y": {
+        "ports": [
+          "counterA1_3/Y",
+          "Y3"
+        ]
+      },
+      "rst_1": {
+        "ports": [
+          "rst",
+          "counterA1_0/rst"
+        ]
+      }
+    }
+  }
+}

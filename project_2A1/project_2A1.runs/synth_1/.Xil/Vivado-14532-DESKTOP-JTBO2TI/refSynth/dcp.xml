@@ -1,0 +1,28 @@
+<?xml version="1.0"?>
+<Checkpoint Version="22" Minor="0">
+	<BUILD_NUMBER Name="5094488"/>
+	<FULL_BUILD Name="SW Build 5094488 on Fri Jun 14 08:59:21 MDT 2024"/>
+	<PRODUCT Name="Vivado v2024.1.1 (64-bit)"/>
+	<Part Name="xc7z007sclg400-1"/>
+	<FeatureSet Name="FeatureSet_Classic"/>
+	<NEXTGEN_VERSAL Name="0"/>
+	<Top Name="duplicateCircuit"/>
+	<DisableAutoIOBuffers Name="0"/>
+	<OutOfContext Name="0"/>
+	<MacroLevel Name="1"/>
+	<RunGenerated Name="1"/>
+	<HDPlatform Name="0"/>
+	<File Type="VERILOG_STUB" Name="duplicateCircuit_stub.v" ModTime="1726017559"/>
+	<File Type="VHDL_STUB" Name="duplicateCircuit_stub.vhdl" ModTime="1726017559"/>
+	<File Type="PARAMXML" Name="duplicateCircuit_param.xml" ModTime="1726017559"/>
+	<File Type="PARAMXML" Name="duplicateCircuit_param.xml" ModTime="1726017559"/>
+	<File Type="XN" Name="duplicateCircuit.xn" ModTime="1726017559"/>
+	<File Type="SHAPE" Name="duplicateCircuit.shape" ModTime="1726017559"/>
+	<File Type="EDIF" Name="duplicateCircuit.edf" ModTime="1726017559"/>
+	<File Type="INCR" Name="duplicateCircuit.incr" ModTime="1726017559"/>
+	<File Type="RDA" Name="duplicateCircuit.rda" ModTime="1726017559"/>
+	<File Type="JSON_RDA" Name="duplicateCircuit_rda.json" ModTime="1726017559"/>
+	<File Type="WDF" Name="duplicateCircuit.wdf" ModTime="1726017559"/>
+	<File Type="SYNTH" Name="duplicateCircuit.synth" ModTime="1726017559"/>
+</Checkpoint>
+

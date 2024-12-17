@@ -1,0 +1,28 @@
+{
+   "ActiveEmotionalView":"Default View",
+   "Default View_ScaleFactor":"0.8",
+   "Default View_TopLeft":"-344,-309",
+   "ExpandedHierarchyInLayout":"",
+   "guistr":"# # String gsaved with Nlview 7.7.1 2023-07-26 3bc4126617 VDI=43 GEI=38 GUI=JA:21.0
+#  -string -flagsOSRD
+preplace port port-id_CA -pg 1 -lvl 3 -x 590 -y 160 -defaultsOSRD
+preplace port port-id_CB -pg 1 -lvl 3 -x 590 -y 180 -defaultsOSRD
+preplace port port-id_CC -pg 1 -lvl 3 -x 590 -y 200 -defaultsOSRD
+preplace port port-id_CD -pg 1 -lvl 3 -x 590 -y 220 -defaultsOSRD
+preplace port port-id_CE -pg 1 -lvl 3 -x 590 -y 240 -defaultsOSRD
+preplace port port-id_CF -pg 1 -lvl 3 -x 590 -y 260 -defaultsOSRD
+preplace port port-id_CG -pg 1 -lvl 3 -x 590 -y 280 -defaultsOSRD
+preplace inst decoder_0 -pg 1 -lvl 2 -x 480 -y 220 -defaultsOSRD
+preplace inst clock_divider_0 -pg 1 -lvl 1 -x 90 -y 80 -defaultsOSRD
+preplace netloc decoder_0_CA 1 2 1 N 160
+preplace netloc decoder_0_CB 1 2 1 N 180
+preplace netloc decoder_0_CC 1 2 1 N 200
+preplace netloc decoder_0_CD 1 2 1 N 220
+preplace netloc decoder_0_CE 1 2 1 N 240
+preplace netloc decoder_0_CF 1 2 1 N 260
+preplace netloc decoder_0_CG 1 2 1 N 280
+levelinfo -pg 1 0 90 480 590
+pagesize -pg 1 -db -bbox -sgen -70 0 660 340
+"
+}
+

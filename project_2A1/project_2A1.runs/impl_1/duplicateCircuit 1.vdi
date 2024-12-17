@@ -1,0 +1,30 @@
+#-----------------------------------------------------------
+# Vivado v2024.1.1 (64-bit)
+# SW Build 5094488 on Fri Jun 14 08:59:21 MDT 2024
+# IP Build 5091682 on Fri Jun 14 16:55:04 MDT 2024
+# SharedData Build 5094118 on Fri Jun 14 01:09:43 MDT 2024
+# Start of session at: Tue Sep 10 18:19:36 2024
+# Process ID: 54440
+# Current directory: C:/Users/sgk/OneDrive/Desktop/EE214/project_2A1/project_2A1.runs/impl_1
+# Command line: vivado.exe -log duplicateCircuit.vdi -applog -product Vivado -messageDb vivado.pb -mode batch -source duplicateCircuit.tcl -notrace
+# Log file: C:/Users/sgk/OneDrive/Desktop/EE214/project_2A1/project_2A1.runs/impl_1/duplicateCircuit.vdi
+# Journal file: C:/Users/sgk/OneDrive/Desktop/EE214/project_2A1/project_2A1.runs/impl_1\vivado.jou
+# Running On        :DESKTOP-JTBO2TI
+# Platform          :Windows Server 2016 or Windows 10
+# Operating System  :22631
+# Processor Detail  :AMD Ryzen 7 7840HS w/ Radeon 780M Graphics     
+# CPU Frequency     :3793 MHz
+# CPU Physical cores:8
+# CPU Logical cores :16
+# Host memory       :66367 MB
+# Swap memory       :4160 MB
+# Total Virtual     :70528 MB
+# Available Virtual :51909 MB
+#-----------------------------------------------------------
+source duplicateCircuit.tcl -notrace
+create_project: Time (s): cpu = 00:00:04 ; elapsed = 00:00:07 . Memory (MB): peak = 629.148 ; gain = 198.297
+Command: link_design -top duplicateCircuit -part xc7z007sclg400-1
+Design is defaulting to srcset: sources_1
+Design is defaulting to constrset: constrs_1
+INFO: [Device 21-403] Loading part xc7z007sclg400-1
+INFO: [Device 21-9227] Part: xc7z007sclg400-1 does not have CEAM library.

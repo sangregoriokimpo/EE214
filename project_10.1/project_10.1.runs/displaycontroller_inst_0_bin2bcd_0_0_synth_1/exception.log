@@ -1,0 +1,4 @@
+ERROR: Exception caught trying to open file C:\xproj\project_10.1\project_10.1.runs\displaycontroller_inst_0_bin2bcd_0_0_synth_1/runme.log
+	Exception name: Error
+	Exception error code: 70
+	Exception message: Permission denied

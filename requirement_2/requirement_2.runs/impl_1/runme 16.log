@@ -1,0 +1,404 @@
+
+*** Running vivado
+    with args -log requirement5.vdi -applog -m64 -product Vivado -messageDb vivado.pb -mode batch -source requirement5.tcl -notrace
+
+
+
+****** Vivado v2024.1 (64-bit)
+  **** SW Build 5076996 on Wed May 22 18:37:14 MDT 2024
+  **** IP Build 5075265 on Wed May 22 21:45:21 MDT 2024
+  **** SharedData Build 5076995 on Wed May 22 18:29:18 MDT 2024
+  **** Start of session at: Tue Aug 27 18:52:48 2024
+    ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+    ** Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
+
+source requirement5.tcl -notrace
+create_project: Time (s): cpu = 00:00:04 ; elapsed = 00:00:06 . Memory (MB): peak = 628.805 ; gain = 200.801
+Command: link_design -top requirement5 -part xc7z007sclg400-1
+Design is defaulting to srcset: sources_1
+Design is defaulting to constrset: constrs_1
+INFO: [Device 21-403] Loading part xc7z007sclg400-1
+INFO: [Device 21-9227] Part: xc7z007sclg400-1 does not have CEAM library.
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1038.020 ; gain = 0.000
+INFO: [Project 1-479] Netlist was created with Vivado 2024.1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+Parsing XDC File [C:/Users/sgk/OneDrive/Desktop/EE214/requirement_2/requirement_2.srcs/constrs_1/new/project2.xdc]
+WARNING: [Vivado 12-584] No ports matched 'clk'. [C:/Users/sgk/OneDrive/Desktop/EE214/requirement_2/requirement_2.srcs/constrs_1/new/project2.xdc:4]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/sgk/OneDrive/Desktop/EE214/requirement_2/requirement_2.srcs/constrs_1/new/project2.xdc:4]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'led[0]'. [C:/Users/sgk/OneDrive/Desktop/EE214/requirement_2/requirement_2.srcs/constrs_1/new/project2.xdc:7]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/sgk/OneDrive/Desktop/EE214/requirement_2/requirement_2.srcs/constrs_1/new/project2.xdc:7]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'led[1]'. [C:/Users/sgk/OneDrive/Desktop/EE214/requirement_2/requirement_2.srcs/constrs_1/new/project2.xdc:8]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/sgk/OneDrive/Desktop/EE214/requirement_2/requirement_2.srcs/constrs_1/new/project2.xdc:8]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'led[2]'. [C:/Users/sgk/OneDrive/Desktop/EE214/requirement_2/requirement_2.srcs/constrs_1/new/project2.xdc:9]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/sgk/OneDrive/Desktop/EE214/requirement_2/requirement_2.srcs/constrs_1/new/project2.xdc:9]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'led[3]'. [C:/Users/sgk/OneDrive/Desktop/EE214/requirement_2/requirement_2.srcs/constrs_1/new/project2.xdc:10]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/sgk/OneDrive/Desktop/EE214/requirement_2/requirement_2.srcs/constrs_1/new/project2.xdc:10]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'led[4]'. [C:/Users/sgk/OneDrive/Desktop/EE214/requirement_2/requirement_2.srcs/constrs_1/new/project2.xdc:11]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/sgk/OneDrive/Desktop/EE214/requirement_2/requirement_2.srcs/constrs_1/new/project2.xdc:11]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'led[5]'. [C:/Users/sgk/OneDrive/Desktop/EE214/requirement_2/requirement_2.srcs/constrs_1/new/project2.xdc:12]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/sgk/OneDrive/Desktop/EE214/requirement_2/requirement_2.srcs/constrs_1/new/project2.xdc:12]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'led[6]'. [C:/Users/sgk/OneDrive/Desktop/EE214/requirement_2/requirement_2.srcs/constrs_1/new/project2.xdc:13]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/sgk/OneDrive/Desktop/EE214/requirement_2/requirement_2.srcs/constrs_1/new/project2.xdc:13]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'led[7]'. [C:/Users/sgk/OneDrive/Desktop/EE214/requirement_2/requirement_2.srcs/constrs_1/new/project2.xdc:14]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/sgk/OneDrive/Desktop/EE214/requirement_2/requirement_2.srcs/constrs_1/new/project2.xdc:14]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'led[8]'. [C:/Users/sgk/OneDrive/Desktop/EE214/requirement_2/requirement_2.srcs/constrs_1/new/project2.xdc:15]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/sgk/OneDrive/Desktop/EE214/requirement_2/requirement_2.srcs/constrs_1/new/project2.xdc:15]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'led[9]'. [C:/Users/sgk/OneDrive/Desktop/EE214/requirement_2/requirement_2.srcs/constrs_1/new/project2.xdc:16]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/sgk/OneDrive/Desktop/EE214/requirement_2/requirement_2.srcs/constrs_1/new/project2.xdc:16]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'RGN_led_A[0]'. [C:/Users/sgk/OneDrive/Desktop/EE214/requirement_2/requirement_2.srcs/constrs_1/new/project2.xdc:19]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/sgk/OneDrive/Desktop/EE214/requirement_2/requirement_2.srcs/constrs_1/new/project2.xdc:19]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'led[10]'. [C:/Users/sgk/OneDrive/Desktop/EE214/requirement_2/requirement_2.srcs/constrs_1/new/project2.xdc:20]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/sgk/OneDrive/Desktop/EE214/requirement_2/requirement_2.srcs/constrs_1/new/project2.xdc:20]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'led[10]'. [C:/Users/sgk/OneDrive/Desktop/EE214/requirement_2/requirement_2.srcs/constrs_1/new/project2.xdc:21]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/sgk/OneDrive/Desktop/EE214/requirement_2/requirement_2.srcs/constrs_1/new/project2.xdc:21]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'led[11]'. [C:/Users/sgk/OneDrive/Desktop/EE214/requirement_2/requirement_2.srcs/constrs_1/new/project2.xdc:23]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/sgk/OneDrive/Desktop/EE214/requirement_2/requirement_2.srcs/constrs_1/new/project2.xdc:23]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'RGB_led_B[1]'. [C:/Users/sgk/OneDrive/Desktop/EE214/requirement_2/requirement_2.srcs/constrs_1/new/project2.xdc:24]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/sgk/OneDrive/Desktop/EE214/requirement_2/requirement_2.srcs/constrs_1/new/project2.xdc:24]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'led[11]'. [C:/Users/sgk/OneDrive/Desktop/EE214/requirement_2/requirement_2.srcs/constrs_1/new/project2.xdc:25]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/sgk/OneDrive/Desktop/EE214/requirement_2/requirement_2.srcs/constrs_1/new/project2.xdc:25]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'sw[0]'. [C:/Users/sgk/OneDrive/Desktop/EE214/requirement_2/requirement_2.srcs/constrs_1/new/project2.xdc:28]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/sgk/OneDrive/Desktop/EE214/requirement_2/requirement_2.srcs/constrs_1/new/project2.xdc:28]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'sw[1]'. [C:/Users/sgk/OneDrive/Desktop/EE214/requirement_2/requirement_2.srcs/constrs_1/new/project2.xdc:29]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/sgk/OneDrive/Desktop/EE214/requirement_2/requirement_2.srcs/constrs_1/new/project2.xdc:29]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'sw[2]'. [C:/Users/sgk/OneDrive/Desktop/EE214/requirement_2/requirement_2.srcs/constrs_1/new/project2.xdc:30]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/sgk/OneDrive/Desktop/EE214/requirement_2/requirement_2.srcs/constrs_1/new/project2.xdc:30]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'sw[3]'. [C:/Users/sgk/OneDrive/Desktop/EE214/requirement_2/requirement_2.srcs/constrs_1/new/project2.xdc:31]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/sgk/OneDrive/Desktop/EE214/requirement_2/requirement_2.srcs/constrs_1/new/project2.xdc:31]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'sw[4]'. [C:/Users/sgk/OneDrive/Desktop/EE214/requirement_2/requirement_2.srcs/constrs_1/new/project2.xdc:32]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/sgk/OneDrive/Desktop/EE214/requirement_2/requirement_2.srcs/constrs_1/new/project2.xdc:32]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'sw[5]'. [C:/Users/sgk/OneDrive/Desktop/EE214/requirement_2/requirement_2.srcs/constrs_1/new/project2.xdc:33]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/sgk/OneDrive/Desktop/EE214/requirement_2/requirement_2.srcs/constrs_1/new/project2.xdc:33]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'sw[6]'. [C:/Users/sgk/OneDrive/Desktop/EE214/requirement_2/requirement_2.srcs/constrs_1/new/project2.xdc:34]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/sgk/OneDrive/Desktop/EE214/requirement_2/requirement_2.srcs/constrs_1/new/project2.xdc:34]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'sw[7]'. [C:/Users/sgk/OneDrive/Desktop/EE214/requirement_2/requirement_2.srcs/constrs_1/new/project2.xdc:35]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/sgk/OneDrive/Desktop/EE214/requirement_2/requirement_2.srcs/constrs_1/new/project2.xdc:35]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'sw[8]'. [C:/Users/sgk/OneDrive/Desktop/EE214/requirement_2/requirement_2.srcs/constrs_1/new/project2.xdc:36]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/sgk/OneDrive/Desktop/EE214/requirement_2/requirement_2.srcs/constrs_1/new/project2.xdc:36]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'sw[9]'. [C:/Users/sgk/OneDrive/Desktop/EE214/requirement_2/requirement_2.srcs/constrs_1/new/project2.xdc:37]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/sgk/OneDrive/Desktop/EE214/requirement_2/requirement_2.srcs/constrs_1/new/project2.xdc:37]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'sw[10]'. [C:/Users/sgk/OneDrive/Desktop/EE214/requirement_2/requirement_2.srcs/constrs_1/new/project2.xdc:38]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/sgk/OneDrive/Desktop/EE214/requirement_2/requirement_2.srcs/constrs_1/new/project2.xdc:38]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'sw[11]'. [C:/Users/sgk/OneDrive/Desktop/EE214/requirement_2/requirement_2.srcs/constrs_1/new/project2.xdc:39]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/sgk/OneDrive/Desktop/EE214/requirement_2/requirement_2.srcs/constrs_1/new/project2.xdc:39]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'seg_an[1]'. [C:/Users/sgk/OneDrive/Desktop/EE214/requirement_2/requirement_2.srcs/constrs_1/new/project2.xdc:49]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/sgk/OneDrive/Desktop/EE214/requirement_2/requirement_2.srcs/constrs_1/new/project2.xdc:49]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'seg_an[2]'. [C:/Users/sgk/OneDrive/Desktop/EE214/requirement_2/requirement_2.srcs/constrs_1/new/project2.xdc:50]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/sgk/OneDrive/Desktop/EE214/requirement_2/requirement_2.srcs/constrs_1/new/project2.xdc:50]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'seg_an[3]'. [C:/Users/sgk/OneDrive/Desktop/EE214/requirement_2/requirement_2.srcs/constrs_1/new/project2.xdc:51]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/sgk/OneDrive/Desktop/EE214/requirement_2/requirement_2.srcs/constrs_1/new/project2.xdc:51]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'seg_cat[1]'. [C:/Users/sgk/OneDrive/Desktop/EE214/requirement_2/requirement_2.srcs/constrs_1/new/project2.xdc:55]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/sgk/OneDrive/Desktop/EE214/requirement_2/requirement_2.srcs/constrs_1/new/project2.xdc:55]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'seg_cat[2]'. [C:/Users/sgk/OneDrive/Desktop/EE214/requirement_2/requirement_2.srcs/constrs_1/new/project2.xdc:56]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/sgk/OneDrive/Desktop/EE214/requirement_2/requirement_2.srcs/constrs_1/new/project2.xdc:56]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'seg_cat[3]'. [C:/Users/sgk/OneDrive/Desktop/EE214/requirement_2/requirement_2.srcs/constrs_1/new/project2.xdc:57]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/sgk/OneDrive/Desktop/EE214/requirement_2/requirement_2.srcs/constrs_1/new/project2.xdc:57]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'seg_cat[4]'. [C:/Users/sgk/OneDrive/Desktop/EE214/requirement_2/requirement_2.srcs/constrs_1/new/project2.xdc:58]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/sgk/OneDrive/Desktop/EE214/requirement_2/requirement_2.srcs/constrs_1/new/project2.xdc:58]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'seg_cat[5]'. [C:/Users/sgk/OneDrive/Desktop/EE214/requirement_2/requirement_2.srcs/constrs_1/new/project2.xdc:59]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/sgk/OneDrive/Desktop/EE214/requirement_2/requirement_2.srcs/constrs_1/new/project2.xdc:59]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'seg_cat[6]'. [C:/Users/sgk/OneDrive/Desktop/EE214/requirement_2/requirement_2.srcs/constrs_1/new/project2.xdc:60]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/sgk/OneDrive/Desktop/EE214/requirement_2/requirement_2.srcs/constrs_1/new/project2.xdc:60]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'seg_cat[7]'. [C:/Users/sgk/OneDrive/Desktop/EE214/requirement_2/requirement_2.srcs/constrs_1/new/project2.xdc:61]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/sgk/OneDrive/Desktop/EE214/requirement_2/requirement_2.srcs/constrs_1/new/project2.xdc:61]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+Finished Parsing XDC File [C:/Users/sgk/OneDrive/Desktop/EE214/requirement_2/requirement_2.srcs/constrs_1/new/project2.xdc]
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1157.637 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+6 Infos, 39 Warnings, 39 Critical Warnings and 0 Errors encountered.
+link_design completed successfully
+link_design: Time (s): cpu = 00:00:03 ; elapsed = 00:00:06 . Memory (MB): peak = 1161.633 ; gain = 532.828
+Command: opt_design
+Attempting to get a license for feature 'Implementation' and/or device 'xc7z007s'
+INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xc7z007s'
+Running DRC as a precondition to command opt_design
+
+Starting DRC Task
+INFO: [DRC 23-27] Running DRC with 2 threads
+INFO: [Project 1-461] DRC finished with 0 Errors
+INFO: [Project 1-462] Please refer to the DRC report (report_drc) for more information.
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.536 . Memory (MB): peak = 1174.602 ; gain = 12.969
+
+Starting Cache Timing Information Task
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+Ending Cache Timing Information Task | Checksum: 22677bc04
+
+Time (s): cpu = 00:00:03 ; elapsed = 00:00:06 . Memory (MB): peak = 1687.496 ; gain = 512.895
+
+Starting Logic Optimization Task
+
+Phase 1 Initialization
+
+Phase 1.1 Core Generation And Design Setup
+Phase 1.1 Core Generation And Design Setup | Checksum: 22677bc04
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 2053.957 ; gain = 0.000
+
+Phase 1.2 Setup Constraints And Sort Netlist
+Phase 1.2 Setup Constraints And Sort Netlist | Checksum: 22677bc04
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 2053.957 ; gain = 0.000
+Phase 1 Initialization | Checksum: 22677bc04
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 2053.957 ; gain = 0.000
+
+Phase 2 Timer Update And Timing Data Collection
+
+Phase 2.1 Timer Update
+Phase 2.1 Timer Update | Checksum: 22677bc04
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.003 . Memory (MB): peak = 2053.957 ; gain = 0.000
+
+Phase 2.2 Timing Data Collection
+Phase 2.2 Timing Data Collection | Checksum: 22677bc04
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.005 . Memory (MB): peak = 2053.957 ; gain = 0.000
+Phase 2 Timer Update And Timing Data Collection | Checksum: 22677bc04
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.006 . Memory (MB): peak = 2053.957 ; gain = 0.000
+
+Phase 3 Retarget
+INFO: [Opt 31-1834] Total Chains To Be Transformed Were: 0 AND Number of Transformed insts Created are: 0
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Opt 31-49] Retargeted 0 cell(s).
+Phase 3 Retarget | Checksum: 22677bc04
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.008 . Memory (MB): peak = 2053.957 ; gain = 0.000
+Retarget | Checksum: 22677bc04
+INFO: [Opt 31-389] Phase Retarget created 0 cells and removed 0 cells
+
+Phase 4 Constant propagation
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Phase 4 Constant propagation | Checksum: 22677bc04
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.009 . Memory (MB): peak = 2053.957 ; gain = 0.000
+Constant propagation | Checksum: 22677bc04
+INFO: [Opt 31-389] Phase Constant propagation created 0 cells and removed 0 cells
+
+Phase 5 Sweep
+Phase 5 Sweep | Checksum: 22677bc04
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.010 . Memory (MB): peak = 2053.957 ; gain = 0.000
+Sweep | Checksum: 22677bc04
+INFO: [Opt 31-389] Phase Sweep created 0 cells and removed 0 cells
+
+Phase 6 BUFG optimization
+Phase 6 BUFG optimization | Checksum: 22677bc04
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.040 . Memory (MB): peak = 2053.957 ; gain = 0.000
+BUFG optimization | Checksum: 22677bc04
+INFO: [Opt 31-662] Phase BUFG optimization created 0 cells of which 0 are BUFGs and removed 0 cells.
+
+Phase 7 Shift Register Optimization
+INFO: [Opt 31-1064] SRL Remap converted 0 SRLs to 0 registers and converted 0 registers of register chains to 0 SRLs
+Phase 7 Shift Register Optimization | Checksum: 22677bc04
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.041 . Memory (MB): peak = 2053.957 ; gain = 0.000
+Shift Register Optimization | Checksum: 22677bc04
+INFO: [Opt 31-389] Phase Shift Register Optimization created 0 cells and removed 0 cells
+
+Phase 8 Post Processing Netlist
+Phase 8 Post Processing Netlist | Checksum: 22677bc04
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.041 . Memory (MB): peak = 2053.957 ; gain = 0.000
+Post Processing Netlist | Checksum: 22677bc04
+INFO: [Opt 31-389] Phase Post Processing Netlist created 0 cells and removed 0 cells
+
+Phase 9 Finalization
+
+Phase 9.1 Finalizing Design Cores and Updating Shapes
+Phase 9.1 Finalizing Design Cores and Updating Shapes | Checksum: 22677bc04
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.042 . Memory (MB): peak = 2053.957 ; gain = 0.000
+
+Phase 9.2 Verifying Netlist Connectivity
+
+Starting Connectivity Check Task
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 2053.957 ; gain = 0.000
+Phase 9.2 Verifying Netlist Connectivity | Checksum: 22677bc04
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.043 . Memory (MB): peak = 2053.957 ; gain = 0.000
+Phase 9 Finalization | Checksum: 22677bc04
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.043 . Memory (MB): peak = 2053.957 ; gain = 0.000
+Opt_design Change Summary
+=========================
+
+
+-------------------------------------------------------------------------------------------------------------------------
+|  Phase                        |  #Cells created  |  #Cells Removed  |  #Constrained objects preventing optimizations  |
+-------------------------------------------------------------------------------------------------------------------------
+|  Retarget                     |               0  |               0  |                                              0  |
+|  Constant propagation         |               0  |               0  |                                              0  |
+|  Sweep                        |               0  |               0  |                                              0  |
+|  BUFG optimization            |               0  |               0  |                                              0  |
+|  Shift Register Optimization  |               0  |               0  |                                              0  |
+|  Post Processing Netlist      |               0  |               0  |                                              0  |
+-------------------------------------------------------------------------------------------------------------------------
+
+
+Ending Logic Optimization Task | Checksum: 22677bc04
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.044 . Memory (MB): peak = 2053.957 ; gain = 0.000
+
+Starting Power Optimization Task
+INFO: [Pwropt 34-132] Skipping clock gating for clocks with a period < 2.00 ns.
+Ending Power Optimization Task | Checksum: 22677bc04
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.006 . Memory (MB): peak = 2053.957 ; gain = 0.000
+
+Starting Final Cleanup Task
+Ending Final Cleanup Task | Checksum: 22677bc04
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2053.957 ; gain = 0.000
+
+Starting Netlist Obfuscation Task
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2053.957 ; gain = 0.000
+Ending Netlist Obfuscation Task | Checksum: 22677bc04
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2053.957 ; gain = 0.000
+INFO: [Common 17-83] Releasing license: Implementation
+24 Infos, 39 Warnings, 39 Critical Warnings and 0 Errors encountered.
+opt_design completed successfully
+opt_design: Time (s): cpu = 00:00:05 ; elapsed = 00:00:10 . Memory (MB): peak = 2053.957 ; gain = 892.324
+INFO: [Vivado 12-24828] Executing command : report_drc -file requirement5_drc_opted.rpt -pb requirement5_drc_opted.pb -rpx requirement5_drc_opted.rpx
+Command: report_drc -file requirement5_drc_opted.rpt -pb requirement5_drc_opted.pb -rpx requirement5_drc_opted.rpx
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2024.1/data/ip'.
+INFO: [DRC 23-27] Running DRC with 2 threads
+INFO: [Vivado_Tcl 2-168] The results of DRC are in file C:/Users/sgk/OneDrive/Desktop/EE214/requirement_2/requirement_2.runs/impl_1/requirement5_drc_opted.rpt.
+report_drc completed successfully
+INFO: [Timing 38-480] Writing timing data to binary archive.
+Write ShapeDB Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 2053.957 ; gain = 0.000
+Wrote PlaceDB: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 2053.957 ; gain = 0.000
+Wrote PulsedLatchDB: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2053.957 ; gain = 0.000
+Writing XDEF routing.
+Writing XDEF routing logical nets.
+Writing XDEF routing special nets.
+Wrote RouteStorage: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.079 . Memory (MB): peak = 2053.957 ; gain = 0.000
+Wrote Netlist Cache: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2053.957 ; gain = 0.000
+Wrote Device Cache: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.008 . Memory (MB): peak = 2053.957 ; gain = 0.000
+Write Physdb Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.095 . Memory (MB): peak = 2053.957 ; gain = 0.000
+INFO: [Common 17-1381] The checkpoint 'C:/Users/sgk/OneDrive/Desktop/EE214/requirement_2/requirement_2.runs/impl_1/requirement5_opt.dcp' has been generated.
+Command: place_design
+Attempting to get a license for feature 'Implementation' and/or device 'xc7z007s'
+INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xc7z007s'
+INFO: [Common 17-83] Releasing license: Implementation
+INFO: [DRC 23-27] Running DRC with 2 threads
+INFO: [Vivado_Tcl 4-198] DRC finished with 0 Errors
+INFO: [Vivado_Tcl 4-199] Please refer to the DRC report (report_drc) for more information.
+Running DRC as a precondition to command place_design
+INFO: [DRC 23-27] Running DRC with 2 threads
+INFO: [Vivado_Tcl 4-198] DRC finished with 0 Errors
+INFO: [Vivado_Tcl 4-199] Please refer to the DRC report (report_drc) for more information.
+INFO: [Place 30-611] Multithreading enabled for place_design using a maximum of 2 CPUs
+
+Starting Placer Task
+
+Phase 1 Placer Initialization
+
+Phase 1.1 Placer Initialization Netlist Sorting
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2053.957 ; gain = 0.000
+Phase 1.1 Placer Initialization Netlist Sorting | Checksum: 160648750
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 2053.957 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2053.957 ; gain = 0.000
+
+Phase 1.2 IO Placement/ Clock Placement/ Build Placer Device
+ERROR: [Place 30-58] IO placement is infeasible. Number of unplaced IO Ports (4) is greater than number of available pins (0).
+The following are banks with available pins: 
+ IO Group: 0 with : SioStd: LVCMOS18   VCCO = 1.8 Termination: 0  TermDir:  Out  RangeId: 1 Drv: 12  has only 0 sites available on device, but needs 4 sites.
+	Term: disp[0]
+	Term: disp[1]
+	Term: disp[2]
+	Term: disp[3]
+
+
+Resolution: Consider using Xilinx part with greater number of IO pins
+ERROR: [Place 30-374] IO placer failed to find a solution
+Below is the partial placement that can be analyzed to see if any constraint modifications will make the IO placement problem easier to solve.
+
++-------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+|                                                                     IO Placement : Bank Stats                                                                           |
++----+-------+-------+------------------------------------------------------------------------+------------------------------------------+--------+--------+--------+-----+
+| Id | Pins  | Terms |                               Standards                                |                IDelayCtrls               |  VREF  |  VCCO  |   VR   | DCI |
++----+-------+-------+------------------------------------------------------------------------+------------------------------------------+--------+--------+--------+-----+
+|  0 |     0 |     0 |                                                                        |                                          |        |        |        |     |
+| 13 |     0 |     0 |                                                                        |                                          |        |        |        |     |
+| 34 |    50 |     2 | LVCMOS33(2)                                                            |                                          |        |  +3.30 |    YES |     |
+| 35 |    50 |     2 | LVCMOS33(2)                                                            |                                          |        |  +3.30 |    YES |     |
++----+-------+-------+------------------------------------------------------------------------+------------------------------------------+--------+--------+--------+-----+
+|    |   100 |     4 |                                                                        |                                          |        |        |        |     |
++----+-------+-------+------------------------------------------------------------------------+------------------------------------------+--------+--------+--------+-----+
+
+IO Placement:
++--------+----------------------+-----------------+----------------------+----------------------+----------------------+
+| BankId |             Terminal | Standard        | Site                 | Pin                  | Attributes           |
++--------+----------------------+-----------------+----------------------+----------------------+----------------------+
+| 34     | btn[1]               | LVCMOS33        | IOB_X0Y41            | W13                  |                      |
+|        | btn[2]               | LVCMOS33        | IOB_X0Y2             | P15                  |                      |
++--------+----------------------+-----------------+----------------------+----------------------+----------------------+
+| 35     | btn[0]               | LVCMOS33        | IOB_X0Y60            | K14                  |                      |
+|        | btn[3]               | LVCMOS33        | IOB_X0Y54            | M14                  |                      |
++--------+----------------------+-----------------+----------------------+----------------------+----------------------+
+
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+Phase 1.2 IO Placement/ Clock Placement/ Build Placer Device | Checksum: 160648750
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.041 . Memory (MB): peak = 2053.957 ; gain = 0.000
+Phase 1 Placer Initialization | Checksum: 160648750
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.041 . Memory (MB): peak = 2053.957 ; gain = 0.000
+ERROR: [Place 30-99] Placer failed with error: 'IO Clock Placer failed'
+Please review all ERROR, CRITICAL WARNING, and WARNING messages during placement to understand the cause for failure.
+Ending Placer Task | Checksum: 160648750
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.042 . Memory (MB): peak = 2053.957 ; gain = 0.000
+42 Infos, 39 Warnings, 39 Critical Warnings and 4 Errors encountered.
+place_design failed
+ERROR: [Common 17-69] Command failed: Placer could not place all instances
+INFO: [Common 17-206] Exiting Vivado at Tue Aug 27 18:53:16 2024...

@@ -1,0 +1,352 @@
+﻿<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+<EDKSYSTEM EDWVERSION="1.2" TIMESTAMP="Tue Nov 19 11:40:09 2024" VIVADOVERSION="2024.1.1">
+
+  <SYSTEMINFO ARCH="zynq" DEVICE="7z007s" NAME="design_3" PACKAGE="clg400" SPEEDGRADE="-1"/>
+
+  <EXTERNALPORTS>
+    <PORT DIR="O" NAME="CA" SIGIS="undef" SIGNAME="display_decoder_0_CA">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="display_decoder_0" PORT="CA"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="O" NAME="CB" SIGIS="undef" SIGNAME="display_decoder_0_CB">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="display_decoder_0" PORT="CB"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="O" NAME="CC" SIGIS="undef" SIGNAME="display_decoder_0_CC">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="display_decoder_0" PORT="CC"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="O" NAME="CD" SIGIS="undef" SIGNAME="display_decoder_0_CD">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="display_decoder_0" PORT="CD"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="O" NAME="CE" SIGIS="undef" SIGNAME="display_decoder_0_CE">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="display_decoder_0" PORT="CE"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="O" NAME="CF" SIGIS="undef" SIGNAME="display_decoder_0_CF">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="display_decoder_0" PORT="CF"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="O" NAME="CG" SIGIS="undef" SIGNAME="display_decoder_0_CG">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="display_decoder_0" PORT="CG"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="I" NAME="clk" SIGIS="undef" SIGNAME="External_Ports_clk">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="clock_divider_1" PORT="clk"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="I" NAME="rst" SIGIS="undef" SIGNAME="External_Ports_rst">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="clock_divider_1" PORT="rst"/>
+        <CONNECTION INSTANCE="clock_divider_0" PORT="rst"/>
+        <CONNECTION INSTANCE="decimal_counter_0" PORT="rst"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="O" LEFT="3" NAME="seg_an" RIGHT="0" SIGIS="undef" SIGNAME="decoder_0_Y">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="decoder_0" PORT="Y"/>
+      </CONNECTIONS>
+    </PORT>
+  </EXTERNALPORTS>
+
+  <EXTERNALINTERFACES/>
+
+  <MODULES>
+    <MODULE COREREVISION="1" FULLNAME="/clock_divider_0" HWVERSION="1.0" INSTANCE="clock_divider_0" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="clock_divider" VLNV="xilinx.com:module_ref:clock_divider:1.0">
+      <DOCUMENTS/>
+      <PARAMETERS>
+        <PARAMETER NAME="Component_Name" VALUE="design_3_clock_divider_0_0"/>
+        <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
+      </PARAMETERS>
+      <PORTS>
+        <PORT CLKFREQUENCY="100000000" DIR="I" NAME="clk" SIGIS="clk" SIGNAME="clock_divider_1_clk_div">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="clock_divider_1" PORT="clk_div"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="clk_div" SIGIS="undef" SIGNAME="clock_divider_0_clk_div">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="decimal_counter_0" PORT="clk"/>
+            <CONNECTION INSTANCE="counter_1" PORT="clk"/>
+            <CONNECTION INSTANCE="counter_0" PORT="clk"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="rst" POLARITY="ACTIVE_LOW" SIGIS="rst" SIGNAME="External_Ports_rst">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="rst"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="16" NAME="terminalcount" RIGHT="0" SIGIS="undef" SIGNAME="xlconstant_1_dout">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="xlconstant_1" PORT="dout"/>
+          </CONNECTIONS>
+        </PORT>
+      </PORTS>
+      <BUSINTERFACES/>
+    </MODULE>
+    <MODULE COREREVISION="1" FULLNAME="/clock_divider_1" HWVERSION="1.0" INSTANCE="clock_divider_1" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="clock_divider" VLNV="xilinx.com:module_ref:clock_divider:1.0">
+      <DOCUMENTS/>
+      <PARAMETERS>
+        <PARAMETER NAME="Component_Name" VALUE="design_3_clock_divider_1_0"/>
+        <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
+      </PARAMETERS>
+      <PORTS>
+        <PORT CLKFREQUENCY="100000000" DIR="I" NAME="clk" SIGIS="clk" SIGNAME="External_Ports_clk">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="clk"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="clk_div" SIGIS="undef" SIGNAME="clock_divider_1_clk_div">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="clock_divider_0" PORT="clk"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="rst" POLARITY="ACTIVE_LOW" SIGIS="rst" SIGNAME="External_Ports_rst">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="rst"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="16" NAME="terminalcount" RIGHT="0" SIGIS="undef" SIGNAME="xlconstant_0_dout">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="xlconstant_0" PORT="dout"/>
+          </CONNECTIONS>
+        </PORT>
+      </PORTS>
+      <BUSINTERFACES/>
+    </MODULE>
+    <MODULE COREREVISION="1" FULLNAME="/counter_0" HWVERSION="1.0" INSTANCE="counter_0" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="counter" VLNV="xilinx.com:module_ref:counter:1.0">
+      <DOCUMENTS/>
+      <PARAMETERS>
+        <PARAMETER NAME="Component_Name" VALUE="design_3_counter_0_0"/>
+        <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
+      </PARAMETERS>
+      <PORTS>
+        <PORT DIR="O" LEFT="1" NAME="Y" RIGHT="0" SIGIS="undef" SIGNAME="counter_0_Y">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="decoder_0" PORT="I"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT CLKFREQUENCY="100000000" DIR="I" NAME="clk" SIGIS="clk" SIGNAME="clock_divider_0_clk_div">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="clock_divider_0" PORT="clk_div"/>
+          </CONNECTIONS>
+        </PORT>
+      </PORTS>
+      <BUSINTERFACES/>
+    </MODULE>
+    <MODULE COREREVISION="1" FULLNAME="/counter_1" HWVERSION="1.0" INSTANCE="counter_1" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="counter" VLNV="xilinx.com:module_ref:counter:1.0">
+      <DOCUMENTS/>
+      <PARAMETERS>
+        <PARAMETER NAME="Component_Name" VALUE="design_3_counter_1_0"/>
+        <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
+      </PARAMETERS>
+      <PORTS>
+        <PORT DIR="O" LEFT="1" NAME="Y" RIGHT="0" SIGIS="undef" SIGNAME="counter_1_Y">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="mux_0" PORT="S"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT CLKFREQUENCY="100000000" DIR="I" NAME="clk" SIGIS="clk" SIGNAME="clock_divider_0_clk_div">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="clock_divider_0" PORT="clk_div"/>
+          </CONNECTIONS>
+        </PORT>
+      </PORTS>
+      <BUSINTERFACES/>
+    </MODULE>
+    <MODULE COREREVISION="1" FULLNAME="/decimal_counter_0" HWVERSION="1.0" INSTANCE="decimal_counter_0" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="decimal_counter" VLNV="xilinx.com:module_ref:decimal_counter:1.0">
+      <DOCUMENTS/>
+      <PARAMETERS>
+        <PARAMETER NAME="Component_Name" VALUE="design_3_decimal_counter_0_0"/>
+        <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
+      </PARAMETERS>
+      <PORTS>
+        <PORT DIR="O" LEFT="3" NAME="Y0" RIGHT="0" SIGIS="undef" SIGNAME="decimal_counter_0_Y0">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="mux_0" PORT="I0"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="3" NAME="Y1" RIGHT="0" SIGIS="undef" SIGNAME="decimal_counter_0_Y1">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="mux_0" PORT="I1"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="3" NAME="Y2" RIGHT="0" SIGIS="undef" SIGNAME="decimal_counter_0_Y2">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="mux_0" PORT="I2"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="3" NAME="Y3" RIGHT="0" SIGIS="undef" SIGNAME="decimal_counter_0_Y3">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="mux_0" PORT="I3"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT CLKFREQUENCY="100000000" DIR="I" NAME="clk" SIGIS="clk" SIGNAME="clock_divider_0_clk_div">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="clock_divider_0" PORT="clk_div"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="rst" POLARITY="ACTIVE_LOW" SIGIS="rst" SIGNAME="External_Ports_rst">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="rst"/>
+          </CONNECTIONS>
+        </PORT>
+      </PORTS>
+      <BUSINTERFACES/>
+    </MODULE>
+    <MODULE COREREVISION="1" FULLNAME="/decoder_0" HWVERSION="1.0" INSTANCE="decoder_0" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="decoder" VLNV="xilinx.com:module_ref:decoder:1.0">
+      <DOCUMENTS/>
+      <PARAMETERS>
+        <PARAMETER NAME="Component_Name" VALUE="design_3_decoder_0_0"/>
+        <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
+      </PARAMETERS>
+      <PORTS>
+        <PORT DIR="I" LEFT="1" NAME="I" RIGHT="0" SIGIS="undef" SIGNAME="counter_0_Y">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="counter_0" PORT="Y"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="3" NAME="Y" RIGHT="0" SIGIS="undef" SIGNAME="decoder_0_Y">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="seg_an"/>
+          </CONNECTIONS>
+        </PORT>
+      </PORTS>
+      <BUSINTERFACES/>
+    </MODULE>
+    <MODULE COREREVISION="1" FULLNAME="/display_decoder_0" HWVERSION="1.0" INSTANCE="display_decoder_0" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="display_decoder" VLNV="xilinx.com:module_ref:display_decoder:1.0">
+      <DOCUMENTS/>
+      <PARAMETERS>
+        <PARAMETER NAME="Component_Name" VALUE="design_3_display_decoder_0_0"/>
+        <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
+      </PARAMETERS>
+      <PORTS>
+        <PORT DIR="I" LEFT="3" NAME="B" RIGHT="0" SIGIS="undef" SIGNAME="mux_0_Y">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="mux_0" PORT="Y"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="CA" SIGIS="undef" SIGNAME="display_decoder_0_CA">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="CA"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="CB" SIGIS="undef" SIGNAME="display_decoder_0_CB">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="CB"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="CC" SIGIS="undef" SIGNAME="display_decoder_0_CC">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="CC"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="CD" SIGIS="undef" SIGNAME="display_decoder_0_CD">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="CD"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="CE" SIGIS="undef" SIGNAME="display_decoder_0_CE">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="CE"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="CF" SIGIS="undef" SIGNAME="display_decoder_0_CF">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="CF"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="CG" SIGIS="undef" SIGNAME="display_decoder_0_CG">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="CG"/>
+          </CONNECTIONS>
+        </PORT>
+      </PORTS>
+      <BUSINTERFACES/>
+    </MODULE>
+    <MODULE COREREVISION="1" FULLNAME="/mux_0" HWVERSION="1.0" INSTANCE="mux_0" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="mux" VLNV="xilinx.com:module_ref:mux:1.0">
+      <DOCUMENTS/>
+      <PARAMETERS>
+        <PARAMETER NAME="Component_Name" VALUE="design_3_mux_0_0"/>
+        <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
+      </PARAMETERS>
+      <PORTS>
+        <PORT DIR="I" LEFT="3" NAME="I0" RIGHT="0" SIGIS="undef" SIGNAME="decimal_counter_0_Y0">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="decimal_counter_0" PORT="Y0"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="3" NAME="I1" RIGHT="0" SIGIS="undef" SIGNAME="decimal_counter_0_Y1">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="decimal_counter_0" PORT="Y1"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="3" NAME="I2" RIGHT="0" SIGIS="undef" SIGNAME="decimal_counter_0_Y2">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="decimal_counter_0" PORT="Y2"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="3" NAME="I3" RIGHT="0" SIGIS="undef" SIGNAME="decimal_counter_0_Y3">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="decimal_counter_0" PORT="Y3"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="1" NAME="S" RIGHT="0" SIGIS="undef" SIGNAME="counter_1_Y">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="counter_1" PORT="Y"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="3" NAME="Y" RIGHT="0" SIGIS="undef" SIGNAME="mux_0_Y">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="display_decoder_0" PORT="B"/>
+          </CONNECTIONS>
+        </PORT>
+      </PORTS>
+      <BUSINTERFACES/>
+    </MODULE>
+    <MODULE COREREVISION="9" FULLNAME="/xlconstant_0" HWVERSION="1.1" INSTANCE="xlconstant_0" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="xlconstant" VLNV="xilinx.com:ip:xlconstant:1.1">
+      <DOCUMENTS/>
+      <PARAMETERS>
+        <PARAMETER NAME="CONST_VAL" VALUE="0x0C34F"/>
+        <PARAMETER NAME="CONST_WIDTH" VALUE="17"/>
+        <PARAMETER NAME="Component_Name" VALUE="design_3_xlconstant_0_0"/>
+        <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
+      </PARAMETERS>
+      <PORTS>
+        <PORT DIR="O" LEFT="16" NAME="dout" RIGHT="0" SIGIS="undef" SIGNAME="xlconstant_0_dout">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="clock_divider_1" PORT="terminalcount"/>
+          </CONNECTIONS>
+        </PORT>
+      </PORTS>
+      <BUSINTERFACES/>
+    </MODULE>
+    <MODULE COREREVISION="9" FULLNAME="/xlconstant_1" HWVERSION="1.1" INSTANCE="xlconstant_1" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="xlconstant" VLNV="xilinx.com:ip:xlconstant:1.1">
+      <DOCUMENTS/>
+      <PARAMETERS>
+        <PARAMETER NAME="CONST_VAL" VALUE="0x001F3"/>
+        <PARAMETER NAME="CONST_WIDTH" VALUE="17"/>
+        <PARAMETER NAME="Component_Name" VALUE="design_3_xlconstant_1_0"/>
+        <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
+      </PARAMETERS>
+      <PORTS>
+        <PORT DIR="O" LEFT="16" NAME="dout" RIGHT="0" SIGIS="undef" SIGNAME="xlconstant_1_dout">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="clock_divider_0" PORT="terminalcount"/>
+          </CONNECTIONS>
+        </PORT>
+      </PORTS>
+      <BUSINTERFACES/>
+    </MODULE>
+  </MODULES>
+
+</EDKSYSTEM>

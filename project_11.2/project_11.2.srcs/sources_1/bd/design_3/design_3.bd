@@ -1,0 +1,316 @@
+{
+  "design": {
+    "design_info": {
+      "boundary_crc": "0xBE8710BBBE8710BB",
+      "device": "xc7z007sclg400-1",
+      "gen_directory": "../../../../project_11.2.gen/sources_1/bd/design_3",
+      "name": "design_3",
+      "rev_ctrl_bd_flag": "RevCtrlBdOff",
+      "synth_flow_mode": "Hierarchical",
+      "tool_version": "2024.1.1"
+    },
+    "design_tree": {
+      "counterA2_0": "",
+      "statemachineA2_0": "",
+      "clock_divider_0": "",
+      "xlconstant_0": "",
+      "bcd_counter_0": "",
+      "displaycontroller_wr_0": ""
+    },
+    "ports": {
+      "clk": {
+        "direction": "I"
+      },
+      "rst": {
+        "direction": "I"
+      },
+      "stop": {
+        "direction": "I"
+      },
+      "start": {
+        "direction": "I"
+      },
+      "increment": {
+        "direction": "I"
+      }
+    },
+    "components": {
+      "counterA2_0": {
+        "vlnv": "xilinx.com:module_ref:counterA2:1.0",
+        "ip_revision": "1",
+        "xci_name": "design_3_counterA2_0_0",
+        "xci_path": "ip\\design_3_counterA2_0_0\\design_3_counterA2_0_0.xci",
+        "inst_hier_path": "counterA2_0",
+        "reference_info": {
+          "ref_type": "hdl",
+          "ref_name": "counterA2",
+          "boundary_crc": "0x0"
+        },
+        "ports": {
+          "rst": {
+            "type": "rst",
+            "direction": "I"
+          },
+          "clk": {
+            "type": "clk",
+            "direction": "I",
+            "parameters": {
+              "ASSOCIATED_RESET": {
+                "value": "rst",
+                "value_src": "constant"
+              }
+            }
+          },
+          "Cen": {
+            "direction": "I",
+            "left": "1",
+            "right": "0"
+          },
+          "Y": {
+            "direction": "O",
+            "left": "13",
+            "right": "0"
+          }
+        }
+      },
+      "statemachineA2_0": {
+        "vlnv": "xilinx.com:module_ref:statemachineA2:1.0",
+        "ip_revision": "1",
+        "xci_name": "design_3_statemachineA2_0_0",
+        "xci_path": "ip\\design_3_statemachineA2_0_0\\design_3_statemachineA2_0_0.xci",
+        "inst_hier_path": "statemachineA2_0",
+        "reference_info": {
+          "ref_type": "hdl",
+          "ref_name": "statemachineA2",
+          "boundary_crc": "0x0"
+        },
+        "ports": {
+          "clk": {
+            "type": "clk",
+            "direction": "I",
+            "parameters": {
+              "ASSOCIATED_RESET": {
+                "value": "rst",
+                "value_src": "constant"
+              }
+            }
+          },
+          "rst": {
+            "type": "rst",
+            "direction": "I"
+          },
+          "start": {
+            "direction": "I"
+          },
+          "stop": {
+            "direction": "I"
+          },
+          "increment": {
+            "direction": "I"
+          },
+          "Cen": {
+            "direction": "O",
+            "left": "1",
+            "right": "0"
+          },
+          "increment_signal": {
+            "direction": "O"
+          }
+        }
+      },
+      "clock_divider_0": {
+        "vlnv": "xilinx.com:module_ref:clock_divider:1.0",
+        "ip_revision": "1",
+        "xci_name": "design_3_clock_divider_0_1",
+        "xci_path": "ip\\design_3_clock_divider_0_1\\design_3_clock_divider_0_1.xci",
+        "inst_hier_path": "clock_divider_0",
+        "reference_info": {
+          "ref_type": "hdl",
+          "ref_name": "clock_divider",
+          "boundary_crc": "0x0"
+        },
+        "ports": {
+          "clk": {
+            "type": "clk",
+            "direction": "I",
+            "parameters": {
+              "ASSOCIATED_RESET": {
+                "value": "rst",
+                "value_src": "constant"
+              }
+            }
+          },
+          "rst": {
+            "type": "rst",
+            "direction": "I"
+          },
+          "terminalcount": {
+            "direction": "I",
+            "left": "16",
+            "right": "0"
+          },
+          "clk_div": {
+            "direction": "O"
+          }
+        }
+      },
+      "xlconstant_0": {
+        "vlnv": "xilinx.com:ip:xlconstant:1.1",
+        "ip_revision": "9",
+        "xci_name": "design_3_xlconstant_0_1",
+        "xci_path": "ip\\design_3_xlconstant_0_1\\design_3_xlconstant_0_1.xci",
+        "inst_hier_path": "xlconstant_0",
+        "parameters": {
+          "CONST_VAL": {
+            "value": "49999"
+          },
+          "CONST_WIDTH": {
+            "value": "17"
+          }
+        }
+      },
+      "bcd_counter_0": {
+        "vlnv": "xilinx.com:module_ref:bcd_counter:1.0",
+        "ip_revision": "1",
+        "xci_name": "design_3_bcd_counter_0_0",
+        "xci_path": "ip\\design_3_bcd_counter_0_0\\design_3_bcd_counter_0_0.xci",
+        "inst_hier_path": "bcd_counter_0",
+        "reference_info": {
+          "ref_type": "hdl",
+          "ref_name": "bcd_counter",
+          "boundary_crc": "0x0"
+        },
+        "ports": {
+          "clk": {
+            "type": "clk",
+            "direction": "I",
+            "parameters": {
+              "ASSOCIATED_RESET": {
+                "value": "rst",
+                "value_src": "constant"
+              }
+            }
+          },
+          "rst": {
+            "type": "rst",
+            "direction": "I"
+          },
+          "bcd_digit": {
+            "direction": "O",
+            "left": "3",
+            "right": "0"
+          },
+          "bcd_digit2": {
+            "direction": "O",
+            "left": "3",
+            "right": "0"
+          },
+          "bcd_digit3": {
+            "direction": "O",
+            "left": "3",
+            "right": "0"
+          },
+          "bcd_digit4": {
+            "direction": "O",
+            "left": "3",
+            "right": "0"
+          }
+        }
+      },
+      "displaycontroller_wr_0": {
+        "vlnv": "xilinx.com:module_ref:displaycontroller_wrapper:1.0",
+        "ip_revision": "1",
+        "xci_name": "design_3_displaycontroller_wr_0_0",
+        "xci_path": "ip\\design_3_displaycontroller_wr_0_0\\design_3_displaycontroller_wr_0_0.xci",
+        "inst_hier_path": "displaycontroller_wr_0",
+        "reference_info": {
+          "ref_type": "hdl",
+          "ref_name": "displaycontroller_wrapper",
+          "boundary_crc": "0x0"
+        },
+        "ports": {
+          "I": {
+            "direction": "I",
+            "left": "13",
+            "right": "0"
+          },
+          "clk": {
+            "type": "clk",
+            "direction": "I",
+            "parameters": {
+              "ASSOCIATED_RESET": {
+                "value": "rst",
+                "value_src": "constant"
+              }
+            }
+          },
+          "rst": {
+            "type": "rst",
+            "direction": "I"
+          },
+          "seg_an": {
+            "direction": "O",
+            "left": "3",
+            "right": "0"
+          },
+          "seg_cat": {
+            "direction": "O",
+            "left": "7",
+            "right": "0"
+          }
+        }
+      }
+    },
+    "nets": {
+      "clk_1": {
+        "ports": [
+          "clk",
+          "clock_divider_0/clk",
+          "counterA2_0/clk"
+        ]
+      },
+      "clock_divider_0_clk_div": {
+        "ports": [
+          "clock_divider_0/clk_div",
+          "statemachineA2_0/clk"
+        ]
+      },
+      "increment_1": {
+        "ports": [
+          "increment",
+          "statemachineA2_0/increment"
+        ]
+      },
+      "rst_1": {
+        "ports": [
+          "rst",
+          "counterA2_0/rst"
+        ]
+      },
+      "start_1": {
+        "ports": [
+          "start",
+          "statemachineA2_0/start"
+        ]
+      },
+      "statemachineA2_0_Cen": {
+        "ports": [
+          "statemachineA2_0/Cen",
+          "counterA2_0/Cen"
+        ]
+      },
+      "stop_1": {
+        "ports": [
+          "stop",
+          "statemachineA2_0/stop"
+        ]
+      },
+      "xlconstant_0_dout": {
+        "ports": [
+          "xlconstant_0/dout",
+          "clock_divider_0/terminalcount"
+        ]
+      }
+    }
+  }
+}

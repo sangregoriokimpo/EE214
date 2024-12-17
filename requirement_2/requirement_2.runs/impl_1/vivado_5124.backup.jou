@@ -1,0 +1,24 @@
+#-----------------------------------------------------------
+# Vivado v2024.1 (64-bit)
+# SW Build 5076996 on Wed May 22 18:37:14 MDT 2024
+# IP Build 5075265 on Wed May 22 21:45:21 MDT 2024
+# SharedData Build 5076995 on Wed May 22 18:29:18 MDT 2024
+# Start of session at: Tue Sep  3 17:40:02 2024
+# Process ID: 5124
+# Current directory: C:/Users/sgk/OneDrive/Desktop/EE214/requirement_2/requirement_2.runs/impl_1
+# Command line: vivado.exe -log requirement5.vdi -applog -product Vivado -messageDb vivado.pb -mode batch -source requirement5.tcl -notrace
+# Log file: C:/Users/sgk/OneDrive/Desktop/EE214/requirement_2/requirement_2.runs/impl_1/requirement5.vdi
+# Journal file: C:/Users/sgk/OneDrive/Desktop/EE214/requirement_2/requirement_2.runs/impl_1\vivado.jou
+# Running On        :DESKTOP-JTBO2TI
+# Platform          :Windows Server 2016 or Windows 10
+# Operating System  :22631
+# Processor Detail  :AMD Ryzen 7 7840HS w/ Radeon 780M Graphics     
+# CPU Frequency     :3793 MHz
+# CPU Physical cores:8
+# CPU Logical cores :16
+# Host memory       :66367 MB
+# Swap memory       :4160 MB
+# Total Virtual     :70528 MB
+# Available Virtual :55709 MB
+#-----------------------------------------------------------
+source requirement5.tcl -notrace

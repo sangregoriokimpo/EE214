@@ -1,0 +1,33 @@
+{
+   "ActiveEmotionalView":"Default View",
+   "Default View_ScaleFactor":"0.737906",
+   "Default View_TopLeft":"-77,-419",
+   "ExpandedHierarchyInLayout":"",
+   "guistr":"# # String gsaved with Nlview 7.7.1 2023-07-26 3bc4126617 VDI=43 GEI=38 GUI=JA:21.0
+#  -string -flagsOSRD
+preplace port port-id_clk -pg 1 -lvl 0 -x 0 -y 90 -defaultsOSRD
+preplace port port-id_rst -pg 1 -lvl 0 -x 0 -y 20 -defaultsOSRD
+preplace port port-id_start -pg 1 -lvl 0 -x 0 -y 110 -defaultsOSRD
+preplace portBus seg_an -pg 1 -lvl 5 -x 1180 -y 160 -defaultsOSRD
+preplace portBus seg_cat -pg 1 -lvl 5 -x 1180 -y 180 -defaultsOSRD
+preplace inst displaycontrollerE1_0 -pg 1 -lvl 4 -x 1040 -y 170 -defaultsOSRD
+preplace inst random_FSM_0 -pg 1 -lvl 3 -x 780 -y 150 -defaultsOSRD
+preplace inst clock_divider_0 -pg 1 -lvl 2 -x 480 -y 130 -defaultsOSRD
+preplace inst clock_divider_1 -pg 1 -lvl 1 -x 180 -y 110 -defaultsOSRD
+preplace inst xlconstant_0 -pg 1 -lvl 1 -x 180 -y 230 -defaultsOSRD
+preplace inst xlconstant_1 -pg 1 -lvl 2 -x 480 -y 250 -defaultsOSRD
+preplace netloc displaycontrollerE1_0_seg_cat 1 4 1 N 180
+preplace netloc displaycontrollerE1_0_seg_an 1 4 1 N 160
+preplace netloc random_FSM_0_random_num 1 3 1 N 150
+preplace netloc rst_1 1 0 4 30 20 330 40 630 60 920
+preplace netloc start_1 1 0 3 20 10 N 10 640
+preplace netloc clock_divider_1_clk_div 1 1 1 N 110
+preplace netloc clock_divider_0_clk_div 1 2 2 650 70 910
+preplace netloc clk_1 1 0 1 N 90
+preplace netloc xlconstant_0_dout 1 0 2 40 30 320
+preplace netloc xlconstant_1_dout 1 1 2 340 50 620
+levelinfo -pg 1 0 180 480 780 1040 1180
+pagesize -pg 1 -db -bbox -sgen -80 0 1310 310
+"
+}
+

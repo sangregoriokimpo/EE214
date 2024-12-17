@@ -1,0 +1,74 @@
+{
+  "design": {
+    "design_info": {
+      "boundary_crc": "0xC0F150E5CE69F91E",
+      "device": "xc7z007sclg400-1",
+      "gen_directory": "../../../../project_12.1.gen/sources_1/bd/design_1",
+      "name": "design_1",
+      "rev_ctrl_bd_flag": "RevCtrlBdOff",
+      "synth_flow_mode": "Hierarchical",
+      "tool_version": "2024.1.1",
+      "validated": "true"
+    },
+    "design_tree": {
+      "debounce_0": ""
+    },
+    "ports": {
+      "I": {
+        "direction": "I"
+      },
+      "clk": {
+        "direction": "I"
+      },
+      "Y": {
+        "direction": "O"
+      }
+    },
+    "components": {
+      "debounce_0": {
+        "vlnv": "xilinx.com:module_ref:debounce:1.0",
+        "ip_revision": "1",
+        "xci_name": "design_1_debounce_0_0",
+        "xci_path": "ip\\design_1_debounce_0_0\\design_1_debounce_0_0.xci",
+        "inst_hier_path": "debounce_0",
+        "reference_info": {
+          "ref_type": "hdl",
+          "ref_name": "debounce",
+          "boundary_crc": "0x0"
+        },
+        "ports": {
+          "I": {
+            "direction": "I"
+          },
+          "clk": {
+            "type": "clk",
+            "direction": "I"
+          },
+          "Y": {
+            "direction": "O"
+          }
+        }
+      }
+    },
+    "nets": {
+      "I_1": {
+        "ports": [
+          "I",
+          "debounce_0/I"
+        ]
+      },
+      "clk_1": {
+        "ports": [
+          "clk",
+          "debounce_0/clk"
+        ]
+      },
+      "debounce_0_Y": {
+        "ports": [
+          "debounce_0/Y",
+          "Y"
+        ]
+      }
+    }
+  }
+}
